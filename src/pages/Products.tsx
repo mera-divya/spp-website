@@ -1,0 +1,427 @@
+import { useState } from "react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link } from "react-router-dom";
+import {
+  Package,
+  Pill,
+  Factory,
+  Utensils,
+  Settings,
+  CheckCircle,
+  Ruler,
+  Palette,
+  Shield,
+  Phone
+} from "lucide-react";
+import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
+
+const Products = () => {
+  const [selectedCategory, setSelectedCategory] = useState("pharmaceutical");
+
+  const categories = [
+    {
+      id: "pharmaceutical",
+      name: "Pharmaceutical",
+      icon: <Pill className="w-5 h-5" />,
+      description: "FDA compliant bags for medicine and healthcare applications"
+    },
+    {
+      id: "industrial",
+      name: "Industrial", 
+      icon: <Factory className="w-5 h-5" />,
+      description: "Heavy-duty bags for industrial packaging and storage"
+    },
+    {
+      id: "food-grade",
+      name: "Food Grade",
+      icon: <Utensils className="w-5 h-5" />,
+      description: "Food-safe bags meeting international safety standards"
+    },
+    {
+      id: "custom",
+      name: "Custom Solutions",
+      icon: <Settings className="w-5 h-5" />,
+      description: "Tailored LDPE bags for specific requirements"
+    }
+  ];
+
+  const products = {
+    pharmaceutical: [
+      {
+        name: "Medicine Packaging Bags",
+        description: "Premium LDPE bags designed for pharmaceutical products with excellent barrier properties and contamination protection.",
+        specifications: [
+          "Thickness: 25-200 microns",
+          "Sizes: Custom as per requirement",
+          "Colors: Clear, White, Blue, Amber",
+          "Print: Up to 8 colors flexographic printing",
+          "Features: Anti-static, UV resistant options"
+        ],
+        applications: ["Tablet packaging", "Capsule storage", "Powder containment", "Medical device protection"],
+        certifications: ["FDA Compliant", "USP Class VI", "ISO 15378"]
+      },
+      {
+        name: "Medical Device Bags",
+        description: "Specialized bags for sterile medical devices and equipment with superior seal strength and puncture resistance.",
+        specifications: [
+          "Thickness: 50-300 microns",
+          "Sizes: 4x6 inches to 24x36 inches",
+          "Colors: Clear, Blue, Green",
+          "Seal type: Heat sealable, Zipper options",
+          "Features: Sterile barrier properties"
+        ],
+        applications: ["Surgical instruments", "Disposable devices", "Sterile packaging", "Laboratory supplies"],
+        certifications: ["ISO 11607", "EN 868", "ASTM Standards"]
+      },
+      {
+        name: "Clinical Trial Bags", 
+        description: "Secure packaging for clinical trial materials with tamper-evident features and regulatory compliance.",
+        specifications: [
+          "Thickness: 75-250 microns",
+          "Sizes: Customizable",
+          "Colors: Opaque, Amber for light protection",
+          "Features: Tamper-evident seals",
+          "Compliance: GCP guidelines"
+        ],
+        applications: ["Drug samples", "Patient kits", "Blinded studies", "Sample collection"],
+        certifications: ["GMP Compliant", "21 CFR Part 11", "ICH Guidelines"]
+      }
+    ],
+    industrial: [
+      {
+        name: "Heavy Duty Industrial Bags",
+        description: "Robust LDPE bags designed for industrial applications requiring superior strength and chemical resistance.",
+        specifications: [
+          "Thickness: 100-500 microns", 
+          "Sizes: Up to 60x72 inches",
+          "Colors: Natural, Black, Custom colors",
+          "Load capacity: Up to 50 kg",
+          "Features: Chemical resistant, puncture proof"
+        ],
+        applications: ["Chemical storage", "Industrial waste", "Raw material packaging", "Bulk storage"],
+        certifications: ["ISO 9001", "REACH Compliant", "RoHS Certified"]
+      },
+      {
+        name: "Anti-Static Bags",
+        description: "Specialized bags with anti-static properties for electronic components and sensitive equipment protection.",
+        specifications: [
+          "Thickness: 75-200 microns",
+          "Sizes: 2x3 inches to 18x24 inches", 
+          "Surface resistance: 10^11-10^12 ohms",
+          "Colors: Pink, Blue anti-static",
+          "Features: ESD protection, moisture barrier"
+        ],
+        applications: ["Electronic components", "Circuit boards", "Semiconductors", "Precision instruments"],
+        certifications: ["IEC 61340", "ANSI/ESD S20.20", "MIL-PRF-81705"]
+      },
+      {
+        name: "Chemical Resistant Bags",
+        description: "Specially formulated LDPE bags offering excellent chemical compatibility for hazardous materials.",
+        specifications: [
+          "Thickness: 150-400 microns",
+          "Chemical compatibility: Wide range",
+          "Temperature range: -40°C to +80°C",
+          "Colors: Natural, Black, Yellow", 
+          "Features: Leak-proof, heat sealable"
+        ],
+        applications: ["Chemical powders", "Hazardous waste", "Laboratory chemicals", "Industrial solvents"],
+        certifications: ["UN Packaging Standards", "OSHA Compliant", "DOT Approved"]
+      }
+    ],
+    "food-grade": [
+      {
+        name: "Food Storage Bags",
+        description: "Food-safe LDPE bags meeting FDA regulations for direct food contact applications.",
+        specifications: [
+          "Thickness: 25-150 microns",
+          "Sizes: 4x6 inches to 18x24 inches",
+          "Colors: Clear, Natural",
+          "Features: Freezer safe, microwave safe",
+          "Compliance: FDA 21 CFR 177.1520"
+        ],
+        applications: ["Fresh produce", "Frozen foods", "Bakery items", "Meat packaging"],
+        certifications: ["FDA Approved", "EU 10/2011", "BfR Recommendations"]
+      },
+      {
+        name: "Vacuum Packaging Bags",
+        description: "Multi-layer LDPE bags designed for vacuum packaging to extend food shelf life.",
+        specifications: [
+          "Structure: Multi-layer coextruded",
+          "Thickness: 80-200 microns",
+          "Oxygen transmission: <1 cc/m²/day",
+          "Colors: Clear, Silver metallized",
+          "Features: Puncture resistant, heat sealable"
+        ],
+        applications: ["Meat products", "Seafood", "Cheese", "Ready meals"],
+        certifications: ["FDA Food Contact", "HACCP Compliant", "Kosher Certified"]
+      },
+      {
+        name: "Produce Bags",
+        description: "Breathable LDPE bags designed for fresh fruits and vegetables with optimal gas exchange.",
+        specifications: [
+          "Thickness: 15-50 microns",
+          "Perforations: Micro or macro as required",
+          "Sizes: 8x12 inches to 16x24 inches",
+          "Colors: Clear, Green tinted",
+          "Features: Anti-fog, breathable"
+        ],
+        applications: ["Fresh fruits", "Vegetables", "Herbs", "Salad greens"],
+        certifications: ["FDA Food Grade", "Organic Compliant", "USDA Approved"]
+      }
+    ],
+    custom: [
+      {
+        name: "Printed Bags with Branding",
+        description: "Custom printed LDPE bags with your company branding and specifications.",
+        specifications: [
+          "Printing: Up to 10 colors flexographic",
+          "Finish: Matte, Gloss, Metallic options",
+          "Minimum order: 10,000 pieces",
+          "Lead time: 2-3 weeks",
+          "Features: Custom sizes, colors, designs"
+        ],
+        applications: ["Promotional packaging", "Retail bags", "Brand marketing", "Product identification"],
+        certifications: ["Color matching standards", "Print quality ISO", "Brand compliance"]
+      },
+      {
+        name: "Specialty Barrier Bags",
+        description: "Advanced multi-layer bags with specific barrier properties for unique applications.",
+        specifications: [
+          "Layers: 3-7 layer coextrusion",
+          "Barriers: Oxygen, moisture, light",
+          "Thickness: 100-300 microns",
+          "Features: Enhanced protection",
+          "Customization: Per application"
+        ],
+        applications: ["Sensitive chemicals", "Pharmaceutical APIs", "Electronic components", "Research materials"],
+        certifications: ["Custom validation", "Performance testing", "Regulatory compliance"]
+      },
+      {
+        name: "Shaped & Formed Bags",
+        description: "Custom shaped and formed LDPE bags for unique packaging requirements.",
+        specifications: [
+          "Shapes: Gusset, stand-up, formed",
+          "Features: Zippers, valves, spouts", 
+          "Sizes: As per requirement",
+          "Colors: Full color range",
+          "Minimum order: 5,000 pieces"
+        ],
+        applications: ["Liquid packaging", "Powder containment", "Bulk materials", "Specialized storage"],
+        certifications: ["Design validation", "Performance testing", "Quality assurance"]
+      }
+    ]
+  };
+
+  const features = [
+    {
+      icon: <Shield className="w-6 h-6 text-primary" />,
+      title: "Quality Assured",
+      description: "All products manufactured under ISO 9001:2015 quality management system"
+    },
+    {
+      icon: <Palette className="w-6 h-6 text-primary" />,
+      title: "Custom Colors",
+      description: "Wide range of standard and custom colors to match your brand requirements"
+    },
+    {
+      icon: <Ruler className="w-6 h-6 text-primary" />,
+      title: "Custom Sizes", 
+      description: "Flexible manufacturing to produce bags in any size as per your specifications"
+    },
+    {
+      icon: <Package className="w-6 h-6 text-primary" />,
+      title: "Flexible Packaging",
+      description: "Various packaging options including bulk, retail packs, and custom bundling"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative hero-gradient text-primary-foreground overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={bagsShowcase}
+            alt="LDPE Products Showcase"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+          <div className="text-center">
+            <Badge variant="secondary" className="mb-6">
+              <Package className="w-4 h-4 mr-2" />
+              Premium LDPE Products
+            </Badge>
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+              Our Product Range
+            </h1>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+              Comprehensive selection of high-quality LDPE polythene bags designed for 
+              pharmaceutical, industrial, and food-grade applications.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Categories */}
+      <section className="section-padding bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
+              Product Categories
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Explore our diverse range of LDPE solutions tailored for different industries and applications.
+            </p>
+          </div>
+
+          <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
+            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-12">
+              {categories.map((category) => (
+                <TabsTrigger 
+                  key={category.id} 
+                  value={category.id}
+                  className="flex items-center space-x-2 p-4"
+                >
+                  {category.icon}
+                  <span className="hidden sm:inline">{category.name}</span>
+                </TabsTrigger>
+              ))}
+            </TabsList>
+
+            {categories.map((category) => (
+              <TabsContent key={category.id} value={category.id}>
+                <div className="mb-8 text-center">
+                  <h3 className="text-2xl font-bold text-foreground mb-2">{category.name} Products</h3>
+                  <p className="text-muted-foreground">{category.description}</p>
+                </div>
+
+                <div className="grid gap-8">
+                  {products[category.id as keyof typeof products].map((product, index) => (
+                    <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
+                      <CardHeader>
+                        <CardTitle className="text-2xl text-foreground">{product.name}</CardTitle>
+                        <p className="text-muted-foreground">{product.description}</p>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="grid lg:grid-cols-3 gap-8">
+                          {/* Specifications */}
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-3">Specifications</h4>
+                            <ul className="space-y-2">
+                              {product.specifications.map((spec, specIndex) => (
+                                <li key={specIndex} className="flex items-start space-x-2">
+                                  <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                                  <span className="text-muted-foreground text-sm">{spec}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+
+                          {/* Applications */}
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-3">Applications</h4>
+                            <div className="flex flex-wrap gap-2">
+                              {product.applications.map((app, appIndex) => (
+                                <Badge key={appIndex} variant="secondary" className="text-xs">
+                                  {app}
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
+
+                          {/* Certifications */}
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-3">Certifications</h4>
+                            <div className="space-y-2">
+                              {product.certifications.map((cert, certIndex) => (
+                                <Badge key={certIndex} variant="outline" className="text-xs mr-2 mb-2">
+                                  <CheckCircle className="w-3 h-3 mr-1" />
+                                  {cert}
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="mt-6 pt-6 border-t border-border">
+                          <Button asChild className="hero-gradient">
+                            <Link to="/contact">
+                              <Phone className="w-4 h-4 mr-2" />
+                              Request Quote for {product.name}
+                            </Link>
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </TabsContent>
+            ))}
+          </Tabs>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="section-padding section-gradient">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
+              Product Features
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Every product we manufacture comes with these standard features and benefits.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {features.map((feature, index) => (
+              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow text-center">
+                <CardContent className="p-6">
+                  <div className="mb-4 flex justify-center">{feature.icon}</div>
+                  <h3 className="text-xl font-semibold mb-3 text-foreground">
+                    {feature.title}
+                  </h3>
+                  <p className="text-muted-foreground">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-padding hero-gradient text-primary-foreground">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+            Need Custom Solutions?
+          </h2>
+          <p className="text-xl mb-8 text-blue-100">
+            Our experienced team can develop custom LDPE packaging solutions 
+            tailored to your specific requirements and industry standards.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" variant="secondary" className="shadow-elevated">
+              <Link to="/contact">
+                <Phone className="w-5 h-5 mr-2" />
+                Discuss Requirements
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-white/20 hover:bg-white/10">
+              <Link to="/quality">
+                <CheckCircle className="w-5 h-5 mr-2" />
+                View Quality Standards
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Products;

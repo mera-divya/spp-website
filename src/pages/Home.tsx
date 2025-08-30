@@ -1,0 +1,286 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { 
+  CheckCircle, 
+  Shield, 
+  Users, 
+  Award,
+  ArrowRight,
+  Phone,
+  Factory,
+  Recycle,
+  Star
+} from "lucide-react";
+import heroImage from "@/assets/hero-manufacturing.jpg";
+import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
+import qualityLab from "@/assets/quality-lab.jpg";
+
+const Home = () => {
+  const features = [
+    {
+      icon: <Factory className="w-8 h-8 text-primary" />,
+      title: "Advanced Manufacturing",
+      description: "State-of-the-art facilities with cutting-edge technology for premium LDPE production."
+    },
+    {
+      icon: <Shield className="w-8 h-8 text-primary" />,
+      title: "Quality Assured", 
+      description: "ISO 9001:2015 certified processes ensuring consistent quality and reliability."
+    },
+    {
+      icon: <Users className="w-8 h-8 text-primary" />,
+      title: "Industry Expertise",
+      description: "Decades of experience serving pharmaceutical and industrial clients worldwide."
+    },
+    {
+      icon: <Recycle className="w-8 h-8 text-primary" />,
+      title: "Eco-Friendly Solutions",
+      description: "Sustainable manufacturing practices with environmentally responsible materials."
+    }
+  ];
+
+  const products = [
+    {
+      title: "Pharmaceutical Bags",
+      description: "FDA compliant LDPE bags for medicine packaging with superior barrier properties.",
+      image: bagsShowcase
+    },
+    {
+      title: "Industrial Packaging",
+      description: "Heavy-duty polythene bags for industrial applications and bulk material storage.",
+      image: bagsShowcase
+    },
+    {
+      title: "Food Grade Bags",
+      description: "Food-safe LDPE packaging solutions meeting international safety standards.",
+      image: bagsShowcase
+    }
+  ];
+
+  const stats = [
+    { number: "25+", label: "Years Experience" },
+    { number: "500+", label: "Happy Clients" },
+    { number: "50K+", label: "Bags Produced Daily" },
+    { number: "3", label: "ISO Certifications" }
+  ];
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative hero-gradient text-primary-foreground overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={heroImage}
+            alt="Srinivasa Polypack Manufacturing Facility"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <Badge variant="secondary" className="mb-6">
+                <Star className="w-4 h-4 mr-2" />
+                ISO 9001:2015 Certified
+              </Badge>
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                Premium LDPE 
+                <span className="block text-blue-200">Polythene Bags</span>
+              </h1>
+              <p className="text-xl mb-8 text-blue-100 max-w-lg">
+                Leading manufacturer and supplier of high-quality LDPE polythene bags for 
+                pharmaceutical and industrial applications across India.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg" variant="secondary" className="shadow-elevated">
+                  <Link to="/products">
+                    View Our Products
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-white/20 hover:bg-white/10">
+                  <Link to="/contact">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Get Quote Now
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="hidden lg:block">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-elevated">
+                <img 
+                  src={bagsShowcase}
+                  alt="LDPE Polythene Bags Showcase"
+                  className="w-full rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-muted-foreground">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="section-padding section-gradient">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
+              Why Choose Srinivasa Polypack?
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Combining decades of expertise with cutting-edge technology to deliver 
+              superior LDPE packaging solutions that exceed industry standards.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {features.map((feature, index) => (
+              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
+                <CardContent className="p-6 text-center">
+                  <div className="mb-4 flex justify-center">{feature.icon}</div>
+                  <h3 className="text-xl font-semibold mb-3 text-foreground">
+                    {feature.title}
+                  </h3>
+                  <p className="text-muted-foreground">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Products Showcase */}
+      <section className="section-padding bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
+              Our Product Range
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Comprehensive selection of LDPE polythene bags designed for diverse 
+              pharmaceutical and industrial applications.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {products.map((product, index) => (
+              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow overflow-hidden">
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={product.image}
+                    alt={product.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-3 text-foreground">
+                    {product.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4">{product.description}</p>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link to="/products">Learn More</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Quality Assurance */}
+      <section className="section-padding section-gradient">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
+                Uncompromising Quality Standards
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Our commitment to excellence is reflected in our comprehensive quality 
+                management system and internationally recognized certifications.
+              </p>
+              
+              <div className="space-y-4 mb-8">
+                {[
+                  "ISO 9001:2015 Quality Management System",
+                  "ZED (Zero Defect Zero Effect) Certification", 
+                  "MSME (Micro, Small & Medium Enterprises) Registered",
+                  "Advanced Quality Control Laboratory",
+                  "Raw Material Testing & Validation"
+                ].map((item, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <Button asChild size="lg" className="hero-gradient">
+                <Link to="/quality">
+                  <Award className="w-5 h-5 mr-2" />
+                  View Certifications
+                </Link>
+              </Button>
+            </div>
+
+            <div>
+              <img 
+                src={qualityLab}
+                alt="Quality Control Laboratory"
+                className="rounded-2xl shadow-elevated"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-padding hero-gradient text-primary-foreground">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+            Ready to Partner with Us?
+          </h2>
+          <p className="text-xl mb-8 text-blue-100">
+            Get in touch today for custom LDPE packaging solutions tailored to your 
+            pharmaceutical or industrial requirements.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" variant="secondary" className="shadow-elevated">
+              <Link to="/contact">
+                <Phone className="w-5 h-5 mr-2" />
+                Request Quote
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-white/20 hover:bg-white/10">
+              <Link to="/about">
+                Learn About Us
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;

@@ -1,0 +1,363 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import {
+  Users,
+  Building2,
+  Star,
+  Quote,
+  Award,
+  TrendingUp,
+  Globe,
+  Phone,
+  Heart,
+  CheckCircle
+} from "lucide-react";
+
+const Clients = () => {
+  const clientCategories = [
+    {
+      category: "Pharmaceutical Companies",
+      icon: <Building2 className="w-8 h-8 text-primary" />,
+      description: "Leading pharmaceutical manufacturers who trust our FDA-compliant packaging solutions.",
+      count: "150+",
+      clients: [
+        "Major Pharma Corp (Mumbai)",
+        "MediLife Industries (Delhi)", 
+        "HealthCare Solutions (Bangalore)",
+        "PharmaTech Ltd (Pune)",
+        "Generic Medicines Inc (Chennai)"
+      ]
+    },
+    {
+      category: "Industrial Manufacturers",
+      icon: <Building2 className="w-8 h-8 text-primary" />,
+      description: "Industrial clients requiring heavy-duty packaging for various applications.",
+      count: "200+", 
+      clients: [
+        "Chemical Industries (Gujarat)",
+        "Auto Components Ltd (Tamil Nadu)",
+        "Engineering Solutions (Karnataka)",
+        "Industrial Parts Co (Maharashtra)",
+        "Manufacturing Hub (Haryana)"
+      ]
+    },
+    {
+      category: "Food Processing Units",
+      icon: <Building2 className="w-8 h-8 text-primary" />,
+      description: "Food industry clients using our food-grade LDPE bags for packaging.",
+      count: "100+",
+      clients: [
+        "Food Processing Corp (Punjab)",
+        "Dairy Products Ltd (Rajasthan)",
+        "Frozen Foods Inc (Uttar Pradesh)",
+        "Snack Manufacturing (West Bengal)",
+        "Organic Foods Co (Kerala)"
+      ]
+    },
+    {
+      category: "Export Partners",
+      icon: <Globe className="w-8 h-8 text-primary" />,
+      description: "International partners who rely on our quality for global markets.",
+      count: "50+",
+      clients: [
+        "Export House (Middle East)",
+        "International Trading (Southeast Asia)",
+        "Global Pharma (Europe)",
+        "Overseas Distributors (Africa)",
+        "Trading Partners (South America)"
+      ]
+    }
+  ];
+
+  const testimonials = [
+    {
+      name: "Dr. Rajesh Kumar",
+      position: "Quality Manager",
+      company: "PharmaCorp Industries",
+      testimonial: "Srinivasa Polypack has been our trusted partner for pharmaceutical packaging for over 8 years. Their consistent quality and timely delivery have been crucial for our operations. The ISO-certified processes give us confidence in their products.",
+      rating: 5,
+      industry: "Pharmaceutical"
+    },
+    {
+      name: "Priya Sharma", 
+      position: "Procurement Head",
+      company: "Industrial Solutions Ltd",
+      testimonial: "The heavy-duty LDPE bags from Srinivasa Polypack have exceeded our expectations. Their technical team worked closely with us to develop custom solutions for our industrial applications. Excellent service and product quality.",
+      rating: 5,
+      industry: "Industrial"
+    },
+    {
+      name: "Amit Patel",
+      position: "Operations Director", 
+      company: "Food Processing Co",
+      testimonial: "We've been using their food-grade LDPE bags for our packaging needs. The FDA-compliant materials and consistent quality have helped us maintain our food safety standards. Highly recommend their services.",
+      rating: 5,
+      industry: "Food Processing"
+    },
+    {
+      name: "Sarah Thompson",
+      position: "Supply Chain Manager",
+      company: "Global Export House",
+      testimonial: "As an export company, we need packaging that meets international standards. Srinivasa Polypack delivers exactly that. Their products have helped us expand our reach to multiple countries with confidence.",
+      rating: 5,
+      industry: "Export"
+    }
+  ];
+
+  const partnershipBenefits = [
+    {
+      icon: <CheckCircle className="w-6 h-6 text-primary" />,
+      title: "Dedicated Support",
+      description: "Assigned account managers for personalized service and quick resolution of queries."
+    },
+    {
+      icon: <TrendingUp className="w-6 h-6 text-primary" />,
+      title: "Scalable Solutions",
+      description: "Flexible production capacity to accommodate growing business requirements."
+    },
+    {
+      icon: <Award className="w-6 h-6 text-primary" />,
+      title: "Quality Assurance",
+      description: "Guaranteed quality with comprehensive testing and certification documentation."
+    },
+    {
+      icon: <Globe className="w-6 h-6 text-primary" />,
+      title: "Global Standards",
+      description: "Products manufactured to international standards for domestic and export markets."
+    }
+  ];
+
+  const stats = [
+    { number: "500+", label: "Active Clients", description: "Across pharmaceutical, industrial, and food sectors" },
+    { number: "25+", label: "Years Partnership", description: "Average client relationship duration" },
+    { number: "98%", label: "Client Retention", description: "Customer satisfaction and repeat business" },
+    { number: "15", label: "States Served", description: "Pan-India presence and distribution network" }
+  ];
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="hero-gradient text-primary-foreground section-padding">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <Badge variant="secondary" className="mb-6">
+              <Users className="w-4 h-4 mr-2" />
+              Trusted by Industry Leaders
+            </Badge>
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+              Our Valued Clients
+            </h1>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+              Building long-term partnerships with leading pharmaceutical, industrial, 
+              and food processing companies across India and international markets.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Stats */}
+      <section className="section-padding bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <Card key={index} className="shadow-card text-center">
+                <CardContent className="p-6">
+                  <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
+                  <div className="text-xl font-semibold text-foreground mb-2">{stat.label}</div>
+                  <div className="text-sm text-muted-foreground">{stat.description}</div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Client Categories */}
+      <section className="section-padding section-gradient">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
+              Client Categories
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              We serve diverse industries with specialized LDPE packaging solutions 
+              tailored to their unique requirements and regulatory standards.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {clientCategories.map((category, index) => (
+              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center space-x-3">
+                      {category.icon}
+                      <CardTitle className="text-xl text-foreground">{category.category}</CardTitle>
+                    </div>
+                    <Badge variant="outline" className="text-primary border-primary">
+                      {category.count}
+                    </Badge>
+                  </div>
+                  <p className="text-muted-foreground">{category.description}</p>
+                </CardHeader>
+                <CardContent>
+                  <h4 className="font-semibold text-foreground mb-3">Representative Clients:</h4>
+                  <ul className="space-y-2">
+                    {category.clients.map((client, clientIndex) => (
+                      <li key={clientIndex} className="flex items-center space-x-2">
+                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                        <span className="text-muted-foreground text-sm">{client}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="section-padding bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
+              Client Testimonials
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Hear what our clients say about their experience working with 
+              Srinivasa Polypack and our commitment to excellence.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start mb-4">
+                    <Quote className="w-8 h-8 text-primary flex-shrink-0 mr-3" />
+                    <div className="flex-1">
+                      <div className="flex items-center mb-2">
+                        {[...Array(testimonial.rating)].map((_, starIndex) => (
+                          <Star key={starIndex} className="w-4 h-4 text-yellow-400 fill-current" />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    "{testimonial.testimonial}"
+                  </p>
+                  
+                  <div className="border-t border-border pt-4">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <div className="font-semibold text-foreground">{testimonial.name}</div>
+                        <div className="text-sm text-muted-foreground">{testimonial.position}</div>
+                        <div className="text-sm text-muted-foreground">{testimonial.company}</div>
+                      </div>
+                      <Badge variant="secondary">{testimonial.industry}</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Partnership Benefits */}
+      <section className="section-padding section-gradient">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
+              Partnership Benefits
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Why leading companies choose Srinivasa Polypack as their 
+              trusted LDPE packaging partner.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {partnershipBenefits.map((benefit, index) => (
+              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow text-center">
+                <CardContent className="p-6">
+                  <div className="mb-4 flex justify-center">{benefit.icon}</div>
+                  <h3 className="text-xl font-semibold mb-3 text-foreground">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-muted-foreground">{benefit.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Client Success Story */}
+      <section className="section-padding bg-background">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="shadow-elevated">
+            <CardContent className="p-8 lg:p-12">
+              <div className="text-center mb-8">
+                <Heart className="w-16 h-16 text-primary mx-auto mb-4" />
+                <h2 className="text-3xl font-bold text-foreground mb-4">Client Success Story</h2>
+              </div>
+              
+              <div className="space-y-6 text-lg text-muted-foreground">
+                <p>
+                  <strong className="text-foreground">Challenge:</strong> A leading pharmaceutical company 
+                  needed specialized LDPE bags for their new drug packaging line that required specific 
+                  barrier properties and regulatory compliance.
+                </p>
+                <p>
+                  <strong className="text-foreground">Solution:</strong> Our technical team worked closely 
+                  with their R&D department to develop a custom multi-layer LDPE solution that met all 
+                  FDA requirements and enhanced product stability.
+                </p>
+                <p>
+                  <strong className="text-foreground">Result:</strong> The client successfully launched 
+                  their new product line with our packaging, resulting in 40% faster time-to-market and 
+                  improved product shelf life. They have since become one of our largest clients.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-padding hero-gradient text-primary-foreground">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+            Join Our Success Stories
+          </h2>
+          <p className="text-xl mb-8 text-blue-100">
+            Become part of our growing family of satisfied clients who trust 
+            Srinivasa Polypack for their LDPE packaging requirements.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" variant="secondary" className="shadow-elevated">
+              <Link to="/contact">
+                <Phone className="w-5 h-5 mr-2" />
+                Start Partnership
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-white/20 hover:bg-white/10">
+              <Link to="/products">
+                <CheckCircle className="w-5 h-5 mr-2" />
+                View Our Solutions
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Clients;
