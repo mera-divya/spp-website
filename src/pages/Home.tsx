@@ -11,7 +11,8 @@ import {
   Phone,
   Factory,
   Recycle,
-  Star
+  Star,
+  Settings
 } from "lucide-react";
 import heroImage from "@/assets/blown-film-extrusion-hero.jpg";
 import vciPolytheneBags from "@/assets/vci-polythene-bags.jpg";
@@ -44,6 +45,11 @@ const Home = () => {
       icon: <Recycle className="w-8 h-8 text-primary" />,
       title: "Eco-Friendly Solutions",
       description: "Sustainable manufacturing practices with environmentally responsible materials."
+    },
+    {
+      icon: <Settings className="w-8 h-8 text-primary" />,
+      title: "Customization",
+      description: "Tailored LDPE packaging solutions designed to meet your specific requirements and specifications."
     }
   ];
 
