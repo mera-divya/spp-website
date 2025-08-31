@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const Footer = () => {
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const quickLinks = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
@@ -68,6 +72,7 @@ const Footer = () => {
                 <li key={link.path}>
                   <Link
                     to={link.path}
+                    onClick={handleLinkClick}
                     className="text-muted-foreground hover:text-primary transition-colors text-sm"
                   >
                     {link.label}
