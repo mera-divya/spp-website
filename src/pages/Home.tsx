@@ -277,7 +277,7 @@ const Home = () => {
                 Request Quote
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/20 hover:bg-white/10">
+            <Button asChild size="lg" variant="secondary" className="shadow-elevated">
               <Link to="/about">
                 Learn About Us
                 <ArrowRight className="w-5 h-5 ml-2" />
