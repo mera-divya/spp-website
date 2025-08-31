@@ -13,7 +13,7 @@ import {
   Recycle,
   Star
 } from "lucide-react";
-// Using uploaded blown film plant image
+import heroImage from "@/assets/blown-film-plant.jpg";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 import qualityLab from "@/assets/quality-lab.jpg";
 
@@ -72,7 +72,7 @@ const Home = () => {
       <section className="relative hero-gradient text-primary-foreground overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/dcbb5089-214d-45c3-99e3-168735804483.png"
+            src={heroImage}
             alt="Blown Film Plant in Operation - Srinivasa Polypack"
             className="w-full h-full object-cover opacity-20"
           />
