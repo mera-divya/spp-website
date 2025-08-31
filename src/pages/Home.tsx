@@ -174,7 +174,7 @@ const Home = () => {
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Comprehensive selection of LDPE polythene bags designed for diverse 
-              pharmaceutical and industrial applications.
+              pharmaceutical, food and industrial applications.
             </p>
           </div>
 
