@@ -9,6 +9,7 @@ const Footer = () => {
     { path: "/quality", label: "Quality Standards" },
     { path: "/clients", label: "Clients" },
     { path: "/contact", label: "Contact Us" },
+    { path: "mailto:srinivasapolypack@yahoo.com", label: "Email Us" },
   ];
 
   const products = [
