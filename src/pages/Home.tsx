@@ -16,6 +16,7 @@ import {
 import heroImage from "@/assets/blown-film-extrusion-hero.jpg";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 import ldpePolyBags from "@/assets/ldpe-polythene-bags.jpg";
+import pharmaDrumLiners from "@/assets/pharma-drum-liners.jpg";
 import qualityLab from "@/assets/quality-lab.jpg";
 
 const Home = () => {
@@ -51,7 +52,7 @@ const Home = () => {
     {
       title: "Antistatic Polythene Bags",
       description: "Static-dissipative packaging solutions for Pharma products & electronic components ensuring safety & reliability.",
-      image: bagsShowcase
+      image: pharmaDrumLiners
     },
     {
       title: "Rolls",
