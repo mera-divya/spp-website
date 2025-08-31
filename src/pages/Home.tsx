@@ -22,7 +22,7 @@ import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
 import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
 import polytheneSheets from "@/assets/polythene-sheets.jpg";
 import selfSealCoversClear from "@/assets/self-seal-covers-clear.jpg";
-import officialCertificationsReal from "@/assets/official-certifications-real.jpg";
+import authenticCertifications from "@/assets/authentic-certifications.jpg";
 
 const Home = () => {
   const features = [
@@ -250,8 +250,8 @@ const Home = () => {
 
             <div>
               <img 
-                src={officialCertificationsReal}
-                alt="Official ISO 9001:2015, ZED, and MSME Certification Logos"
+                src={authenticCertifications}
+                alt="Official ISO 9001:2015, ZED, and MSME Government of India Certification Logos"
                 className="rounded-2xl shadow-elevated"
               />
             </div>
