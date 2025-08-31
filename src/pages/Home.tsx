@@ -60,7 +60,7 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "25+", label: "Years Experience" },
+    { number: "20 +", label: "Years Experience" },
     { number: "500+", label: "Happy Clients" },
     { number: "50K+", label: "Bags Produced Daily" },
     { number: "3", label: "ISO Certifications" }
