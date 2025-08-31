@@ -14,7 +14,7 @@ import {
   Star
 } from "lucide-react";
 import heroImage from "@/assets/blown-film-extrusion-hero.jpg";
-import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
+import vciPolytheneBags from "@/assets/vci-polythene-bags.jpg";
 import ldpeBagsUser from "@/assets/ldpe-bags-user.jpg";
 import ldpePolytheneBagsNew from "@/assets/ldpe-polythene-bags-new.jpg";
 import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
@@ -71,7 +71,7 @@ const Home = () => {
     {
       title: "VCI Polythene Bags",
       description: "Vapor Corrosion Inhibitor bags providing superior metal protection during storage and transport.",
-      image: bagsShowcase
+      image: vciPolytheneBags
     },
     {
       title: "Self Seal Covers",
