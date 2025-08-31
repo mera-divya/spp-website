@@ -61,7 +61,7 @@ const Home = () => {
 
   const stats = [
     { number: "20 +", label: "Years Experience" },
-    { number: "3", label: "ISO Certifications" }
+    { number: "3", label: "Certifications" }
   ];
 
   return (
