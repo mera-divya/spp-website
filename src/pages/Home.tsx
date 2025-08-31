@@ -19,6 +19,7 @@ import ldpeBagsUser from "@/assets/ldpe-bags-user.jpg";
 import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
 import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
 import polytheneSheets from "@/assets/polythene-sheets.jpg";
+import selfSealCovers from "@/assets/self-seal-covers.jpg";
 import qualityLab from "@/assets/quality-lab.jpg";
 
 const Home = () => {
@@ -70,6 +71,11 @@ const Home = () => {
       title: "VCI Polythene Bags",
       description: "Vapor Corrosion Inhibitor bags providing superior metal protection during storage and transport.",
       image: bagsShowcase
+    },
+    {
+      title: "Self Seal Covers",
+      description: "Convenient self-sealing polythene covers with adhesive strips for quick and secure packaging.",
+      image: selfSealCovers
     }
   ];
 
