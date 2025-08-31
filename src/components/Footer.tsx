@@ -1,7 +1,27 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const Footer = () => {
+  const { toast } = useToast();
+  
+  const handleEmailClick = () => {
+    const email = "srinivasapolypack@yahoo.com";
+    navigator.clipboard.writeText(email).then(() => {
+      toast({
+        title: "Email copied!",
+        description: `${email} has been copied to your clipboard.`,
+      });
+    }).catch(() => {
+      toast({
+        title: "Email address",
+        description: email,
+      });
+    });
+    // Also try to open email client
+    window.location.href = `mailto:${email}`;
+  };
+
   const quickLinks = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
@@ -75,12 +95,12 @@ const Footer = () => {
                 </li>
               ))}
               <li>
-                <a
-                  href="mailto:srinivasapolypack@yahoo.com"
-                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                <button
+                  onClick={handleEmailClick}
+                  className="text-muted-foreground hover:text-primary transition-colors text-sm text-left"
                 >
                   Email Us
-                </a>
+                </button>
               </li>
             </ul>
           </div>
