@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/blown-film-extrusion-hero.jpg";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
-import ldpeBagsFromUrl from "@/assets/ldpe-bags-from-url.jpg";
+import transparentLdpeBags from "@/assets/transparent-ldpe-bags.jpg";
 import pharmaDrumLiners from "@/assets/pharma-drum-liners.jpg";
 import qualityLab from "@/assets/quality-lab.jpg";
 
@@ -47,7 +47,7 @@ const Home = () => {
     {
       title: "LDPE Polythene Bags",
       description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
-      image: ldpeBagsFromUrl
+      image: transparentLdpeBags
     },
     {
       title: "Antistatic Polythene Bags",
