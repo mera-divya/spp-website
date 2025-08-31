@@ -17,7 +17,7 @@ import heroImage from "@/assets/blown-film-extrusion-hero.jpg";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 import ldpeBagsUser from "@/assets/ldpe-bags-user.jpg";
 import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
-import ldpeRolls from "@/assets/ldpe-rolls.jpg";
+import blackLdpeRolls from "@/assets/black-ldpe-rolls.jpg";
 import qualityLab from "@/assets/quality-lab.jpg";
 
 const Home = () => {
@@ -58,7 +58,7 @@ const Home = () => {
     {
       title: "Rolls",
       description: "Continuous polythene film rolls for automated packaging and industrial processes.",
-      image: ldpeRolls
+      image: blackLdpeRolls
     },
     {
       title: "Polythene Sheets",
