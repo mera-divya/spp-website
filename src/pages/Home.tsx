@@ -246,12 +246,6 @@ const Home = () => {
                 ))}
               </div>
 
-              <Button asChild size="lg" className="hero-gradient">
-                <Link to="/quality">
-                  <Award className="w-5 h-5 mr-2" />
-                  View Certifications
-                </Link>
-              </Button>
             </div>
 
             <div>
