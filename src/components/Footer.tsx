@@ -9,7 +9,6 @@ const Footer = () => {
     { path: "/quality", label: "Quality Standards" },
     { path: "/clients", label: "Clients" },
     { path: "/contact", label: "Contact Us" },
-    { path: "mailto:srinivasapolypack@yahoo.com", label: "Email Us" },
   ];
 
   const products = [
@@ -75,6 +74,14 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
+              <li>
+                <a
+                  href="mailto:srinivasapolypack@yahoo.com"
+                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                >
+                  Email Us
+                </a>
+              </li>
             </ul>
           </div>
 
