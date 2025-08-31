@@ -110,11 +110,11 @@ const Home = () => {
             </div>
 
             <div className="hidden lg:block">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-elevated">
+              <div className="bg-black/10 backdrop-blur-sm rounded-2xl p-6 shadow-elevated border border-white/20">
                 <img 
                   src={bagsShowcase}
                   alt="LDPE Polythene Bags Showcase"
-                  className="w-full rounded-lg"
+                  className="w-full rounded-lg shadow-lg"
                 />
               </div>
             </div>
