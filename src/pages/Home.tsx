@@ -18,6 +18,7 @@ import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 import ldpeBagsUser from "@/assets/ldpe-bags-user.jpg";
 import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
 import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
+import polytheneSheets from "@/assets/polythene-sheets.jpg";
 import qualityLab from "@/assets/quality-lab.jpg";
 
 const Home = () => {
@@ -63,7 +64,7 @@ const Home = () => {
     {
       title: "Polythene Sheets",
       description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
-      image: bagsShowcase
+      image: polytheneSheets
     },
     {
       title: "VCI Polythene Bags",
