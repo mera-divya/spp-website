@@ -16,7 +16,7 @@ import {
 import heroImage from "@/assets/blown-film-extrusion-hero.jpg";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 import ldpeBagsUser from "@/assets/ldpe-bags-user.jpg";
-import ldpePolytheneBags from "@/assets/ldpe-polythene-bags.jpg";
+import ldpePolytheneBagsNew from "@/assets/ldpe-polythene-bags-new.jpg";
 import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
 import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
 import polytheneSheets from "@/assets/polythene-sheets.jpg";
@@ -51,7 +51,7 @@ const Home = () => {
     {
       title: "LDPE Polythene Bags",
       description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
-      image: ldpePolytheneBags
+      image: ldpePolytheneBagsNew
     },
     {
       title: "Antistatic Polythene Bags",
