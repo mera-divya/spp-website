@@ -20,7 +20,7 @@ import ldpePolytheneBagsNew from "@/assets/ldpe-polythene-bags-new.jpg";
 import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
 import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
 import polytheneSheets from "@/assets/polythene-sheets.jpg";
-import selfSealCovers from "@/assets/self-seal-covers.jpg";
+import selfSealCoversClear from "@/assets/self-seal-covers-clear.jpg";
 import qualityLab from "@/assets/quality-lab.jpg";
 
 const Home = () => {
@@ -76,7 +76,7 @@ const Home = () => {
     {
       title: "Self Seal Covers",
       description: "Convenient self-sealing polythene covers with adhesive strips for quick and secure packaging.",
-      image: selfSealCovers
+      image: selfSealCoversClear
     }
   ];
 
