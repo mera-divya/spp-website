@@ -51,7 +51,7 @@ const Home = () => {
     {
       title: "LDPE Polythene Bags",
       description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
-      image: ldpePolytheneBagsNew
+      image: polytheneSheets
     },
     {
       title: "Antistatic Polythene Bags",
@@ -66,7 +66,7 @@ const Home = () => {
     {
       title: "Polythene Sheets",
       description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
-      image: polytheneSheets
+      image: ldpePolytheneBagsNew
     },
     {
       title: "VCI Polythene Bags",
