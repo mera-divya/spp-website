@@ -13,7 +13,7 @@ import {
   Recycle,
   Star
 } from "lucide-react";
-import heroImage from "@/assets/hero-manufacturing.jpg";
+import heroImage from "@/assets/blown-film-plant.jpg";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 import qualityLab from "@/assets/quality-lab.jpg";
 
@@ -73,7 +73,7 @@ const Home = () => {
         <div className="absolute inset-0">
           <img 
             src={heroImage}
-            alt="Srinivasa Polypack Manufacturing Facility"
+            alt="Blown Film Plant in Operation - Srinivasa Polypack"
             className="w-full h-full object-cover opacity-20"
           />
         </div>
