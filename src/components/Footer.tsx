@@ -76,10 +76,11 @@ const Footer = () => {
               ))}
               <li>
                 <a
-                  href="mailto:srinivasapolypack@yahoo.com"
+                  href="mailto:srinivasapolypack@yahoo.com?subject=Inquiry from Website"
                   className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                  title="Click to open email client or copy: srinivasapolypack@yahoo.com"
                 >
-                  Email Us
+                  Email Us (srinivasapolypack@yahoo.com)
                 </a>
               </li>
             </ul>
