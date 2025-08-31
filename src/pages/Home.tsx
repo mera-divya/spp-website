@@ -231,9 +231,7 @@ const Home = () => {
                 {[
                   "ISO 9001:2015 Quality Management System",
                   "ZED (Zero Defect Zero Effect) Certification", 
-                  "MSME (Micro, Small & Medium Enterprises) Registered",
-                  "Advanced Quality Control Laboratory",
-                  "Raw Material Testing & Validation"
+                  "MSME (Micro, Small & Medium Enterprises) Registered"
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
