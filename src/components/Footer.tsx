@@ -25,9 +25,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">SP</span>
-              </div>
+              <img 
+                src="/lovable-uploads/dcbb5089-214d-45c3-99e3-168735804483.png" 
+                alt="Srinivasa Polypack Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h3 className="text-lg font-bold text-foreground">Srinivasa Polypack</h3>
                 <p className="text-sm text-muted-foreground">Quality LDPE Solutions</p>
