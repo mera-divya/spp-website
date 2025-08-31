@@ -43,18 +43,28 @@ const Home = () => {
 
   const products = [
     {
-      title: "Pharmaceutical Bags",
-      description: "FDA compliant LDPE bags for medicine packaging with superior barrier properties.",
+      title: "LDPE Polythene Bags",
+      description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
       image: bagsShowcase
     },
     {
-      title: "Industrial Packaging",
-      description: "Heavy-duty polythene bags for industrial applications and bulk material storage.",
+      title: "Antistatic Polythene Bags",
+      description: "Static-dissipative packaging solutions for electronic components and sensitive materials.",
       image: bagsShowcase
     },
     {
-      title: "Food Grade Bags",
-      description: "Food-safe LDPE packaging solutions meeting international safety standards.",
+      title: "Rolls",
+      description: "Continuous polythene film rolls for automated packaging and industrial processes.",
+      image: bagsShowcase
+    },
+    {
+      title: "Polythene Sheets",
+      description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
+      image: bagsShowcase
+    },
+    {
+      title: "VCI Polythene Bags",
+      description: "Vapor Corrosion Inhibitor bags providing superior metal protection during storage and transport.",
       image: bagsShowcase
     }
   ];
