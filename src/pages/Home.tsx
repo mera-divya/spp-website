@@ -22,7 +22,7 @@ import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
 import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
 import polytheneSheets from "@/assets/polythene-sheets.jpg";
 import selfSealCoversClear from "@/assets/self-seal-covers-clear.jpg";
-import qualityLab from "@/assets/quality-lab.jpg";
+import isoClertificationBadge from "@/assets/iso-certification-badge.jpg";
 
 const Home = () => {
   const features = [
@@ -250,8 +250,8 @@ const Home = () => {
 
             <div>
               <img 
-                src={qualityLab}
-                alt="Quality Control Laboratory"
+                src={isoClertificationBadge}
+                alt="ISO 9001:2015 Certification Badge"
                 className="rounded-2xl shadow-elevated"
               />
             </div>
