@@ -51,7 +51,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>info@srinivasapolypack.com</span>
+                <span>srinivasapolypack@yahoo.com</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Clock className="w-4 h-4 text-primary" />
