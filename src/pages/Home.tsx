@@ -76,7 +76,7 @@ const Home = () => {
     },
     {
       title: "VCI Polythene Bags",
-      description: "Vapor Corrosion Inhibitor bags providing superior metal protection during storage and transport.",
+      description: "Also called anti-rustic bags. Provides corrosion protection for metal parts during storage & transport",
       image: vciPolytheneBags
     },
     {
