@@ -50,7 +50,7 @@ const Home = () => {
     },
     {
       title: "Antistatic Polythene Bags",
-      description: "Static-dissipative packaging solutions for electronic components and sensitive materials.",
+      description: "Static-dissipative packaging solutions for Pharma products & electronic components ensuring safety & reliability.",
       image: bagsShowcase
     },
     {
