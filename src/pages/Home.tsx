@@ -13,7 +13,7 @@ import {
   Recycle,
   Star
 } from "lucide-react";
-import heroImage from "@/assets/blown-film-plant.jpg";
+import heroImage from "@/assets/blown-film-extrusion-hero.jpg";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 import qualityLab from "@/assets/quality-lab.jpg";
 
