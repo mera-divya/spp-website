@@ -28,7 +28,7 @@ const Products = () => {
       description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
       image: polytheneSheets,
       specifications: [
-        "Thickness: 25-150 microns",
+        "Thickness: Multiple gauge options as per requirement",
         "Sizes: 4x6 inches to 18x24 inches",
         "Colors: Clear, Natural",
         "Features: Freezer safe, microwave safe"
@@ -42,7 +42,7 @@ const Products = () => {
       specifications: [
         "Material: Anti-static LDPE compounds",
         "Surface resistivity: 10^9 to 10^12 ohms/sq",
-        "Thickness: 50-200 microns",
+        "Thickness: Multiple gauge options as per requirement",
         "Features: Static dissipative, transparent",
         "Testing: ANSI/ESD S20.20 compliant"
       ],
@@ -54,7 +54,7 @@ const Products = () => {
       image: ldpePolytheneBagsNew,
       specifications: [
         "Structure: Multi-layer coextruded",
-        "Thickness: 80-200 microns",
+        "Thickness: Multiple gauge options as per requirement",
         "Oxygen transmission: <1 cc/m²/day",
         "Colors: Clear, Silver metallized",
         "Features: Puncture resistant, heat sealable"
@@ -67,7 +67,7 @@ const Products = () => {
       image: mediumBlackLdpeRolls,
       specifications: [
         "Width: 100mm to 2000mm",
-        "Thickness: 25-300 microns",
+        "Thickness: Multiple gauge options as per requirement",
         "Roll diameter: Up to 1500mm",
         "Core sizes: 25mm, 38mm, 76mm",
         "Features: High clarity, puncture resistant"
@@ -94,7 +94,7 @@ const Products = () => {
       specifications: [
         "VCI compounds: Vapor corrosion inhibitors",
         "Protection period: Up to 2 years",
-        "Thickness: 100-200 microns",
+        "Thickness: Multiple gauge options as per requirement",
         "Features: Self-sealing, transparent",
         "Metals protected: Steel, copper, aluminum"
       ],
@@ -106,7 +106,7 @@ const Products = () => {
       image: customPackagingSolutions,
       specifications: [
         "Material: Multi-layer LDPE/LLDPE blends",
-        "Thickness: 50-300 microns",
+        "Thickness: Multiple gauge options as per requirement",
         "Barrier options: Oxygen, moisture, aroma barriers",
         "Closure types: Heat seal, zipper, spout, valve",
         "Print capability: Up to 10 colors"
