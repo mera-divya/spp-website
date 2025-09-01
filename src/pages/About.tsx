@@ -152,7 +152,7 @@ const About = () => {
                   <h3 className="text-2xl font-bold text-foreground">Our Mission</h3>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  To deliver high-quality, customized LDPE packaging with consistent quality, timely service, and a commitment to customer satisfaction and sustainability.
+                  To deliver high-quality, customized LDPE packaging with consistent quality, timely service, and a commitment to customer satisfaction and sustainability. We are committed to building long-term partnerships while maintaining the highest standards.
                 </p>
               </CardContent>
             </Card>
