@@ -141,12 +141,7 @@ const About = () => {
                   <Eye className="w-8 h-8 text-primary mr-4" />
                   <h3 className="text-2xl font-bold text-foreground">Our Vision</h3>
                 </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  To be the leading manufacturer of LDPE packaging solutions in India, 
-                  recognized globally for our innovation, quality, and sustainable practices. 
-                  We envision a future where our products contribute to safer, more efficient 
-                  supply chains across pharmaceutical and industrial sectors.
-                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">To be the leading manufacturer of LDPE packaging solutions in India, recognized for our innovation, quality, reliability and customer satisfaction. We envision a future where our products contribute to safer, more efficient supply chains across sectors.</p>
               </CardContent>
             </Card>
 
