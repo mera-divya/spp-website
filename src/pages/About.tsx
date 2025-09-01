@@ -9,7 +9,7 @@ const About = () => {
   const values = [{
     icon: <Target className="w-8 h-8 text-primary" />,
     title: "Excellence",
-    description: "Committed to delivering superior quality products that exceed customer expectations and industry standards."
+    description: "Committed to delivering superior quality products that meet customer expectations and industry standards."
   }, {
     icon: <Heart className="w-8 h-8 text-primary" />,
     title: "Integrity",
