@@ -212,13 +212,16 @@ const Products = () => {
                     {/* Specifications */}
                     <div>
                       <h4 className="font-semibold text-foreground mb-3">Specifications</h4>
-                      <ul className="space-y-2">
-                        {product.specifications.map((spec, specIndex) => (
-                          <li key={specIndex} className="flex items-start space-x-2">
+                       <ul className="space-y-2">
+                         {product.specifications.map((spec, specIndex) => {
+                           console.log(`Product: ${product.name}, Spec ${specIndex}:`, spec);
+                           return (
+                           <li key={specIndex} className="flex items-start space-x-2">
                             <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                            <span className="text-muted-foreground text-sm">{spec}</span>
-                          </li>
-                        ))}
+                             <span className="text-muted-foreground text-sm">{spec}</span>
+                           </li>
+                           );
+                         })}
                       </ul>
                     </div>
 
