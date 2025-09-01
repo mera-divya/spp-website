@@ -16,6 +16,84 @@ import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 const Products = () => {
   const products = [
     {
+      name: "LDPE Polythene Bags",
+      description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
+      specifications: [
+        "Thickness: 25-150 microns",
+        "Sizes: 4x6 inches to 18x24 inches",
+        "Colors: Clear, Natural",
+        "Features: Freezer safe, microwave safe",
+        "Compliance: FDA 21 CFR 177.1520"
+      ],
+      applications: ["Fresh produce", "Frozen foods", "Bakery items", "Meat packaging"],
+      certifications: ["FDA Approved", "EU 10/2011", "BfR Recommendations"]
+    },
+    {
+      name: "Antistatic Polythene Bags",
+      description: "Static-dissipative packaging solutions for Pharma products & electronic components ensuring safety & reliability.",
+      specifications: [
+        "Material: Anti-static LDPE compounds",
+        "Surface resistivity: 10^9 to 10^12 ohms/sq",
+        "Thickness: 50-200 microns",
+        "Features: Static dissipative, transparent",
+        "Testing: ANSI/ESD S20.20 compliant"
+      ],
+      applications: ["Electronic components", "Pharmaceutical products", "Static-sensitive items", "Clean room packaging"],
+      certifications: ["ESD Association Standards", "Clean room compatible", "Static dissipative tested"]
+    },
+    {
+      name: "Polythene Sheets",
+      description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
+      specifications: [
+        "Structure: Multi-layer coextruded",
+        "Thickness: 80-200 microns",
+        "Oxygen transmission: <1 cc/m²/day",
+        "Colors: Clear, Silver metallized",
+        "Features: Puncture resistant, heat sealable"
+      ],
+      applications: ["Meat products", "Seafood", "Cheese", "Ready meals"],
+      certifications: ["FDA Food Contact", "HACCP Compliant", "Kosher Certified"]
+    },
+    {
+      name: "Rolls",
+      description: "Continuous polythene film rolls for automated packaging and industrial processes.",
+      specifications: [
+        "Width: 100mm to 2000mm",
+        "Thickness: 25-300 microns",
+        "Roll diameter: Up to 1500mm",
+        "Core sizes: 25mm, 38mm, 76mm",
+        "Features: High clarity, puncture resistant"
+      ],
+      applications: ["Automated packaging", "Industrial wrapping", "Food processing", "Manufacturing lines"],
+      certifications: ["Food grade options", "Industrial strength tested", "Consistent thickness tolerance"]
+    },
+    {
+      name: "Printed Polythene Bags",
+      description: "High-quality printed polythene bags customized in any color with your logo, address, PCB number, and thickness for a professional brand identity",
+      specifications: [
+        "Colors: Up to 8 colors + varnish",
+        "Print area: Full surface coverage available",
+        "Registration: ±0.5mm accuracy",
+        "Finish options: Matte, gloss, soft touch",
+        "Minimum order: 10,000 pieces per design"
+      ],
+      applications: ["Retail packaging", "Promotional bags", "Brand marketing", "Product identification"],
+      certifications: ["Color matching standards", "Food contact inks", "Migration test compliant"]
+    },
+    {
+      name: "VCI Polythene Bags",
+      description: "Also called anti-rustic bags. Provides corrosion protection for metal parts during storage & transport",
+      specifications: [
+        "VCI compounds: Vapor corrosion inhibitors",
+        "Protection period: Up to 2 years",
+        "Thickness: 100-200 microns",
+        "Features: Self-sealing, transparent",
+        "Metals protected: Steel, copper, aluminum"
+      ],
+      applications: ["Metal parts storage", "Automotive components", "Industrial equipment", "Export packaging"],
+      certifications: ["NACE standards", "Military specifications", "Corrosion protection tested"]
+    },
+    {
       name: "Custom Packaging Solutions",
       description: "Custom LDPE packaging solutions tailored to any size, color, and thickness to meet your exact requirements",
       specifications: [
@@ -40,84 +118,6 @@ const Products = () => {
       ],
       applications: ["Document storage", "Product protection", "Mailing", "Archive storage"],
       certifications: ["Adhesive strength tested", "Long-term storage suitable", "Non-toxic adhesive"]
-    },
-    {
-      name: "Printed Polythene Bags",
-      description: "High-quality printed polythene bags customized in any color with your logo, address, PCB number, and thickness for a professional brand identity",
-      specifications: [
-        "Colors: Up to 8 colors + varnish",
-        "Print area: Full surface coverage available",
-        "Registration: ±0.5mm accuracy",
-        "Finish options: Matte, gloss, soft touch",
-        "Minimum order: 10,000 pieces per design"
-      ],
-      applications: ["Retail packaging", "Promotional bags", "Brand marketing", "Product identification"],
-      certifications: ["Color matching standards", "Food contact inks", "Migration test compliant"]
-    },
-    {
-      name: "Antistatic Polythene Bags",
-      description: "Static-dissipative packaging solutions for Pharma products & electronic components ensuring safety & reliability.",
-      specifications: [
-        "Material: Anti-static LDPE compounds",
-        "Surface resistivity: 10^9 to 10^12 ohms/sq",
-        "Thickness: 50-200 microns",
-        "Features: Static dissipative, transparent",
-        "Testing: ANSI/ESD S20.20 compliant"
-      ],
-      applications: ["Electronic components", "Pharmaceutical products", "Static-sensitive items", "Clean room packaging"],
-      certifications: ["ESD Association Standards", "Clean room compatible", "Static dissipative tested"]
-    },
-    {
-      name: "Rolls",
-      description: "Continuous polythene film rolls for automated packaging and industrial processes.",
-      specifications: [
-        "Width: 100mm to 2000mm",
-        "Thickness: 25-300 microns",
-        "Roll diameter: Up to 1500mm",
-        "Core sizes: 25mm, 38mm, 76mm",
-        "Features: High clarity, puncture resistant"
-      ],
-      applications: ["Automated packaging", "Industrial wrapping", "Food processing", "Manufacturing lines"],
-      certifications: ["Food grade options", "Industrial strength tested", "Consistent thickness tolerance"]
-    },
-    {
-      name: "VCI Polythene Bags",
-      description: "Also called anti-rustic bags. Provides corrosion protection for metal parts during storage & transport",
-      specifications: [
-        "VCI compounds: Vapor corrosion inhibitors",
-        "Protection period: Up to 2 years",
-        "Thickness: 100-200 microns",
-        "Features: Self-sealing, transparent",
-        "Metals protected: Steel, copper, aluminum"
-      ],
-      applications: ["Metal parts storage", "Automotive components", "Industrial equipment", "Export packaging"],
-      certifications: ["NACE standards", "Military specifications", "Corrosion protection tested"]
-    },
-    {
-      name: "LDPE Polythene Bags",
-      description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
-      specifications: [
-        "Thickness: 25-150 microns",
-        "Sizes: 4x6 inches to 18x24 inches",
-        "Colors: Clear, Natural",
-        "Features: Freezer safe, microwave safe",
-        "Compliance: FDA 21 CFR 177.1520"
-      ],
-      applications: ["Fresh produce", "Frozen foods", "Bakery items", "Meat packaging"],
-      certifications: ["FDA Approved", "EU 10/2011", "BfR Recommendations"]
-    },
-    {
-      name: "Polythene Sheets",
-      description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
-      specifications: [
-        "Structure: Multi-layer coextruded",
-        "Thickness: 80-200 microns",
-        "Oxygen transmission: <1 cc/m²/day",
-        "Colors: Clear, Silver metallized",
-        "Features: Puncture resistant, heat sealable"
-      ],
-      applications: ["Meat products", "Seafood", "Cheese", "Ready meals"],
-      certifications: ["FDA Food Contact", "HACCP Compliant", "Kosher Certified"]
     }
   ];
 
