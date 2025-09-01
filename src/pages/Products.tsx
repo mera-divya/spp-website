@@ -117,7 +117,7 @@ const Products = () => {
         "Features: Easy peel, secure seal",
         "Applications: Product protection"
       ],
-      applications: ["Document storage", "Product protection", "Mailing", "Archive storage"]
+      applications: ["Product protection", "Mailing", "Archive storage"]
     }
   ];
 
