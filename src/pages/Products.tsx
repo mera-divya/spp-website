@@ -22,21 +22,9 @@ import { HeroSection } from "@/components/HeroSection";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 
 const Products = () => {
-  const [selectedCategory, setSelectedCategory] = useState("pharmaceutical");
+  const [selectedCategory, setSelectedCategory] = useState("food-grade");
 
   const categories = [
-    {
-      id: "pharmaceutical",
-      name: "Pharmaceutical",
-      icon: <Pill className="w-5 h-5" />,
-      description: "FDA compliant bags for medicine and healthcare applications"
-    },
-    {
-      id: "industrial",
-      name: "Industrial", 
-      icon: <Factory className="w-5 h-5" />,
-      description: "Heavy-duty bags for industrial packaging and storage"
-    },
     {
       id: "food-grade",
       name: "Food Grade",
@@ -64,88 +52,6 @@ const Products = () => {
   ];
 
   const products = {
-    pharmaceutical: [
-      {
-        name: "LDPE Polythene Bags",
-        description: "Premium LDPE bags designed for pharmaceutical products with excellent barrier properties and contamination protection.",
-        specifications: [
-          "Thickness: 25-200 microns",
-          "Sizes: Custom as per requirement",
-          "Colors: Clear, White, Blue, Amber",
-          "Print: Up to 8 colors flexographic printing",
-          "Features: Anti-static, UV resistant options"
-        ],
-        applications: ["Tablet packaging", "Capsule storage", "Powder containment", "Medical device protection"],
-        certifications: ["FDA Compliant", "USP Class VI", "ISO 15378"]
-      },
-      {
-        name: "VCI Polythene Bags",
-        description: "Specialized bags for sterile medical devices and equipment with superior seal strength and puncture resistance.",
-        specifications: [
-          "Thickness: 50-300 microns",
-          "Sizes: 4x6 inches to 24x36 inches",
-          "Colors: Clear, Blue, Green",
-          "Seal type: Heat sealable, Zipper options",
-          "Features: Sterile barrier properties"
-        ],
-        applications: ["Surgical instruments", "Disposable devices", "Sterile packaging", "Laboratory supplies"],
-        certifications: ["ISO 11607", "EN 868", "ASTM Standards"]
-      },
-      {
-        name: "Self Seal Covers", 
-        description: "Secure packaging for clinical trial materials with tamper-evident features and regulatory compliance.",
-        specifications: [
-          "Thickness: 75-250 microns",
-          "Sizes: Customizable",
-          "Colors: Opaque, Amber for light protection",
-          "Features: Tamper-evident seals",
-          "Compliance: GCP guidelines"
-        ],
-        applications: ["Drug samples", "Patient kits", "Blinded studies", "Sample collection"],
-        certifications: ["GMP Compliant", "21 CFR Part 11", "ICH Guidelines"]
-      }
-    ],
-    industrial: [
-      {
-        name: "LDPE Polythene Bags",
-        description: "Robust LDPE bags designed for industrial applications requiring superior strength and chemical resistance.",
-        specifications: [
-          "Thickness: 100-500 microns", 
-          "Sizes: Up to 60x72 inches",
-          "Colors: Natural, Black, Custom colors",
-          "Load capacity: Up to 50 kg",
-          "Features: Chemical resistant, puncture proof"
-        ],
-        applications: ["Chemical storage", "Industrial waste", "Raw material packaging", "Bulk storage"],
-        certifications: ["ISO 9001", "REACH Compliant", "RoHS Certified"]
-      },
-      {
-        name: "Antistatic Polythene Bags",
-        description: "Specialized bags with anti-static properties for electronic components and sensitive equipment protection.",
-        specifications: [
-          "Thickness: 75-200 microns",
-          "Sizes: 2x3 inches to 18x24 inches", 
-          "Surface resistance: 10^11-10^12 ohms",
-          "Colors: Pink, Blue anti-static",
-          "Features: ESD protection, moisture barrier"
-        ],
-        applications: ["Electronic components", "Circuit boards", "Semiconductors", "Precision instruments"],
-        certifications: ["IEC 61340", "ANSI/ESD S20.20", "MIL-PRF-81705"]
-      },
-      {
-        name: "Rolls",
-        description: "Specially formulated LDPE bags offering excellent chemical compatibility for hazardous materials.",
-        specifications: [
-          "Thickness: 150-400 microns",
-          "Chemical compatibility: Wide range",
-          "Temperature range: -40°C to +80°C",
-          "Colors: Natural, Black, Yellow", 
-          "Features: Leak-proof, heat sealable"
-        ],
-        applications: ["Chemical powders", "Hazardous waste", "Laboratory chemicals", "Industrial solvents"],
-        certifications: ["UN Packaging Standards", "OSHA Compliant", "DOT Approved"]
-      }
-    ],
     "food-grade": [
       {
         name: "Polythene Sheets",
@@ -383,7 +289,7 @@ const Products = () => {
           </div>
 
           <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
-            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 mb-12">
+            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 mb-12">
               {categories.map((category) => (
                 <TabsTrigger 
                   key={category.id} 
