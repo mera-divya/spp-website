@@ -28,6 +28,7 @@ const Products = () => {
       description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
       image: polytheneSheets,
       specifications: [
+        "Types: Plain & Gusseted",
         "Thickness: Multiple gauge options as per requirement",
         "Sizes: Fully customized as per client requirements",
         "Colors: Clear or Natural or Transparent or White, Black & Custom colors",
@@ -40,6 +41,7 @@ const Products = () => {
       description: "Static-dissipative packaging solutions for Pharma products & electronic components ensuring safety & reliability.",
       image: antistaticBagsNew,
       specifications: [
+        "Types: Plain & Gusseted",
         "Material: Anti-static LDPE compounds",
         "Surface resistivity: 10^9 to 10^12 ohms/sq",
         "Thickness: Multiple gauge options as per requirement",
@@ -79,6 +81,7 @@ const Products = () => {
       description: "High-quality printed polythene bags customized in any color with your logo, address, PCB number, and thickness for a professional brand identity",
       image: printedPolytheneBags,
       specifications: [
+        "Types: Plain & Gusseted",
         "Colors: Clear or Natural or Transparent or White, Black & Custom colors",
         "Print area: Full surface coverage available",
         "Registration: ±0.5mm accuracy",
