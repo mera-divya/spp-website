@@ -42,7 +42,7 @@ const Products = () => {
       specifications: [
         "Types: Plain & Gusseted",
         "Material: Anti-static LDPE compounds",
-        "Surface resistivity: 10^9 to 10^12 ohms/sq",
+        "Surface resistivity: 10^10 to 10^11 ohms/sq",
         "Thickness: Multiple gauge options as per requirement",
         "Features: Static dissipative, transparent",
         "Testing: ANSI/ESD S20.20 compliant"
