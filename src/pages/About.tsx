@@ -125,7 +125,7 @@ const About = () => {
                 <Card className="shadow-card">
                   <CardContent className="p-6 text-center">
                     <div className="text-3xl font-bold text-primary mb-2">3</div>
-                    <div className="text-muted-foreground">ISO Certifications</div>
+                    <div className="text-muted-foreground">Certifications</div>
                   </CardContent>
                 </Card>
               </div>
