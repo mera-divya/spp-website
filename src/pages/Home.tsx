@@ -82,7 +82,7 @@ const Home = () => {
     },
     {
       title: "Custom Packaging Solutions",
-      description: "Bespoke packaging designs including flexible pouches, stand-up pouches, and shaped containers for unique requirements.",
+      description: "Custom LDPE packaging solutions tailored to any size, color, and thickness to meet your exact requirements",
       image: customPackagingSolutions
     },
     {
