@@ -42,11 +42,6 @@ const Home = () => {
       description: "Decades of experience serving pharmaceutical and industrial clients worldwide."
     },
     {
-      icon: <Recycle className="w-8 h-8 text-primary" />,
-      title: "Eco-Friendly Solutions",
-      description: "Sustainable manufacturing practices with environmentally responsible materials."
-    },
-    {
       icon: <Settings className="w-8 h-8 text-primary" />,
       title: "Customization",
       description: "Tailored LDPE packaging solutions designed to meet your specific requirements and specifications."
