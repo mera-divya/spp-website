@@ -2,187 +2,83 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import {
-  Award,
-  Shield,
-  CheckCircle,
-  Microscope,
-  FileCheck,
-  Users,
-  Settings,
-  TrendingUp,
-  Target,
-  Clock,
-  Phone,
-  Download
-} from "lucide-react";
+import { Award, Shield, CheckCircle, Microscope, FileCheck, Users, Settings, TrendingUp, Target, Clock, Phone, Download } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import qualityLab from "@/assets/quality-lab.jpg";
-
 const Quality = () => {
-  const certifications = [
-    {
-      title: "ISO 9001:2015",
-      description: "Quality Management System certification ensuring consistent quality and customer satisfaction.",
-      scope: "Design, manufacturing and supply of LDPE polythene bags",
-      validity: "Valid until 2027",
-      benefits: [
-        "Systematic quality approach",
-        "Continuous improvement process", 
-        "Customer focus",
-        "Risk-based thinking"
-      ]
-    },
-    {
-      title: "ZED Certification",
-      description: "Zero Defect Zero Effect certification promoting quality and environmental consciousness.",
-      scope: "Manufacturing processes and environmental compliance",
-      validity: "Bronze level certified",
-      benefits: [
-        "Zero defect manufacturing",
-        "Environmental protection",
-        "Resource optimization",
-        "Sustainable practices"
-      ]
-    },
-    {
-      title: "MSME Registration",
-      description: "Micro, Small & Medium Enterprises registration supporting Indian manufacturing.",
-      scope: "Government recognized manufacturing unit",
-      validity: "Active registration",
-      benefits: [
-        "Government support",
-        "Priority sector lending",
-        "Subsidy eligibility", 
-        "Market development"
-      ]
-    }
-  ];
-
-  const qualityProcesses = [
-    {
-      icon: <Settings className="w-8 h-8 text-primary" />,
-      title: "Raw Material Testing",
-      description: "Comprehensive testing of all incoming raw materials including virgin LDPE resins, additives, and colorants.",
-      steps: [
-        "Chemical composition analysis",
-        "Physical property testing",
-        "Melt flow index verification",
-        "Contamination screening",
-        "Certificate verification"
-      ]
-    },
-    {
-      icon: <Microscope className="w-8 h-8 text-primary" />,
-      title: "In-Process Monitoring",
-      description: "Continuous monitoring and control of manufacturing processes to ensure consistent quality output.",
-      steps: [
-        "Extrusion parameter monitoring",
-        "Film thickness measurement",
-        "Temperature profile control",
-        "Speed and tension monitoring",
-        "Visual quality inspection"
-      ]
-    },
-    {
-      icon: <FileCheck className="w-8 h-8 text-primary" />,
-      title: "Final Product Testing",
-      description: "Rigorous testing of finished products to validate compliance with specifications and standards.",
-      steps: [
-        "Dimensional accuracy check",
-        "Strength and elongation testing",
-        "Heat seal strength evaluation",
-        "Barrier property assessment",
-        "Print quality inspection"
-      ]
-    },
-    {
-      icon: <TrendingUp className="w-8 h-8 text-primary" />,
-      title: "Continuous Improvement",
-      description: "Systematic approach to identify opportunities for enhancement and implement corrective actions.",
-      steps: [
-        "Statistical process control",
-        "Customer feedback analysis",
-        "Internal audit findings",
-        "Corrective action implementation",
-        "Process optimization"
-      ]
-    }
-  ];
-
-  const testParameters = [
-    {
-      category: "Physical Properties",
-      tests: [
-        "Thickness measurement (±5 microns accuracy)",
-        "Tensile strength (MD & TD)",
-        "Elongation at break",
-        "Puncture resistance",
-        "Tear propagation resistance"
-      ]
-    },
-    {
-      category: "Barrier Properties", 
-      tests: [
-        "Water vapor transmission rate",
-        "Oxygen transmission rate",
-        "Gas permeability testing",
-        "Moisture barrier evaluation",
-        "UV light transmission"
-      ]
-    },
-    {
-      category: "Thermal Properties",
-      tests: [
-        "Heat seal strength",
-        "Seal integrity testing", 
-        "Heat resistance evaluation",
-        "Cold temperature flexibility",
-        "Thermal stability assessment"
-      ]
-    },
-    {
-      category: "Chemical Compatibility",
-      tests: [
-        "Chemical resistance testing",
-        "Migration studies",
-        "Extractable analysis",
-        "Leachable evaluation",
-        "Compatibility assessment"
-      ]
-    }
-  ];
-
-  const qualityBenefits = [
-    {
-      icon: <Target className="w-6 h-6 text-primary" />,
-      title: "Consistent Quality",
-      description: "Standardized processes ensuring every batch meets the same high-quality standards."
-    },
-    {
-      icon: <Clock className="w-6 h-6 text-primary" />,
-      title: "Reliable Delivery", 
-      description: "Quality management enables predictable production schedules and on-time delivery."
-    },
-    {
-      icon: <Shield className="w-6 h-6 text-primary" />,
-      title: "Risk Mitigation",
-      description: "Comprehensive quality controls minimize risks and ensure regulatory compliance."
-    },
-    {
-      icon: <Users className="w-6 h-6 text-primary" />,
-      title: "Customer Satisfaction",
-      description: "Quality-first approach results in higher customer satisfaction and long-term partnerships."
-    }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const certifications = [{
+    title: "ISO 9001:2015",
+    description: "Quality Management System certification ensuring consistent quality and customer satisfaction.",
+    scope: "Design, manufacturing and supply of LDPE polythene bags",
+    validity: "Valid until 2027",
+    benefits: ["Systematic quality approach", "Continuous improvement process", "Customer focus", "Risk-based thinking"]
+  }, {
+    title: "ZED Certification",
+    description: "Zero Defect Zero Effect certification promoting quality and environmental consciousness.",
+    scope: "Manufacturing processes and environmental compliance",
+    validity: "Bronze level certified",
+    benefits: ["Zero defect manufacturing", "Environmental protection", "Resource optimization", "Sustainable practices"]
+  }, {
+    title: "MSME Registration",
+    description: "Micro, Small & Medium Enterprises registration supporting Indian manufacturing.",
+    scope: "Government recognized manufacturing unit",
+    validity: "Active registration",
+    benefits: ["Government support", "Priority sector lending", "Subsidy eligibility", "Market development"]
+  }];
+  const qualityProcesses = [{
+    icon: <Settings className="w-8 h-8 text-primary" />,
+    title: "Raw Material Testing",
+    description: "Comprehensive testing of all incoming raw materials including virgin LDPE resins, additives, and colorants.",
+    steps: ["Chemical composition analysis", "Physical property testing", "Melt flow index verification", "Contamination screening", "Certificate verification"]
+  }, {
+    icon: <Microscope className="w-8 h-8 text-primary" />,
+    title: "In-Process Monitoring",
+    description: "Continuous monitoring and control of manufacturing processes to ensure consistent quality output.",
+    steps: ["Extrusion parameter monitoring", "Film thickness measurement", "Temperature profile control", "Speed and tension monitoring", "Visual quality inspection"]
+  }, {
+    icon: <FileCheck className="w-8 h-8 text-primary" />,
+    title: "Final Product Testing",
+    description: "Rigorous testing of finished products to validate compliance with specifications and standards.",
+    steps: ["Dimensional accuracy check", "Strength and elongation testing", "Heat seal strength evaluation", "Barrier property assessment", "Print quality inspection"]
+  }, {
+    icon: <TrendingUp className="w-8 h-8 text-primary" />,
+    title: "Continuous Improvement",
+    description: "Systematic approach to identify opportunities for enhancement and implement corrective actions.",
+    steps: ["Statistical process control", "Customer feedback analysis", "Internal audit findings", "Corrective action implementation", "Process optimization"]
+  }];
+  const testParameters = [{
+    category: "Physical Properties",
+    tests: ["Thickness measurement (±5 microns accuracy)", "Tensile strength (MD & TD)", "Elongation at break", "Puncture resistance", "Tear propagation resistance"]
+  }, {
+    category: "Barrier Properties",
+    tests: ["Water vapor transmission rate", "Oxygen transmission rate", "Gas permeability testing", "Moisture barrier evaluation", "UV light transmission"]
+  }, {
+    category: "Thermal Properties",
+    tests: ["Heat seal strength", "Seal integrity testing", "Heat resistance evaluation", "Cold temperature flexibility", "Thermal stability assessment"]
+  }, {
+    category: "Chemical Compatibility",
+    tests: ["Chemical resistance testing", "Migration studies", "Extractable analysis", "Leachable evaluation", "Compatibility assessment"]
+  }];
+  const qualityBenefits = [{
+    icon: <Target className="w-6 h-6 text-primary" />,
+    title: "Consistent Quality",
+    description: "Standardized processes ensuring every batch meets the same high-quality standards."
+  }, {
+    icon: <Clock className="w-6 h-6 text-primary" />,
+    title: "Reliable Delivery",
+    description: "Quality management enables predictable production schedules and on-time delivery."
+  }, {
+    icon: <Shield className="w-6 h-6 text-primary" />,
+    title: "Risk Mitigation",
+    description: "Comprehensive quality controls minimize risks and ensure regulatory compliance."
+  }, {
+    icon: <Users className="w-6 h-6 text-primary" />,
+    title: "Customer Satisfaction",
+    description: "Quality-first approach results in higher customer satisfaction and long-term partnerships."
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
-      <HeroSection 
-        backgroundImage={qualityLab}
-        altText="Quality Control Laboratory"
-      >
+      <HeroSection backgroundImage={qualityLab} altText="Quality Control Laboratory">
         <div className="text-center">
           <Badge variant="secondary" className="mb-6">
             <Award className="w-4 h-4 mr-2" />
@@ -212,8 +108,7 @@ const Quality = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {certifications.map((cert, index) => (
-              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
+            {certifications.map((cert, index) => <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
                 <CardHeader className="text-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Award className="w-8 h-8 text-primary" />
@@ -229,24 +124,21 @@ const Quality = () => {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Status:</h4>
-                    <Badge variant="outline" className="text-xs">{cert.validity}</Badge>
+                    
+                    
                   </div>
                   
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Benefits:</h4>
                     <ul className="space-y-1">
-                      {cert.benefits.map((benefit, benefitIndex) => (
-                        <li key={benefitIndex} className="flex items-center space-x-2">
+                      {cert.benefits.map((benefit, benefitIndex) => <li key={benefitIndex} className="flex items-center space-x-2">
                           <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
                           <span className="text-sm text-muted-foreground">{benefit}</span>
-                        </li>
-                      ))}
+                        </li>)}
                     </ul>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -265,8 +157,7 @@ const Quality = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {qualityProcesses.map((process, index) => (
-              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
+            {qualityProcesses.map((process, index) => <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     {process.icon}
@@ -279,17 +170,14 @@ const Quality = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-3">Key Steps:</h4>
                     <ul className="space-y-2">
-                      {process.steps.map((step, stepIndex) => (
-                        <li key={stepIndex} className="flex items-start space-x-2">
+                      {process.steps.map((step, stepIndex) => <li key={stepIndex} className="flex items-start space-x-2">
                           <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                           <span className="text-muted-foreground text-sm">{step}</span>
-                        </li>
-                      ))}
+                        </li>)}
                     </ul>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -308,23 +196,19 @@ const Quality = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {testParameters.map((category, index) => (
-              <Card key={index} className="shadow-card">
+            {testParameters.map((category, index) => <Card key={index} className="shadow-card">
                 <CardHeader>
                   <CardTitle className="text-lg text-foreground">{category.category}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
-                    {category.tests.map((test, testIndex) => (
-                      <li key={testIndex} className="flex items-start space-x-2">
+                    {category.tests.map((test, testIndex) => <li key={testIndex} className="flex items-start space-x-2">
                         <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                         <span className="text-muted-foreground text-sm">{test}</span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -343,8 +227,7 @@ const Quality = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {qualityBenefits.map((benefit, index) => (
-              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow text-center">
+            {qualityBenefits.map((benefit, index) => <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow text-center">
                 <CardContent className="p-6">
                   <div className="mb-4 flex justify-center">{benefit.icon}</div>
                   <h3 className="text-xl font-semibold mb-3 text-foreground">
@@ -352,8 +235,7 @@ const Quality = () => {
                   </h3>
                   <p className="text-muted-foreground">{benefit.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -416,8 +298,6 @@ const Quality = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Quality;
