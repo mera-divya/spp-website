@@ -65,7 +65,7 @@ const Products = () => {
       description: "Continuous polythene film rolls for automated packaging and industrial processes.",
       image: mediumBlackLdpeRolls,
       specifications: [
-        "Width: 100mm to 2000mm",
+        "Width: As per requirement",
         "Thickness: Multiple gauge options as per requirement",
         "Roll diameter: Up to 1500mm",
         "Core sizes: 25mm, 38mm, 76mm",
