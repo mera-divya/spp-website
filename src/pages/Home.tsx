@@ -25,6 +25,7 @@ import selfSealCoversClear from "@/assets/self-seal-covers-clear.jpg";
 import customPackagingSolutions from "@/assets/custom-packaging-solutions.jpg";
 import isoLogoNew from "@/assets/iso-logo-new.jpg";
 import zedLogoNew from "@/assets/zed-logo-new.jpg";
+import msmeLogoNew from "@/assets/msme-logo-new.jpg";
 
 const Home = () => {
   const features = [
@@ -255,16 +256,21 @@ const Home = () => {
 
             </div>
 
-            <div className="flex gap-6 justify-center">
+            <div className="flex gap-4 justify-center">
               <img 
                 src={isoLogoNew}
                 alt="ISO 9001:2015 Quality Management System Certification Logo"
-                className="rounded-2xl shadow-elevated w-48 h-48 object-contain"
+                className="rounded-2xl shadow-elevated w-40 h-40 object-contain"
               />
               <img 
                 src={zedLogoNew}
                 alt="ZED (Zero Defect Zero Effect) Certification Logo"
-                className="rounded-2xl shadow-elevated w-48 h-48 object-contain"
+                className="rounded-2xl shadow-elevated w-40 h-40 object-contain"
+              />
+              <img 
+                src={msmeLogoNew}
+                alt="MSME (Micro, Small & Medium Enterprises) Government of India Certification Logo"
+                className="rounded-2xl shadow-elevated w-40 h-40 object-contain"
               />
             </div>
           </div>
