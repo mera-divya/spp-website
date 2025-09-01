@@ -139,8 +139,8 @@ const Products = () => {
     },
     {
       icon: <Package className="w-6 h-6 text-primary" />,
-      title: "Flexible Packaging",
-      description: "Various packaging options including bulk, retail packs, and custom bundling"
+      title: "Food grade & Pharma grade materials",
+      description: "All materials comply with food grade and pharmaceutical grade standards for safe packaging"
     }
   ];
 
