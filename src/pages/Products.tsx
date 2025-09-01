@@ -30,7 +30,7 @@ const Products = () => {
       specifications: [
         "Thickness: Multiple gauge options as per requirement",
         "Sizes: Fully customized as per client requirements",
-        "Colors: Clear, Natural",
+        "Colors: Clear or Natural or Transparent, Black & custom colors",
         "Features: Freezer safe, microwave safe"
       ],
       applications: ["Fresh produce", "Frozen foods", "Bakery items", "Meat packaging"]
@@ -56,7 +56,7 @@ const Products = () => {
         "Structure: Multi-layer coextruded",
         "Thickness: Multiple gauge options as per requirement",
         "Oxygen transmission: <1 cc/m²/day",
-        "Colors: Clear, Silver metallized",
+        "Colors: Clear or Natural or Transparent, Black & custom colors",
         "Features: Puncture resistant, heat sealable"
       ],
       applications: ["Meat products", "Seafood", "Cheese", "Ready meals"]
@@ -79,7 +79,7 @@ const Products = () => {
       description: "High-quality printed polythene bags customized in any color with your logo, address, PCB number, and thickness for a professional brand identity",
       image: printedPolytheneBags,
       specifications: [
-        "Colors: Up to 8 colors + varnish",
+        "Colors: Clear or Natural or Transparent, Black & custom colors",
         "Print area: Full surface coverage available",
         "Registration: ±0.5mm accuracy",
         "Finish options: Matte, gloss, soft touch",
