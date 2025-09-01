@@ -101,10 +101,8 @@ const Products = () => {
       description: "Custom LDPE packaging solutions tailored to any size, color, and thickness to meet your exact requirements",
       image: customPackagingSolutions,
       specifications: [
-        "Material: Multi-layer LDPE/LLDPE blends",
+        "Type: Plain, Gusseted, Antistatic, Non-Antistatic, Printed, Sheets, Rolls",
         "Thickness: Multiple gauge options as per requirement",
-        "Barrier options: Oxygen, moisture, aroma barriers",
-        "Closure types: Heat seal, zipper, spout, valve",
         "Print capability: Up to 10 colors"
       ],
       applications: ["Liquid products", "Powder packaging", "Granular materials", "Pet food", "Cosmetics"]
