@@ -251,13 +251,13 @@ const About = () => {
             <Button asChild size="lg" variant="secondary" className="shadow-elevated">
               <Link to="/contact">
                 <Users className="w-5 h-5 mr-2" />
-                Start Partnership
+                Get Quote now
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/20 hover:bg-white/10">
-              <Link to="/quality">
+              <Link to="/products">
                 <Award className="w-5 h-5 mr-2" />
-                View Certifications
+                view our products
               </Link>
             </Button>
           </div>
