@@ -68,7 +68,6 @@ const Products = () => {
         "Width: As per requirement",
         "Thickness: Multiple gauge options as per requirement",
         "Color: White or Clear, Black & custom colors",
-        "Form: Continuous rolls (with or without core)",
         "Roll diameter: Up to 1500mm",
         "Core sizes: 25mm, 38mm, 76mm",
         "Features: High clarity, puncture resistant"
