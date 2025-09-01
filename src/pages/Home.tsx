@@ -54,32 +54,32 @@ const Home = () => {
 
   const products = [
     {
-      title: "Polythene Sheets",
+      title: "LDPE Polythene Bags",
       description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
       image: polytheneSheets
     },
     {
-      title: "Specialty Barrier Bags",
+      title: "Antistatic Polythene Bags",
       description: "Static-dissipative packaging solutions for Pharma products & electronic components ensuring safety & reliability.",
       image: antistaticBagsNew
     },
     {
-      title: "Shaped & Formed Bags",
+      title: "Rolls",
       description: "Continuous polythene film rolls for automated packaging and industrial processes.",
       image: mediumBlackLdpeRolls
     },
     {
-      title: "Vacuum Packaging Bags",
+      title: "Polythene Sheets",
       description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
       image: ldpePolytheneBagsNew
     },
     {
-      title: "Produce Bags",
+      title: "VCI Polythene Bags",
       description: "Also called anti-rustic bags. Provides corrosion protection for metal parts during storage & transport",
       image: vciPolytheneBags
     },
     {
-      title: "Stand-Up Pouches",
+      title: "Self Seal Covers",
       description: "Convenient self-sealing polythene covers with adhesive strips for quick and secure packaging.",
       image: selfSealCoversClear
     },
