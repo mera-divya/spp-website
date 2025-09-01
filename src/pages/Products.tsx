@@ -1,170 +1,125 @@
-import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
 import {
   Package,
-  Pill,
-  Factory,
-  Utensils,
-  Settings,
   CheckCircle,
   Ruler,
   Palette,
   Shield,
-  Phone,
-  Box,
-  Printer
+  Phone
 } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 
 const Products = () => {
-  const [selectedCategory, setSelectedCategory] = useState("food-grade");
-
-  const categories = [
+  const products = [
     {
-      id: "food-grade",
-      name: "Food Grade",
-      icon: <Utensils className="w-5 h-5" />,
-      description: "Food-safe bags meeting international safety standards"
+      name: "Custom Packaging Solutions",
+      description: "Custom LDPE packaging solutions tailored to any size, color, and thickness to meet your exact requirements",
+      specifications: [
+        "Material: Multi-layer LDPE/LLDPE blends",
+        "Thickness: 50-300 microns",
+        "Barrier options: Oxygen, moisture, aroma barriers",
+        "Closure types: Heat seal, zipper, spout, valve",
+        "Print capability: Up to 10 colors"
+      ],
+      applications: ["Liquid products", "Powder packaging", "Granular materials", "Pet food", "Cosmetics"],
+      certifications: ["FDA Food Contact", "BPA Free", "Custom validation available"]
     },
     {
-      id: "custom-packaging",
-      name: "Custom Packaging",
-      icon: <Box className="w-5 h-5" />,
-      description: "Bespoke packaging solutions designed for your unique requirements"
+      name: "Self Seal Covers",
+      description: "Convenient self-sealing polythene covers with adhesive strips for quick and secure packaging.",
+      specifications: [
+        "Material: Self-adhesive LDPE",
+        "Sizes: Various standard sizes",
+        "Features: Easy peel, secure seal",
+        "Applications: Document protection",
+        "Minimum order: 1,000 pieces"
+      ],
+      applications: ["Document storage", "Product protection", "Mailing", "Archive storage"],
+      certifications: ["Adhesive strength tested", "Long-term storage suitable", "Non-toxic adhesive"]
     },
     {
-      id: "printed-bags",
       name: "Printed Polythene Bags",
-      icon: <Printer className="w-5 h-5" />,
-      description: "High-quality printed bags with custom designs and branding"
+      description: "High-quality printed polythene bags customized in any color with your logo, address, PCB number, and thickness for a professional brand identity",
+      specifications: [
+        "Colors: Up to 8 colors + varnish",
+        "Print area: Full surface coverage available",
+        "Registration: ±0.5mm accuracy",
+        "Finish options: Matte, gloss, soft touch",
+        "Minimum order: 10,000 pieces per design"
+      ],
+      applications: ["Retail packaging", "Promotional bags", "Brand marketing", "Product identification"],
+      certifications: ["Color matching standards", "Food contact inks", "Migration test compliant"]
     },
     {
-      id: "custom",
-      name: "Custom Solutions",
-      icon: <Settings className="w-5 h-5" />,
-      description: "Tailored LDPE bags for specific requirements"
+      name: "Antistatic Polythene Bags",
+      description: "Static-dissipative packaging solutions for Pharma products & electronic components ensuring safety & reliability.",
+      specifications: [
+        "Material: Anti-static LDPE compounds",
+        "Surface resistivity: 10^9 to 10^12 ohms/sq",
+        "Thickness: 50-200 microns",
+        "Features: Static dissipative, transparent",
+        "Testing: ANSI/ESD S20.20 compliant"
+      ],
+      applications: ["Electronic components", "Pharmaceutical products", "Static-sensitive items", "Clean room packaging"],
+      certifications: ["ESD Association Standards", "Clean room compatible", "Static dissipative tested"]
+    },
+    {
+      name: "Rolls",
+      description: "Continuous polythene film rolls for automated packaging and industrial processes.",
+      specifications: [
+        "Width: 100mm to 2000mm",
+        "Thickness: 25-300 microns",
+        "Roll diameter: Up to 1500mm",
+        "Core sizes: 25mm, 38mm, 76mm",
+        "Features: High clarity, puncture resistant"
+      ],
+      applications: ["Automated packaging", "Industrial wrapping", "Food processing", "Manufacturing lines"],
+      certifications: ["Food grade options", "Industrial strength tested", "Consistent thickness tolerance"]
+    },
+    {
+      name: "VCI Polythene Bags",
+      description: "Also called anti-rustic bags. Provides corrosion protection for metal parts during storage & transport",
+      specifications: [
+        "VCI compounds: Vapor corrosion inhibitors",
+        "Protection period: Up to 2 years",
+        "Thickness: 100-200 microns",
+        "Features: Self-sealing, transparent",
+        "Metals protected: Steel, copper, aluminum"
+      ],
+      applications: ["Metal parts storage", "Automotive components", "Industrial equipment", "Export packaging"],
+      certifications: ["NACE standards", "Military specifications", "Corrosion protection tested"]
+    },
+    {
+      name: "LDPE Polythene Bags",
+      description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
+      specifications: [
+        "Thickness: 25-150 microns",
+        "Sizes: 4x6 inches to 18x24 inches",
+        "Colors: Clear, Natural",
+        "Features: Freezer safe, microwave safe",
+        "Compliance: FDA 21 CFR 177.1520"
+      ],
+      applications: ["Fresh produce", "Frozen foods", "Bakery items", "Meat packaging"],
+      certifications: ["FDA Approved", "EU 10/2011", "BfR Recommendations"]
+    },
+    {
+      name: "Polythene Sheets",
+      description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
+      specifications: [
+        "Structure: Multi-layer coextruded",
+        "Thickness: 80-200 microns",
+        "Oxygen transmission: <1 cc/m²/day",
+        "Colors: Clear, Silver metallized",
+        "Features: Puncture resistant, heat sealable"
+      ],
+      applications: ["Meat products", "Seafood", "Cheese", "Ready meals"],
+      certifications: ["FDA Food Contact", "HACCP Compliant", "Kosher Certified"]
     }
   ];
-
-  const products = {
-    "food-grade": [
-      {
-        name: "LDPE Polythene Bags",
-        description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
-        specifications: [
-          "Thickness: 25-150 microns",
-          "Sizes: 4x6 inches to 18x24 inches",
-          "Colors: Clear, Natural",
-          "Features: Freezer safe, microwave safe",
-          "Compliance: FDA 21 CFR 177.1520"
-        ],
-        applications: ["Fresh produce", "Frozen foods", "Bakery items", "Meat packaging"],
-        certifications: ["FDA Approved", "EU 10/2011", "BfR Recommendations"]
-      },
-      {
-        name: "Polythene Sheets",
-        description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
-        specifications: [
-          "Structure: Multi-layer coextruded",
-          "Thickness: 80-200 microns",
-          "Oxygen transmission: <1 cc/m²/day",
-          "Colors: Clear, Silver metallized",
-          "Features: Puncture resistant, heat sealable"
-        ],
-        applications: ["Meat products", "Seafood", "Cheese", "Ready meals"],
-        certifications: ["FDA Food Contact", "HACCP Compliant", "Kosher Certified"]
-      }
-    ],
-    "custom-packaging": [
-      {
-        name: "Custom Packaging Solutions",
-        description: "Custom LDPE packaging solutions tailored to any size, color, and thickness to meet your exact requirements",
-        specifications: [
-          "Material: Multi-layer LDPE/LLDPE blends",
-          "Thickness: 50-300 microns",
-          "Barrier options: Oxygen, moisture, aroma barriers",
-          "Closure types: Heat seal, zipper, spout, valve",
-          "Print capability: Up to 10 colors"
-        ],
-        applications: ["Liquid products", "Powder packaging", "Granular materials", "Pet food", "Cosmetics"],
-        certifications: ["FDA Food Contact", "BPA Free", "Custom validation available"]
-      },
-      {
-        name: "Self Seal Covers",
-        description: "Convenient self-sealing polythene covers with adhesive strips for quick and secure packaging.",
-        specifications: [
-          "Material: Self-adhesive LDPE",
-          "Sizes: Various standard sizes",
-          "Features: Easy peel, secure seal",
-          "Applications: Document protection",
-          "Minimum order: 1,000 pieces"
-        ],
-        applications: ["Document storage", "Product protection", "Mailing", "Archive storage"],
-        certifications: ["Adhesive strength tested", "Long-term storage suitable", "Non-toxic adhesive"]
-      }
-    ],
-    "printed-bags": [
-      {
-        name: "Printed Polythene Bags",
-        description: "High-quality printed polythene bags customized in any color with your logo, address, PCB number, and thickness for a professional brand identity",
-        specifications: [
-          "Colors: Up to 8 colors + varnish",
-          "Print area: Full surface coverage available",
-          "Registration: ±0.5mm accuracy",
-          "Finish options: Matte, gloss, soft touch",
-          "Minimum order: 10,000 pieces per design"
-        ],
-        applications: ["Retail packaging", "Promotional bags", "Brand marketing", "Product identification"],
-        certifications: ["Color matching standards", "Food contact inks", "Migration test compliant"]
-      }
-    ],
-    custom: [
-      {
-        name: "Antistatic Polythene Bags",
-        description: "Static-dissipative packaging solutions for Pharma products & electronic components ensuring safety & reliability.",
-        specifications: [
-          "Material: Anti-static LDPE compounds",
-          "Surface resistivity: 10^9 to 10^12 ohms/sq",
-          "Thickness: 50-200 microns",
-          "Features: Static dissipative, transparent",
-          "Testing: ANSI/ESD S20.20 compliant"
-        ],
-        applications: ["Electronic components", "Pharmaceutical products", "Static-sensitive items", "Clean room packaging"],
-        certifications: ["ESD Association Standards", "Clean room compatible", "Static dissipative tested"]
-      },
-      {
-        name: "Rolls",
-        description: "Continuous polythene film rolls for automated packaging and industrial processes.",
-        specifications: [
-          "Width: 100mm to 2000mm",
-          "Thickness: 25-300 microns",
-          "Roll diameter: Up to 1500mm",
-          "Core sizes: 25mm, 38mm, 76mm",
-          "Features: High clarity, puncture resistant"
-        ],
-        applications: ["Automated packaging", "Industrial wrapping", "Food processing", "Manufacturing lines"],
-        certifications: ["Food grade options", "Industrial strength tested", "Consistent thickness tolerance"]
-      },
-      {
-        name: "VCI Polythene Bags",
-        description: "Also called anti-rustic bags. Provides corrosion protection for metal parts during storage & transport",
-        specifications: [
-          "VCI compounds: Vapor corrosion inhibitors",
-          "Protection period: Up to 2 years",
-          "Thickness: 100-200 microns",
-          "Features: Self-sealing, transparent",
-          "Metals protected: Steel, copper, aluminum"
-        ],
-        applications: ["Metal parts storage", "Automotive components", "Industrial equipment", "Export packaging"],
-        certifications: ["NACE standards", "Military specifications", "Corrosion protection tested"]
-      }
-    ]
-  };
 
   const features = [
     {
@@ -211,102 +166,78 @@ const Products = () => {
         </div>
       </HeroSection>
 
-      {/* Product Categories */}
+      {/* Products Section */}
       <section className="section-padding bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
-              Product Categories
+              Our Products
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Explore our diverse range of LDPE solutions tailored for different industries and applications.
+              Comprehensive selection of high-quality LDPE polythene bags designed for diverse applications.
             </p>
           </div>
 
-          <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
-            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 mb-12">
-              {categories.map((category) => (
-                <TabsTrigger 
-                  key={category.id} 
-                  value={category.id}
-                  className="flex items-center space-x-2 p-4"
-                >
-                  {category.icon}
-                  <span className="hidden sm:inline">{category.name}</span>
-                </TabsTrigger>
-              ))}
-            </TabsList>
+          <div className="grid gap-8">
+            {products.map((product, index) => (
+              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-foreground">{product.name}</CardTitle>
+                  <p className="text-muted-foreground">{product.description}</p>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid lg:grid-cols-3 gap-8">
+                    {/* Specifications */}
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-3">Specifications</h4>
+                      <ul className="space-y-2">
+                        {product.specifications.map((spec, specIndex) => (
+                          <li key={specIndex} className="flex items-start space-x-2">
+                            <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-muted-foreground text-sm">{spec}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
-            {categories.map((category) => (
-              <TabsContent key={category.id} value={category.id}>
-                <div className="mb-8 text-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">{category.name} Products</h3>
-                  <p className="text-muted-foreground">{category.description}</p>
-                </div>
+                    {/* Applications */}
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-3">Applications</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {product.applications.map((app, appIndex) => (
+                          <Badge key={appIndex} variant="secondary" className="text-xs">
+                            {app}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
 
-                <div className="grid gap-8">
-                  {products[category.id as keyof typeof products].map((product, index) => (
-                    <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
-                      <CardHeader>
-                        <CardTitle className="text-2xl text-foreground">{product.name}</CardTitle>
-                        <p className="text-muted-foreground">{product.description}</p>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="grid lg:grid-cols-3 gap-8">
-                          {/* Specifications */}
-                          <div>
-                            <h4 className="font-semibold text-foreground mb-3">Specifications</h4>
-                            <ul className="space-y-2">
-                              {product.specifications.map((spec, specIndex) => (
-                                <li key={specIndex} className="flex items-start space-x-2">
-                                  <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                                  <span className="text-muted-foreground text-sm">{spec}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
+                    {/* Certifications */}
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-3">Certifications</h4>
+                      <div className="space-y-2">
+                        {product.certifications.map((cert, certIndex) => (
+                          <Badge key={certIndex} variant="outline" className="text-xs mr-2 mb-2">
+                            <CheckCircle className="w-3 h-3 mr-1" />
+                            {cert}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
 
-                          {/* Applications */}
-                          <div>
-                            <h4 className="font-semibold text-foreground mb-3">Applications</h4>
-                            <div className="flex flex-wrap gap-2">
-                              {product.applications.map((app, appIndex) => (
-                                <Badge key={appIndex} variant="secondary" className="text-xs">
-                                  {app}
-                                </Badge>
-                              ))}
-                            </div>
-                          </div>
-
-                          {/* Certifications */}
-                          <div>
-                            <h4 className="font-semibold text-foreground mb-3">Certifications</h4>
-                            <div className="space-y-2">
-                              {product.certifications.map((cert, certIndex) => (
-                                <Badge key={certIndex} variant="outline" className="text-xs mr-2 mb-2">
-                                  <CheckCircle className="w-3 h-3 mr-1" />
-                                  {cert}
-                                </Badge>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="mt-6 pt-6 border-t border-border">
-                          <Button asChild className="hero-gradient">
-                            <Link to="/contact">
-                              <Phone className="w-4 h-4 mr-2" />
-                              Request Quote for {product.name}
-                            </Link>
-                          </Button>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </TabsContent>
+                  <div className="mt-6 pt-6 border-t border-border">
+                    <Button asChild className="hero-gradient">
+                      <Link to="/contact">
+                        <Phone className="w-4 h-4 mr-2" />
+                        Request Quote for {product.name}
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
-          </Tabs>
+          </div>
         </div>
       </section>
 
