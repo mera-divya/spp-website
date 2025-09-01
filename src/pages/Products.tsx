@@ -33,7 +33,7 @@ const Products = () => {
         "Sizes: Fully customized as per client requirements",
         "Colors: Clear or Natural or Transparent or White, Black & Custom colors"
       ],
-      applications: ["Fresh produce", "Frozen foods", "Bakery items", "Meat packaging"]
+      applications: ["Pharmaceuticals", "Food & beverages", "Industrial packaging", "Electronic & components", "Retail", "Textile", "Others"]
     },
     {
       name: "Antistatic Polythene Bags",
