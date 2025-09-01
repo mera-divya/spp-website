@@ -14,7 +14,7 @@ import {
   CheckCircle
 } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
-import heroImage from "@/assets/about-hero-new.jpg";
+import heroImage from "@/assets/about-hero-fullcover.jpg";
 
 const About = () => {
   const values = [
