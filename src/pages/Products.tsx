@@ -54,9 +54,7 @@ const Products = () => {
       description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
       image: ldpePolytheneBagsNew,
       specifications: [
-        "Structure: Multi-layer coextruded",
         "Thickness: Multiple gauge options as per requirement",
-        "Oxygen transmission: <1 cc/m²/day",
         "Colors: Clear or Natural or Transparent or White, Black & Custom colors",
         "Features: Puncture resistant, heat sealable"
       ],
