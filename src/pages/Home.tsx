@@ -272,8 +272,7 @@ const Home = () => {
             Ready to Partner with Us?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Get in touch today for custom LDPE packaging solutions tailored to your 
-            pharmaceutical or industrial requirements.
+            Get in touch today for custom LDPE packaging solutions tailored to your requirements.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
