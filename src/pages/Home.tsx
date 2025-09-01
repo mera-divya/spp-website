@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/blown-film-extrusion-hero.jpg";
 import vciPolytheneBags from "@/assets/vci-polythene-bags.jpg";
-import ldpeBagsUser from "@/assets/ldpe-bags-user.jpg";
+import printedPolytheneBags from "@/assets/printed-polythene-bags.jpg";
 import ldpePolytheneBagsNew from "@/assets/ldpe-polythene-bags-new.jpg";
 import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
 import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
@@ -88,7 +88,7 @@ const Home = () => {
     {
       title: "Printed Polythene Bags",
       description: "High-quality printed bags with vibrant colors, custom designs, and branding for marketing and retail applications.",
-      image: ldpeBagsUser
+      image: printedPolytheneBags
     }
   ];
 
