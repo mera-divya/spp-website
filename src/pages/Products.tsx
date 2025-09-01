@@ -66,7 +66,7 @@ const Products = () => {
   const products = {
     pharmaceutical: [
       {
-        name: "Medicine Packaging Bags",
+        name: "LDPE Polythene Bags",
         description: "Premium LDPE bags designed for pharmaceutical products with excellent barrier properties and contamination protection.",
         specifications: [
           "Thickness: 25-200 microns",
@@ -79,7 +79,7 @@ const Products = () => {
         certifications: ["FDA Compliant", "USP Class VI", "ISO 15378"]
       },
       {
-        name: "Medical Device Bags",
+        name: "VCI Polythene Bags",
         description: "Specialized bags for sterile medical devices and equipment with superior seal strength and puncture resistance.",
         specifications: [
           "Thickness: 50-300 microns",
@@ -92,7 +92,7 @@ const Products = () => {
         certifications: ["ISO 11607", "EN 868", "ASTM Standards"]
       },
       {
-        name: "Clinical Trial Bags", 
+        name: "Self Seal Covers", 
         description: "Secure packaging for clinical trial materials with tamper-evident features and regulatory compliance.",
         specifications: [
           "Thickness: 75-250 microns",
@@ -107,7 +107,7 @@ const Products = () => {
     ],
     industrial: [
       {
-        name: "Heavy Duty Industrial Bags",
+        name: "LDPE Polythene Bags",
         description: "Robust LDPE bags designed for industrial applications requiring superior strength and chemical resistance.",
         specifications: [
           "Thickness: 100-500 microns", 
@@ -120,7 +120,7 @@ const Products = () => {
         certifications: ["ISO 9001", "REACH Compliant", "RoHS Certified"]
       },
       {
-        name: "Anti-Static Bags",
+        name: "Antistatic Polythene Bags",
         description: "Specialized bags with anti-static properties for electronic components and sensitive equipment protection.",
         specifications: [
           "Thickness: 75-200 microns",
@@ -133,7 +133,7 @@ const Products = () => {
         certifications: ["IEC 61340", "ANSI/ESD S20.20", "MIL-PRF-81705"]
       },
       {
-        name: "Chemical Resistant Bags",
+        name: "Rolls",
         description: "Specially formulated LDPE bags offering excellent chemical compatibility for hazardous materials.",
         specifications: [
           "Thickness: 150-400 microns",
@@ -148,7 +148,7 @@ const Products = () => {
     ],
     "food-grade": [
       {
-        name: "Food Storage Bags",
+        name: "Polythene Sheets",
         description: "Food-safe LDPE bags meeting FDA regulations for direct food contact applications.",
         specifications: [
           "Thickness: 25-150 microns",
@@ -189,7 +189,7 @@ const Products = () => {
     ],
     "custom-packaging": [
       {
-        name: "Flexible Pouches",
+        name: "Custom Packaging Solutions",
         description: "Custom-designed flexible pouches with advanced barrier properties for various product categories.",
         specifications: [
           "Material: Multi-layer LDPE/LLDPE blends",
@@ -230,7 +230,7 @@ const Products = () => {
     ],
     "printed-bags": [
       {
-        name: "Flexographic Printed Bags",
+        name: "Printed Polythene Bags",
         description: "High-quality flexographic printing on LDPE bags with vibrant colors and sharp detail reproduction.",
         specifications: [
           "Colors: Up to 8 colors + varnish",
@@ -284,7 +284,7 @@ const Products = () => {
     ],
     custom: [
       {
-        name: "Printed Bags with Branding",
+        name: "Printed Polythene Bags",
         description: "Custom printed LDPE bags with your company branding and specifications.",
         specifications: [
           "Printing: Up to 10 colors flexographic",
