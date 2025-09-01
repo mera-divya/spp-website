@@ -104,13 +104,13 @@ const About = () => {
               <div className="space-y-6">
                 <Card className="shadow-card">
                   <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">19+</div>
+                    <div className="text-3xl font-bold text-primary mb-2">20+</div>
                     <div className="text-muted-foreground">Years Experience</div>
                   </CardContent>
                 </Card>
                 <Card className="shadow-card">
                   <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                    <div className="text-3xl font-bold text-primary mb-2">Pan India</div>
                     <div className="text-muted-foreground">Happy Clients</div>
                   </CardContent>
                 </Card>
