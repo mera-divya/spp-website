@@ -291,7 +291,7 @@ const Products = () => {
                 Discuss Requirements
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/20 hover:bg-white/10">
+            <Button asChild size="lg" variant="secondary" className="shadow-elevated">
               <Link to="/quality">
                 <CheckCircle className="w-5 h-5 mr-2" />
                 View Quality Standards
