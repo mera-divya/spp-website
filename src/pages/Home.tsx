@@ -14,6 +14,7 @@ import {
   Star,
   Settings
 } from "lucide-react";
+import { HeroSection } from "@/components/HeroSection";
 import heroImage from "@/assets/blown-film-extrusion-hero.jpg";
 import vciPolytheneBags from "@/assets/vci-polythene-bags.jpg";
 import printedPolytheneBags from "@/assets/printed-polythene-bags.jpg";
@@ -102,48 +103,42 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative hero-gradient text-primary-foreground overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src={heroImage}
-            alt="Blown Film Plant in Operation - Srinivasa Polypack"
-            className="w-full h-full object-cover opacity-20"
-          />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <Badge variant="secondary" className="mb-6">
-                <Star className="w-4 h-4 mr-2" />
-                ISO 9001:2015 Certified
-              </Badge>
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                Premium LDPE 
-                <span className="block text-blue-200">Polythene Bags</span>
-              </h1>
-              <p className="text-xl mb-8 text-blue-100 max-w-lg">
-                Leading manufacturer and supplier of high-quality LDPE polythene bags for 
-                pharmaceutical and industrial applications across India.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" variant="secondary" className="shadow-elevated">
-                  <Link to="/products">
-                    View Our Products
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="secondary" className="shadow-elevated">
-                  <Link to="/contact">
-                    <Phone className="w-5 h-5 mr-2" />
-                    Get Quote Now
-                  </Link>
-                </Button>
-              </div>
+      <HeroSection 
+        backgroundImage={heroImage}
+        altText="Blown Film Plant in Operation - Srinivasa Polypack"
+      >
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <Badge variant="secondary" className="mb-6">
+              <Star className="w-4 h-4 mr-2" />
+              ISO 9001:2015 Certified
+            </Badge>
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+              Premium LDPE 
+              <span className="block text-blue-200">Polythene Bags</span>
+            </h1>
+            <p className="text-xl mb-8 text-blue-100 max-w-lg">
+              Leading manufacturer and supplier of high-quality LDPE polythene bags for 
+              pharmaceutical and industrial applications across India.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button asChild size="lg" variant="secondary" className="shadow-elevated">
+                <Link to="/products">
+                  View Our Products
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="secondary" className="shadow-elevated">
+                <Link to="/contact">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Get Quote Now
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
-      </section>
+      </HeroSection>
 
       {/* Stats Section */}
       <section className="py-16 bg-background">

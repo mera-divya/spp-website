@@ -13,6 +13,7 @@ import {
   TrendingUp,
   CheckCircle
 } from "lucide-react";
+import { HeroSection } from "@/components/HeroSection";
 import heroImage from "@/assets/hero-manufacturing.jpg";
 
 const About = () => {
@@ -62,30 +63,24 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative hero-gradient text-primary-foreground overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src={heroImage}
-            alt="About Srinivasa Polypack"
-            className="w-full h-full object-cover opacity-20"
-          />
+      <HeroSection 
+        backgroundImage={heroImage}
+        altText="About Srinivasa Polypack"
+      >
+        <div className="text-center">
+          <Badge variant="secondary" className="mb-6">
+            <Factory className="w-4 h-4 mr-2" />
+            Established 1998
+          </Badge>
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+            About Srinivasa Polypack
+          </h1>
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            25+ years of excellence in manufacturing premium LDPE polythene bags 
+            for pharmaceutical and industrial applications across India and beyond.
+          </p>
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-          <div className="text-center">
-            <Badge variant="secondary" className="mb-6">
-              <Factory className="w-4 h-4 mr-2" />
-              Established 1998
-            </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              About Srinivasa Polypack
-            </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              25+ years of excellence in manufacturing premium LDPE polythene bags 
-              for pharmaceutical and industrial applications across India and beyond.
-            </p>
-          </div>
-        </div>
-      </section>
+      </HeroSection>
 
       {/* Company Story */}
       <section className="section-padding bg-background">

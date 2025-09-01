@@ -18,6 +18,7 @@ import {
   Box,
   Printer
 } from "lucide-react";
+import { HeroSection } from "@/components/HeroSection";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 
 const Products = () => {
@@ -350,30 +351,24 @@ const Products = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative hero-gradient text-primary-foreground overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src={bagsShowcase}
-            alt="LDPE Products Showcase"
-            className="w-full h-full object-cover opacity-20"
-          />
+      <HeroSection 
+        backgroundImage={bagsShowcase}
+        altText="LDPE Products Showcase"
+      >
+        <div className="text-center">
+          <Badge variant="secondary" className="mb-6">
+            <Package className="w-4 h-4 mr-2" />
+            Premium LDPE Products
+          </Badge>
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+            Our Product Range
+          </h1>
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            Comprehensive selection of high-quality LDPE polythene bags designed for 
+            pharmaceutical, industrial, and food-grade applications.
+          </p>
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-          <div className="text-center">
-            <Badge variant="secondary" className="mb-6">
-              <Package className="w-4 h-4 mr-2" />
-              Premium LDPE Products
-            </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Our Product Range
-            </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Comprehensive selection of high-quality LDPE polythene bags designed for 
-              pharmaceutical, industrial, and food-grade applications.
-            </p>
-          </div>
-        </div>
-      </section>
+      </HeroSection>
 
       {/* Product Categories */}
       <section className="section-padding bg-background">

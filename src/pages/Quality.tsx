@@ -16,6 +16,7 @@ import {
   Phone,
   Download
 } from "lucide-react";
+import { HeroSection } from "@/components/HeroSection";
 import qualityLab from "@/assets/quality-lab.jpg";
 
 const Quality = () => {
@@ -178,30 +179,24 @@ const Quality = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative hero-gradient text-primary-foreground overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src={qualityLab}
-            alt="Quality Control Laboratory"
-            className="w-full h-full object-cover opacity-20"
-          />
+      <HeroSection 
+        backgroundImage={qualityLab}
+        altText="Quality Control Laboratory"
+      >
+        <div className="text-center">
+          <Badge variant="secondary" className="mb-6">
+            <Award className="w-4 h-4 mr-2" />
+            Quality Excellence
+          </Badge>
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+            Quality Standards
+          </h1>
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            Our commitment to excellence is reflected in our comprehensive quality management 
+            system and internationally recognized certifications.
+          </p>
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-          <div className="text-center">
-            <Badge variant="secondary" className="mb-6">
-              <Award className="w-4 h-4 mr-2" />
-              Quality Excellence
-            </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Quality Standards
-            </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Our commitment to excellence is reflected in our comprehensive quality management 
-              system and internationally recognized certifications.
-            </p>
-          </div>
-        </div>
-      </section>
+      </HeroSection>
 
       {/* Certifications */}
       <section className="section-padding bg-background">
