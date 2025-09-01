@@ -91,6 +91,7 @@ const Products = () => {
         "VCI compounds: Vapor corrosion inhibitors",
         "Protection period: Up to 2 years",
         "Thickness: Multiple gauge options as per requirement",
+        "Color: White or clear, Black & custom colors",
         "Features: Self-sealing, transparent",
         "Metals protected: Steel, copper, aluminum"
       ],
