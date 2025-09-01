@@ -17,7 +17,7 @@ const About = () => {
   }, {
     icon: <Users className="w-8 h-8 text-primary" />,
     title: "Customer Focus",
-    description: "Placing our customers at the heart of everything we do, ensuring their success drives our innovation."
+    description: "We put our customers at the center, focused on building long-term partnerships through delivering packaging solutions that match their exact needs with quality and reliability."
   }, {
     icon: <TrendingUp className="w-8 h-8 text-primary" />,
     title: "Innovation",
