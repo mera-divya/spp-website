@@ -68,10 +68,10 @@ const About = () => {
         altText="About Srinivasa Polypack"
       >
         <div className="text-center">
-          <Badge variant="secondary" className="mb-6">
-            <Factory className="w-4 h-4 mr-2" />
-            Established 1998
-          </Badge>
+            <Badge variant="secondary" className="mb-6">
+              <Factory className="w-4 h-4 mr-2" />
+              Established 2005
+            </Badge>
           <h1 className="text-4xl lg:text-6xl font-bold mb-6">
             About Srinivasa Polypack
           </h1>
