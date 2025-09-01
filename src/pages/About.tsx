@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Target, Eye, Heart, Factory, Users, Award, Briefcase, TrendingUp, CheckCircle } from "lucide-react";
+import { Target, Eye, Heart, Factory, Users, Award, Briefcase, TrendingUp, CheckCircle, MessageSquare, Package } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import heroImage from "@/assets/about-hero-fullcover.jpg";
 const About = () => {
@@ -250,13 +250,13 @@ const About = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary" className="shadow-elevated">
               <Link to="/contact">
-                <Users className="w-5 h-5 mr-2" />
+                <MessageSquare className="w-5 h-5 mr-2" />
                 Get Quote now
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/20 hover:bg-white/10">
               <Link to="/products">
-                <Award className="w-5 h-5 mr-2" />
+                <Package className="w-5 h-5 mr-2" />
                 view our products
               </Link>
             </Button>
