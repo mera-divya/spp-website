@@ -58,7 +58,7 @@ const Products = () => {
         "Colors: Clear or Natural or Transparent or White, Black & Custom colors",
         "Features: Puncture resistant, heat sealable"
       ],
-      applications: ["Meat products", "Seafood", "Cheese", "Ready meals"]
+      applications: ["Pharmaceuticals", "Industrial", "Agriculture", "Food & beverages", "Textile", "Others"]
     },
     {
       name: "Rolls",
