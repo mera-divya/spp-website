@@ -31,8 +31,7 @@ const Products = () => {
         "Types: Plain & Gusseted",
         "Thickness: Multiple gauge options as per requirement",
         "Sizes: Fully customized as per client requirements",
-        "Colors: Clear or Natural or Transparent or White, Black & Custom colors",
-        "Features: Freezer safe, microwave safe"
+        "Colors: Clear or Natural or Transparent or White, Black & Custom colors"
       ],
       applications: ["Fresh produce", "Frozen foods", "Bakery items", "Meat packaging"]
     },
