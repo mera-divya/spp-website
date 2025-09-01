@@ -79,11 +79,7 @@ const Products = () => {
       image: printedPolytheneBags,
       specifications: [
         "Types: Plain & Gusseted",
-        "Colors: Clear or Natural or Transparent or White, Black & Custom colors",
-        "Print area: Full surface coverage available",
-        "Registration: ±0.5mm accuracy",
-        "Finish options: Matte, gloss, soft touch",
-        "Minimum order: 10,000 pieces per design"
+        "Colors: Clear or Natural or Transparent or White, Black & Custom colors"
       ],
       applications: ["Retail packaging", "Promotional bags", "Brand marketing", "Product identification"]
     },
