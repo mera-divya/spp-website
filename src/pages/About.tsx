@@ -111,7 +111,7 @@ const About = () => {
                 <Card className="shadow-card">
                   <CardContent className="p-6 text-center">
                     <div className="text-3xl font-bold text-primary mb-2">Pan India</div>
-                    <div className="text-muted-foreground">Happy Clients</div>
+                    <div className="text-muted-foreground">Reliable deliveries</div>
                   </CardContent>
                 </Card>
               </div>
