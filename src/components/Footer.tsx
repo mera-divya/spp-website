@@ -16,10 +16,14 @@ const Footer = () => {
   ];
 
   const products = [
-    "Pharmaceutical Bags",
-    "Industrial Bags", 
-    "Food Grade Bags",
-    "Custom LDPE Solutions",
+    "LDPE Polythene Bags",
+    "Antistatic Polythene Bags",
+    "Rolls", 
+    "Polythene Sheets",
+    "VCI Polythene Bags",
+    "Self Seal Covers",
+    "Custom Packaging Solutions",
+    "Printed Polythene Bags",
   ];
 
   return (
