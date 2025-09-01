@@ -76,8 +76,8 @@ const About = () => {
             About Srinivasa Polypack
           </h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            25+ years of excellence in manufacturing premium LDPE polythene bags 
-            for pharmaceutical and industrial applications across India and beyond.
+            20+ years of excellence in manufacturing premium LDPE polythene bags 
+            for pharmaceutical, food and industrial applications across India.
           </p>
         </div>
       </HeroSection>
