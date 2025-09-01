@@ -103,7 +103,7 @@ const Products = () => {
       specifications: [
         "Type: Plain, Gusseted, Antistatic, Non-Antistatic, Printed, Sheets, Rolls",
         "Thickness: Multiple gauge options as per requirement",
-        "Print capability: Up to 10 colors"
+        "Print capability: Any color"
       ],
       applications: ["Liquid products", "Powder packaging", "Granular materials", "Pet food", "Cosmetics"]
     },
