@@ -14,7 +14,9 @@ import {
   Ruler,
   Palette,
   Shield,
-  Phone
+  Phone,
+  Box,
+  Printer
 } from "lucide-react";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
 
@@ -39,6 +41,18 @@ const Products = () => {
       name: "Food Grade",
       icon: <Utensils className="w-5 h-5" />,
       description: "Food-safe bags meeting international safety standards"
+    },
+    {
+      id: "custom-packaging",
+      name: "Custom Packaging",
+      icon: <Box className="w-5 h-5" />,
+      description: "Bespoke packaging solutions designed for your unique requirements"
+    },
+    {
+      id: "printed-bags",
+      name: "Printed Polythene Bags",
+      icon: <Printer className="w-5 h-5" />,
+      description: "High-quality printed bags with custom designs and branding"
     },
     {
       id: "custom",
@@ -172,6 +186,101 @@ const Products = () => {
         certifications: ["FDA Food Grade", "Organic Compliant", "USDA Approved"]
       }
     ],
+    "custom-packaging": [
+      {
+        name: "Flexible Pouches",
+        description: "Custom-designed flexible pouches with advanced barrier properties for various product categories.",
+        specifications: [
+          "Material: Multi-layer LDPE/LLDPE blends",
+          "Thickness: 50-300 microns",
+          "Barrier options: Oxygen, moisture, aroma barriers",
+          "Closure types: Heat seal, zipper, spout, valve",
+          "Print capability: Up to 10 colors"
+        ],
+        applications: ["Liquid products", "Powder packaging", "Granular materials", "Pet food", "Cosmetics"],
+        certifications: ["FDA Food Contact", "BPA Free", "Custom validation available"]
+      },
+      {
+        name: "Stand-Up Pouches",
+        description: "Eye-catching stand-up pouches that provide excellent shelf presence and convenience.",
+        specifications: [
+          "Bottom gusset: 15-80mm",
+          "Sizes: 50ml to 5 liters capacity",
+          "Features: Resealable zippers, tear notches",
+          "Materials: LDPE, Metallized LDPE, Clear",
+          "Minimum order: 5,000 pieces"
+        ],
+        applications: ["Snack foods", "Beverages", "Sauces", "Detergents", "Health supplements"],
+        certifications: ["Food grade certified", "Child resistant options", "Recyclable materials"]
+      },
+      {
+        name: "Shaped Containers",
+        description: "Custom-molded and shaped containers for unique product requirements and branding needs.",
+        specifications: [
+          "Shapes: Bottle-shaped, contoured, geometric",
+          "Capacity: 100ml to 20 liters",
+          "Handle options: Integrated or separate",
+          "Closure types: Screw caps, snap lids, pumps",
+          "Lead time: 4-6 weeks for tooling"
+        ],
+        applications: ["Household cleaners", "Industrial chemicals", "Specialty liquids", "Promotional packaging"],
+        certifications: ["Drop test certified", "Leak proof testing", "Custom compliance"]
+      }
+    ],
+    "printed-bags": [
+      {
+        name: "Flexographic Printed Bags",
+        description: "High-quality flexographic printing on LDPE bags with vibrant colors and sharp detail reproduction.",
+        specifications: [
+          "Colors: Up to 8 colors + varnish",
+          "Print area: Full surface coverage available",
+          "Registration: ±0.5mm accuracy",
+          "Finish options: Matte, gloss, soft touch",
+          "Minimum order: 10,000 pieces per design"
+        ],
+        applications: ["Retail packaging", "Promotional bags", "Brand marketing", "Product identification"],
+        certifications: ["Color matching standards", "Food contact inks", "Migration test compliant"]
+      },
+      {
+        name: "Digital Printed Bags",
+        description: "Short-run digital printing for small quantities and variable data printing requirements.",
+        specifications: [
+          "Technology: High-resolution digital printing",
+          "Colors: Full CMYK + spot colors",
+          "Variable data: Barcodes, QR codes, numbering",
+          "Minimum order: 500 pieces",
+          "Turnaround: 5-7 working days"
+        ],
+        applications: ["Limited editions", "Test marketing", "Personalized packaging", "Short campaigns"],
+        certifications: ["UV-resistant inks", "Scratch resistant", "Fade resistant"]
+      },
+      {
+        name: "Laminated Printed Bags",
+        description: "Premium printed bags with protective lamination for enhanced durability and appearance.",
+        specifications: [
+          "Lamination: BOPP, PET, or specialized films",
+          "Thickness: 80-250 microns total",
+          "Print quality: Photo-quality reproduction",
+          "Features: Water resistant, tear resistant",
+          "Shelf life: Enhanced protection up to 2 years"
+        ],
+        applications: ["Premium products", "Export packaging", "Long-term storage", "Harsh environments"],
+        certifications: ["Lamination bond strength", "Print adhesion tested", "Environmental resistance"]
+      },
+      {
+        name: "Metallic Printed Bags",
+        description: "Eye-catching metallic substrate printed bags for premium product presentation.",
+        specifications: [
+          "Substrate: Metallized LDPE films",
+          "Colors: Silver, gold, copper base with overprints",
+          "Print process: Reverse printing for protection",
+          "Barrier properties: Enhanced moisture protection",
+          "Finish: High-gloss metallic appearance"
+        ],
+        applications: ["Luxury packaging", "Gift items", "Premium food products", "Cosmetic packaging"],
+        certifications: ["Food grade metallized films", "Print durability tested", "Barrier performance certified"]
+      }
+    ],
     custom: [
       {
         name: "Printed Bags with Branding",
@@ -279,7 +388,7 @@ const Products = () => {
           </div>
 
           <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
-            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-12">
+            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 mb-12">
               {categories.map((category) => (
                 <TabsTrigger 
                   key={category.id} 
