@@ -93,6 +93,19 @@ const Products = () => {
         ],
         applications: ["Liquid products", "Powder packaging", "Granular materials", "Pet food", "Cosmetics"],
         certifications: ["FDA Food Contact", "BPA Free", "Custom validation available"]
+      },
+      {
+        name: "Self Seal Covers",
+        description: "Convenient self-sealing polythene covers with adhesive strips for quick and secure packaging.",
+        specifications: [
+          "Material: Self-adhesive LDPE",
+          "Sizes: Various standard sizes",
+          "Features: Easy peel, secure seal",
+          "Applications: Document protection",
+          "Minimum order: 1,000 pieces"
+        ],
+        applications: ["Document storage", "Product protection", "Mailing", "Archive storage"],
+        certifications: ["Adhesive strength tested", "Long-term storage suitable", "Non-toxic adhesive"]
       }
     ],
     "printed-bags": [
@@ -115,53 +128,40 @@ const Products = () => {
         name: "Antistatic Polythene Bags",
         description: "Static-dissipative packaging solutions for Pharma products & electronic components ensuring safety & reliability.",
         specifications: [
-          "Printing: Up to 10 colors flexographic",
-          "Finish: Matte, Gloss, Metallic options",
-          "Minimum order: 10,000 pieces",
-          "Lead time: 2-3 weeks",
-          "Features: Custom sizes, colors, designs"
+          "Material: Anti-static LDPE compounds",
+          "Surface resistivity: 10^9 to 10^12 ohms/sq",
+          "Thickness: 50-200 microns",
+          "Features: Static dissipative, transparent",
+          "Testing: ANSI/ESD S20.20 compliant"
         ],
-        applications: ["Promotional packaging", "Retail bags", "Brand marketing", "Product identification"],
-        certifications: ["Color matching standards", "Print quality ISO", "Brand compliance"]
+        applications: ["Electronic components", "Pharmaceutical products", "Static-sensitive items", "Clean room packaging"],
+        certifications: ["ESD Association Standards", "Clean room compatible", "Static dissipative tested"]
       },
       {
         name: "Rolls",
         description: "Continuous polythene film rolls for automated packaging and industrial processes.",
         specifications: [
-          "Layers: 3-7 layer coextrusion",
-          "Barriers: Oxygen, moisture, light",
-          "Thickness: 100-300 microns",
-          "Features: Enhanced protection",
-          "Customization: Per application"
+          "Width: 100mm to 2000mm",
+          "Thickness: 25-300 microns",
+          "Roll diameter: Up to 1500mm",
+          "Core sizes: 25mm, 38mm, 76mm",
+          "Features: High clarity, puncture resistant"
         ],
-        applications: ["Sensitive chemicals", "Pharmaceutical APIs", "Electronic components", "Research materials"],
-        certifications: ["Custom validation", "Performance testing", "Regulatory compliance"]
+        applications: ["Automated packaging", "Industrial wrapping", "Food processing", "Manufacturing lines"],
+        certifications: ["Food grade options", "Industrial strength tested", "Consistent thickness tolerance"]
       },
       {
         name: "VCI Polythene Bags",
         description: "Also called anti-rustic bags. Provides corrosion protection for metal parts during storage & transport",
         specifications: [
-          "Shapes: Gusset, stand-up, formed",
-          "Features: Zippers, valves, spouts", 
-          "Sizes: As per requirement",
-          "Colors: Full color range",
-          "Minimum order: 5,000 pieces"
+          "VCI compounds: Vapor corrosion inhibitors",
+          "Protection period: Up to 2 years",
+          "Thickness: 100-200 microns",
+          "Features: Self-sealing, transparent",
+          "Metals protected: Steel, copper, aluminum"
         ],
-        applications: ["Liquid packaging", "Powder containment", "Bulk materials", "Specialized storage"],
-        certifications: ["Design validation", "Performance testing", "Quality assurance"]
-      },
-      {
-        name: "Self Seal Covers",
-        description: "Convenient self-sealing polythene covers with adhesive strips for quick and secure packaging.",
-        specifications: [
-          "Material: Self-adhesive LDPE",
-          "Sizes: Various standard sizes",
-          "Features: Easy peel, secure seal",
-          "Applications: Document protection",
-          "Minimum order: 1,000 pieces"
-        ],
-        applications: ["Document storage", "Product protection", "Mailing", "Archive storage"],
-        certifications: ["Adhesive strength tested", "Long-term storage suitable", "Non-toxic adhesive"]
+        applications: ["Metal parts storage", "Automotive components", "Industrial equipment", "Export packaging"],
+        certifications: ["NACE standards", "Military specifications", "Corrosion protection tested"]
       }
     ]
   };
