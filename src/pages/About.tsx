@@ -139,8 +139,8 @@ const About = () => {
               <div className="space-y-6 mt-8">
                 <Card className="shadow-card">
                   <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">50K+</div>
-                    <div className="text-muted-foreground">Daily Production</div>
+                    <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+                    <div className="text-muted-foreground">Service Availability</div>
                   </CardContent>
                 </Card>
                 <Card className="shadow-card">
