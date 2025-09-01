@@ -105,7 +105,7 @@ const Products = () => {
         "Thickness: Multiple gauge options as per requirement",
         "Print capability: Any color"
       ],
-      applications: ["Liquid products", "Powder packaging", "Granular materials", "Pet food", "Cosmetics"]
+      applications: ["Pharmaceuticals", "Industrial", "Electronics", "Food & beverages", "Textiles", "Cosmetics", "Agriculture", "Retail", "Others"]
     },
     {
       name: "Self Seal Covers",
