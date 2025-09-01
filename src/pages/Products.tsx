@@ -115,8 +115,7 @@ const Products = () => {
         "Material: Self-adhesive LDPE",
         "Sizes: Fully customized as per client requirements",
         "Features: Easy peel, secure seal",
-        "Applications: Document protection",
-        "Minimum order: 1,000 pieces"
+        "Applications: Product protection"
       ],
       applications: ["Document storage", "Product protection", "Mailing", "Archive storage"]
     }
