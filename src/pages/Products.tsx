@@ -45,7 +45,7 @@ const Products = () => {
         "Surface resistivity: 10^10 to 10^11 ohms/sq",
         "Thickness: Multiple gauge options as per requirement",
         "Features: Static dissipative, transparent",
-        "Testing: ANSI/ESD S20.20 compliant"
+        "Color: White or clear or transparent, Black & custom colors"
       ],
       applications: ["Electronic components", "Pharmaceutical products", "Static-sensitive items", "Clean room packaging"]
     },
