@@ -89,10 +89,9 @@ const Products = () => {
       image: vciPolytheneBags,
       specifications: [
         "VCI compounds: Vapor corrosion inhibitors",
-        "Protection period: Up to 2 years",
+        "Protection period: Up to 1 year",
         "Thickness: Multiple gauge options as per requirement",
         "Color: White or clear, Black & custom colors",
-        "Features: Self-sealing, transparent",
         "Metals protected: Steel, copper, aluminum"
       ],
       applications: ["Metal parts storage", "Automotive components", "Industrial equipment", "Export packaging"]
