@@ -2,68 +2,85 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Target, Eye, Heart, Factory, Users, Award, Briefcase, TrendingUp, CheckCircle } from "lucide-react";
-import heroImage from "@/assets/hero-manufacturing.jpg";
+import {
+  Target,
+  Eye,
+  Heart,
+  Factory,
+  Users,
+  Award,
+  Briefcase,
+  TrendingUp,
+  CheckCircle
+} from "lucide-react";
+import { HeroSection } from "@/components/HeroSection";
+import heroImage from "@/assets/about-hero-fullcover.jpg";
+
 const About = () => {
-  const values = [{
-    icon: <Target className="w-8 h-8 text-primary" />,
-    title: "Excellence",
-    description: "Committed to delivering superior quality products that exceed customer expectations and industry standards."
-  }, {
-    icon: <Heart className="w-8 h-8 text-primary" />,
-    title: "Integrity",
-    description: "Building trust through transparent business practices, ethical conduct, and reliable service delivery."
-  }, {
-    icon: <Users className="w-8 h-8 text-primary" />,
-    title: "Customer Focus",
-    description: "Placing our customers at the heart of everything we do, ensuring their success drives our innovation."
-  }, {
-    icon: <TrendingUp className="w-8 h-8 text-primary" />,
-    title: "Innovation",
-    description: "Continuously evolving our processes and products to meet changing market demands and technological advances."
-  }];
-  const capabilities = ["Advanced LDPE Film Extrusion Technology", "Multi-Layer Co-Extrusion Capabilities", "Automated Bag Making & Converting Lines", "Quality Control Laboratory & Testing", "Custom Color Matching & Formulation", "Flexible Production Scheduling", "Large Scale Manufacturing Capacity", "Specialized Pharmaceutical Grade Production"];
-  const milestones = [{
-    year: "1998",
-    event: "Company founded with a vision to serve pharmaceutical industry"
-  }, {
-    year: "2005",
-    event: "Expanded into industrial packaging solutions"
-  }, {
-    year: "2012",
-    event: "Achieved ISO 9001:2015 certification"
-  }, {
-    year: "2018",
-    event: "Launched advanced co-extrusion technology"
-  }, {
-    year: "2021",
-    event: "Received ZED certification for zero defect manufacturing"
-  }, {
-    year: "2024",
-    event: "Celebrating 25+ years of excellence in LDPE manufacturing"
-  }];
-  return <div className="min-h-screen">
+  const values = [
+    {
+      icon: <Target className="w-8 h-8 text-primary" />,
+      title: "Excellence",
+      description: "Committed to delivering superior quality products that exceed customer expectations and industry standards."
+    },
+    {
+      icon: <Heart className="w-8 h-8 text-primary" />,
+      title: "Integrity",
+      description: "Building trust through transparent business practices, ethical conduct, and reliable service delivery."
+    },
+    {
+      icon: <Users className="w-8 h-8 text-primary" />,
+      title: "Customer Focus",
+      description: "Placing our customers at the heart of everything we do, ensuring their success drives our innovation."
+    },
+    {
+      icon: <TrendingUp className="w-8 h-8 text-primary" />,
+      title: "Innovation",
+      description: "Continuously evolving our processes and products to meet changing market demands and technological advances."
+    }
+  ];
+
+  const capabilities = [
+    "Advanced LDPE Film Extrusion Technology",
+    "Multi-Layer Co-Extrusion Capabilities", 
+    "Automated Bag Making & Converting Lines",
+    "Quality Control Laboratory & Testing",
+    "Custom Color Matching & Formulation",
+    "Flexible Production Scheduling",
+    "Large Scale Manufacturing Capacity",
+    "Specialized Pharmaceutical Grade Production"
+  ];
+
+  const milestones = [
+    { year: "2005", event: "Company founded with a vision to provide reliable, safe, and customized packaging solutions" },
+    { year: "2008", event: "Expanded into industrial packaging solutions" },
+    { year: "2012", event: "Achieved ISO 9001:2015 certification" },
+    { year: "2018", event: "Launched advanced co-extrusion technology" },
+    { year: "2021", event: "Received ZED certification for zero defect manufacturing" },
+    { year: "2024", event: "Celebrating nearly 20 years of excellence in LDPE manufacturing" }
+  ];
+
+  return (
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative hero-gradient text-primary-foreground overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={heroImage} alt="About Srinivasa Polypack" className="w-full h-full object-cover opacity-20" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-          <div className="text-center">
+      <HeroSection 
+        backgroundImage={heroImage}
+        altText="About Srinivasa Polypack"
+      >
+        <div className="text-center">
             <Badge variant="secondary" className="mb-6">
               <Factory className="w-4 h-4 mr-2" />
-              Established 1998
+              Established 2005
             </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              About Srinivasa Polypack
-            </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              25+ years of excellence in manufacturing premium LDPE polythene bags 
-              for pharmaceutical and industrial applications across India and beyond.
-            </p>
-          </div>
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+            About Srinivasa Polypack
+          </h1>
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            20+ years of excellence in manufacturing premium LDPE polythene bags 
+            for pharmaceutical, food and industrial applications across India.
+          </p>
         </div>
-      </section>
+      </HeroSection>
 
       {/* Company Story */}
       <section className="section-padding bg-background">
@@ -75,27 +92,50 @@ const About = () => {
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  Founded in 1998, Srinivasa Polypack began as a small family business with a 
-                  big vision: to become India's most trusted manufacturer of LDPE polythene bags 
-                  for the pharmaceutical and industrial sectors.
+                  Founded in 2005, Srinivasa Polypack, our journey began with a clear vision – to provide reliable, safe, and customized packaging solutions that help businesses protect and deliver their products with confidence.
                 </p>
                 <p>
-                  Over more than two decades, we have grown from a modest operation to a 
-                  state-of-the-art manufacturing facility, serving over 500 clients across 
-                  various industries while maintaining our commitment to quality and innovation.
+                  From humble beginnings with a small setup, we have grown into a trusted manufacturer and supplier of LDPE polythene bags, catering to pharmaceutical, industrial, food and commercial sectors. What sets us apart is our focus on quality, customization, and timely delivery.
                 </p>
                 <p>
-                  Today, we stand as a testament to the power of dedication, combining 
-                  traditional values with modern technology to deliver packaging solutions 
-                  that protect what matters most to our customers.
+                  Over more than two decades, we have grown & invested in modern blown film plants, cutting and sealing machinery, and strict quality control practices to ensure every bag we produce meets the highest standards. Whether it's custom sizes, colors, gauges, or printed branding, we provide packaging tailored to your unique needs.
+                </p>
+                <p>
+                  Today, we take pride in being a dependable packaging partner, combining traditional values & modern technology with a customer-first approach. Our commitment remains the same — to deliver packaging that protects, performs, and adds value to your business.
                 </p>
               </div>
               
-              
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg" className="hero-gradient">
+                  <Link to="/products">
+                    <Briefcase className="w-5 h-5 mr-2" />
+                    Our Products
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline">
+                  <Link to="/contact">
+                    <Users className="w-5 h-5 mr-2" />
+                    Meet Our Team
+                  </Link>
+                </Button>
+              </div>
             </div>
 
             <div className="grid grid-cols-2 gap-6">
-              
+              <div className="space-y-6">
+                <Card className="shadow-card">
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold text-primary mb-2">19+</div>
+                    <div className="text-muted-foreground">Years Experience</div>
+                  </CardContent>
+                </Card>
+                <Card className="shadow-card">
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                    <div className="text-muted-foreground">Happy Clients</div>
+                  </CardContent>
+                </Card>
+              </div>
               <div className="space-y-6 mt-8">
                 <Card className="shadow-card">
                   <CardContent className="p-6 text-center">
@@ -166,7 +206,8 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
+            {values.map((value, index) => (
+              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="mb-4 flex justify-center">{value.icon}</div>
                   <h3 className="text-xl font-semibold mb-3 text-foreground">
@@ -174,7 +215,8 @@ const About = () => {
                   </h3>
                   <p className="text-muted-foreground">{value.description}</p>
                 </CardContent>
-              </Card>)}
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -193,10 +235,12 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {capabilities.map((capability, index) => <div key={index} className="flex items-center space-x-3 p-4 bg-background rounded-lg shadow-card">
+            {capabilities.map((capability, index) => (
+              <div key={index} className="flex items-center space-x-3 p-4 bg-background rounded-lg shadow-card">
                 <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-muted-foreground">{capability}</span>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -214,7 +258,8 @@ const About = () => {
           </div>
 
           <div className="space-y-8">
-            {milestones.map((milestone, index) => <div key={index} className="flex items-center space-x-6 p-6 bg-muted/30 rounded-xl">
+            {milestones.map((milestone, index) => (
+              <div key={index} className="flex items-center space-x-6 p-6 bg-muted/30 rounded-xl">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
                     <span className="text-primary-foreground font-bold">{milestone.year}</span>
@@ -223,7 +268,8 @@ const About = () => {
                 <div>
                   <p className="text-lg text-muted-foreground">{milestone.event}</p>
                 </div>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -255,6 +301,8 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>;
+    </div>
+  );
 };
+
 export default About;
