@@ -12,24 +12,33 @@ import {
 } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
+import polytheneSheets from "@/assets/polythene-sheets.jpg";
+import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
+import ldpePolytheneBagsNew from "@/assets/ldpe-polythene-bags-new.jpg";
+import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
+import printedPolytheneBags from "@/assets/printed-polythene-bags.jpg";
+import vciPolytheneBags from "@/assets/vci-polythene-bags.jpg";
+import customPackagingSolutions from "@/assets/custom-packaging-solutions.jpg";
+import selfSealCoversClear from "@/assets/self-seal-covers-clear.jpg";
 
 const Products = () => {
   const products = [
     {
       name: "LDPE Polythene Bags",
       description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
+      image: polytheneSheets,
       specifications: [
         "Thickness: 25-150 microns",
         "Sizes: 4x6 inches to 18x24 inches",
         "Colors: Clear, Natural",
-        "Features: Freezer safe, microwave safe",
-        "Compliance: FDA 21 CFR 177.1520"
+        "Features: Freezer safe, microwave safe"
       ],
       applications: ["Fresh produce", "Frozen foods", "Bakery items", "Meat packaging"]
     },
     {
       name: "Antistatic Polythene Bags",
       description: "Static-dissipative packaging solutions for Pharma products & electronic components ensuring safety & reliability.",
+      image: antistaticBagsNew,
       specifications: [
         "Material: Anti-static LDPE compounds",
         "Surface resistivity: 10^9 to 10^12 ohms/sq",
@@ -42,6 +51,7 @@ const Products = () => {
     {
       name: "Polythene Sheets",
       description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
+      image: ldpePolytheneBagsNew,
       specifications: [
         "Structure: Multi-layer coextruded",
         "Thickness: 80-200 microns",
@@ -54,6 +64,7 @@ const Products = () => {
     {
       name: "Rolls",
       description: "Continuous polythene film rolls for automated packaging and industrial processes.",
+      image: mediumBlackLdpeRolls,
       specifications: [
         "Width: 100mm to 2000mm",
         "Thickness: 25-300 microns",
@@ -66,6 +77,7 @@ const Products = () => {
     {
       name: "Printed Polythene Bags",
       description: "High-quality printed polythene bags customized in any color with your logo, address, PCB number, and thickness for a professional brand identity",
+      image: printedPolytheneBags,
       specifications: [
         "Colors: Up to 8 colors + varnish",
         "Print area: Full surface coverage available",
@@ -78,6 +90,7 @@ const Products = () => {
     {
       name: "VCI Polythene Bags",
       description: "Also called anti-rustic bags. Provides corrosion protection for metal parts during storage & transport",
+      image: vciPolytheneBags,
       specifications: [
         "VCI compounds: Vapor corrosion inhibitors",
         "Protection period: Up to 2 years",
@@ -90,6 +103,7 @@ const Products = () => {
     {
       name: "Custom Packaging Solutions",
       description: "Custom LDPE packaging solutions tailored to any size, color, and thickness to meet your exact requirements",
+      image: customPackagingSolutions,
       specifications: [
         "Material: Multi-layer LDPE/LLDPE blends",
         "Thickness: 50-300 microns",
@@ -102,6 +116,7 @@ const Products = () => {
     {
       name: "Self Seal Covers",
       description: "Convenient self-sealing polythene covers with adhesive strips for quick and secure packaging.",
+      image: selfSealCoversClear,
       specifications: [
         "Material: Self-adhesive LDPE",
         "Sizes: Various standard sizes",
@@ -173,12 +188,24 @@ const Products = () => {
           <div className="grid gap-8">
             {products.map((product, index) => (
               <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-foreground">{product.name}</CardTitle>
-                  <p className="text-muted-foreground">{product.description}</p>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid lg:grid-cols-2 gap-8">
+                <div className="grid lg:grid-cols-3 gap-6">
+                  {/* Product Image */}
+                  <div className="aspect-video lg:aspect-square overflow-hidden rounded-lg">
+                    <img 
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  
+                  {/* Product Content */}
+                  <div className="lg:col-span-2">
+                    <CardHeader>
+                      <CardTitle className="text-2xl text-foreground">{product.name}</CardTitle>
+                      <p className="text-muted-foreground">{product.description}</p>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="grid lg:grid-cols-2 gap-8">
                     {/* Specifications */}
                     <div>
                       <h4 className="font-semibold text-foreground mb-3">Specifications</h4>
@@ -203,17 +230,19 @@ const Products = () => {
                         ))}
                       </div>
                     </div>
-                  </div>
+                      </div>
 
-                  <div className="mt-6 pt-6 border-t border-border">
-                    <Button asChild className="hero-gradient">
-                      <Link to="/contact">
-                        <Phone className="w-4 h-4 mr-2" />
-                        Request Quote for {product.name}
-                      </Link>
-                    </Button>
+                      <div className="mt-6 pt-6 border-t border-border">
+                        <Button asChild className="hero-gradient">
+                          <Link to="/contact">
+                            <Phone className="w-4 h-4 mr-2" />
+                            Request Quote for {product.name}
+                          </Link>
+                        </Button>
+                      </div>
+                    </CardContent>
                   </div>
-                </CardContent>
+                </div>
               </Card>
             ))}
           </div>
