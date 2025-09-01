@@ -2,71 +2,50 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import {
-  Target,
-  Eye,
-  Heart,
-  Factory,
-  Users,
-  Award,
-  Briefcase,
-  TrendingUp,
-  CheckCircle
-} from "lucide-react";
+import { Target, Eye, Heart, Factory, Users, Award, Briefcase, TrendingUp, CheckCircle } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import heroImage from "@/assets/about-hero-fullcover.jpg";
-
 const About = () => {
-  const values = [
-    {
-      icon: <Target className="w-8 h-8 text-primary" />,
-      title: "Excellence",
-      description: "Committed to delivering superior quality products that exceed customer expectations and industry standards."
-    },
-    {
-      icon: <Heart className="w-8 h-8 text-primary" />,
-      title: "Integrity",
-      description: "Building trust through transparent business practices, ethical conduct, and reliable service delivery."
-    },
-    {
-      icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Customer Focus",
-      description: "Placing our customers at the heart of everything we do, ensuring their success drives our innovation."
-    },
-    {
-      icon: <TrendingUp className="w-8 h-8 text-primary" />,
-      title: "Innovation",
-      description: "Continuously evolving our processes and products to meet changing market demands and technological advances."
-    }
-  ];
-
-  const capabilities = [
-    "Advanced LDPE Film Extrusion Technology",
-    "Multi-Layer Co-Extrusion Capabilities", 
-    "Automated Bag Making & Converting Lines",
-    "Quality Control Laboratory & Testing",
-    "Custom Color Matching & Formulation",
-    "Flexible Production Scheduling",
-    "Large Scale Manufacturing Capacity",
-    "Specialized Pharmaceutical Grade Production"
-  ];
-
-  const milestones = [
-    { year: "2005", event: "Company founded with a vision to provide reliable, safe, and customized packaging solutions" },
-    { year: "2008", event: "Expanded into industrial packaging solutions" },
-    { year: "2012", event: "Achieved ISO 9001:2015 certification" },
-    { year: "2018", event: "Launched advanced co-extrusion technology" },
-    { year: "2021", event: "Received ZED certification for zero defect manufacturing" },
-    { year: "2024", event: "Celebrating nearly 20 years of excellence in LDPE manufacturing" }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const values = [{
+    icon: <Target className="w-8 h-8 text-primary" />,
+    title: "Excellence",
+    description: "Committed to delivering superior quality products that exceed customer expectations and industry standards."
+  }, {
+    icon: <Heart className="w-8 h-8 text-primary" />,
+    title: "Integrity",
+    description: "Building trust through transparent business practices, ethical conduct, and reliable service delivery."
+  }, {
+    icon: <Users className="w-8 h-8 text-primary" />,
+    title: "Customer Focus",
+    description: "Placing our customers at the heart of everything we do, ensuring their success drives our innovation."
+  }, {
+    icon: <TrendingUp className="w-8 h-8 text-primary" />,
+    title: "Innovation",
+    description: "Continuously evolving our processes and products to meet changing market demands and technological advances."
+  }];
+  const capabilities = ["Advanced LDPE Film Extrusion Technology", "Multi-Layer Co-Extrusion Capabilities", "Automated Bag Making & Converting Lines", "Quality Control Laboratory & Testing", "Custom Color Matching & Formulation", "Flexible Production Scheduling", "Large Scale Manufacturing Capacity", "Specialized Pharmaceutical Grade Production"];
+  const milestones = [{
+    year: "2005",
+    event: "Company founded with a vision to provide reliable, safe, and customized packaging solutions"
+  }, {
+    year: "2008",
+    event: "Expanded into industrial packaging solutions"
+  }, {
+    year: "2012",
+    event: "Achieved ISO 9001:2015 certification"
+  }, {
+    year: "2018",
+    event: "Launched advanced co-extrusion technology"
+  }, {
+    year: "2021",
+    event: "Received ZED certification for zero defect manufacturing"
+  }, {
+    year: "2024",
+    event: "Celebrating nearly 20 years of excellence in LDPE manufacturing"
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
-      <HeroSection 
-        backgroundImage={heroImage}
-        altText="About Srinivasa Polypack"
-      >
+      <HeroSection backgroundImage={heroImage} altText="About Srinivasa Polypack">
         <div className="text-center">
             <Badge variant="secondary" className="mb-6">
               <Factory className="w-4 h-4 mr-2" />
@@ -140,7 +119,7 @@ const About = () => {
                 <Card className="shadow-card">
                   <CardContent className="p-6 text-center">
                     <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                    <div className="text-muted-foreground">Service Availability</div>
+                    <div className="text-muted-foreground">Round-the-Clock Production</div>
                   </CardContent>
                 </Card>
                 <Card className="shadow-card">
@@ -206,8 +185,7 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
+            {values.map((value, index) => <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="mb-4 flex justify-center">{value.icon}</div>
                   <h3 className="text-xl font-semibold mb-3 text-foreground">
@@ -215,8 +193,7 @@ const About = () => {
                   </h3>
                   <p className="text-muted-foreground">{value.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -235,12 +212,10 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {capabilities.map((capability, index) => (
-              <div key={index} className="flex items-center space-x-3 p-4 bg-background rounded-lg shadow-card">
+            {capabilities.map((capability, index) => <div key={index} className="flex items-center space-x-3 p-4 bg-background rounded-lg shadow-card">
                 <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-muted-foreground">{capability}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -258,8 +233,7 @@ const About = () => {
           </div>
 
           <div className="space-y-8">
-            {milestones.map((milestone, index) => (
-              <div key={index} className="flex items-center space-x-6 p-6 bg-muted/30 rounded-xl">
+            {milestones.map((milestone, index) => <div key={index} className="flex items-center space-x-6 p-6 bg-muted/30 rounded-xl">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
                     <span className="text-primary-foreground font-bold">{milestone.year}</span>
@@ -268,8 +242,7 @@ const About = () => {
                 <div>
                   <p className="text-lg text-muted-foreground">{milestone.event}</p>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -301,8 +274,6 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
