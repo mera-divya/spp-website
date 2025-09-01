@@ -87,7 +87,7 @@ const Home = () => {
     },
     {
       title: "Printed Polythene Bags",
-      description: "High-quality printed bags with vibrant colors, custom designs, and branding for marketing and retail applications.",
+      description: "High-quality printed polythene bags customized in any color with your logo, address, PCB number, and thickness for a professional brand identity",
       image: printedPolytheneBags
     }
   ];
