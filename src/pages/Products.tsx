@@ -190,11 +190,11 @@ const Products = () => {
               <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
                 <div className="grid lg:grid-cols-3 gap-6">
                   {/* Product Image */}
-                  <div className="aspect-video lg:aspect-square overflow-hidden rounded-lg">
+                  <div className="aspect-video overflow-hidden rounded-lg bg-muted">
                     <img 
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   
