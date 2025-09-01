@@ -22,6 +22,7 @@ import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
 import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
 import polytheneSheets from "@/assets/polythene-sheets.jpg";
 import selfSealCoversClear from "@/assets/self-seal-covers-clear.jpg";
+import customPackagingSolutions from "@/assets/custom-packaging-solutions.jpg";
 import authenticCertifications from "@/assets/authentic-certifications.jpg";
 
 const Home = () => {
@@ -82,7 +83,7 @@ const Home = () => {
     {
       title: "Custom Packaging Solutions",
       description: "Bespoke packaging designs including flexible pouches, stand-up pouches, and shaped containers for unique requirements.",
-      image: ldpePolytheneBagsNew
+      image: customPackagingSolutions
     },
     {
       title: "Printed Polythene Bags",
