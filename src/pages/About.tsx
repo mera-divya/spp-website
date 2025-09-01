@@ -169,7 +169,7 @@ const About = () => {
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               The principles that guide our decisions and define our culture, 
-              ensuring we deliver value to customers, employees, and stakeholders.
+              ensuring we deliver value to customers and employees.
             </p>
           </div>
 
