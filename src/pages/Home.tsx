@@ -83,6 +83,16 @@ const Home = () => {
       title: "Self Seal Covers",
       description: "Convenient self-sealing polythene covers with adhesive strips for quick and secure packaging.",
       image: selfSealCoversClear
+    },
+    {
+      title: "Custom Packaging Solutions",
+      description: "Bespoke packaging designs including flexible pouches, stand-up pouches, and shaped containers for unique requirements.",
+      image: ldpePolytheneBagsNew
+    },
+    {
+      title: "Printed Polythene Bags",
+      description: "High-quality printed bags with vibrant colors, custom designs, and branding for marketing and retail applications.",
+      image: ldpeBagsUser
     }
   ];
 
@@ -195,7 +205,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product, index) => (
               <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow overflow-hidden">
                 <div className="aspect-video overflow-hidden">
