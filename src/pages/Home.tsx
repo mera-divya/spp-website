@@ -23,7 +23,7 @@ import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
 import polytheneSheets from "@/assets/polythene-sheets.jpg";
 import selfSealCoversClear from "@/assets/self-seal-covers-clear.jpg";
 import customPackagingSolutions from "@/assets/custom-packaging-solutions.jpg";
-import authenticCertifications from "@/assets/authentic-certifications.jpg";
+import isoLogoNew from "@/assets/iso-logo-new.jpg";
 
 const Home = () => {
   const features = [
@@ -256,9 +256,9 @@ const Home = () => {
 
             <div>
               <img 
-                src={authenticCertifications}
-                alt="Official ISO 9001:2015, ZED, and MSME Government of India Certification Logos"
-                className="rounded-2xl shadow-elevated"
+                src={isoLogoNew}
+                alt="ISO 9001:2015 Quality Management System Certification Logo"
+                className="rounded-2xl shadow-elevated w-96 h-96 object-contain"
               />
             </div>
           </div>
