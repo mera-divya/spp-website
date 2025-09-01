@@ -23,7 +23,7 @@ const About = () => {
     title: "Innovation",
     description: "Continuously evolving our processes and products to meet changing market demands and technological advances."
   }];
-  const capabilities = ["Advanced LDPE Film Extrusion Technology", "custom color & flexible sizing", "Automated Bag Making & Converting Lines", "Quality Control Laboratory & Testing", "Multiple thickness options", "Batch coding & labeling", "Precise cutting & sealing for durability", "Food grade & Pharma grade materials"];
+  const capabilities = ["Advanced LDPE Film Extrusion Technology", "custom color & flexible sizing", "Automated Bag Making & Converting Lines", "Quality Control & Testing", "Multiple thickness options", "Batch coding & labeling", "Precise cutting & sealing for durability", "Food grade & Pharma grade materials"];
   const milestones = [{
     year: "2005",
     event: "Company founded with a vision to provide reliable, safe, and customized packaging solutions"
