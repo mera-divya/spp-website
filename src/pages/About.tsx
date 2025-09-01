@@ -52,12 +52,12 @@ const About = () => {
   ];
 
   const milestones = [
-    { year: "1998", event: "Company founded with a vision to serve pharmaceutical industry" },
-    { year: "2005", event: "Expanded into industrial packaging solutions" },
+    { year: "2005", event: "Company founded with a vision to provide reliable, safe, and customized packaging solutions" },
+    { year: "2008", event: "Expanded into industrial packaging solutions" },
     { year: "2012", event: "Achieved ISO 9001:2015 certification" },
     { year: "2018", event: "Launched advanced co-extrusion technology" },
     { year: "2021", event: "Received ZED certification for zero defect manufacturing" },
-    { year: "2024", event: "Celebrating 25+ years of excellence in LDPE manufacturing" }
+    { year: "2024", event: "Celebrating nearly 20 years of excellence in LDPE manufacturing" }
   ];
 
   return (
@@ -92,19 +92,16 @@ const About = () => {
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  Founded in 1998, Srinivasa Polypack began as a small family business with a 
-                  big vision: to become India's most trusted manufacturer of LDPE polythene bags 
-                  for the pharmaceutical and industrial sectors.
+                  Founded in 2005, Srinivasa Polypack, our journey began with a clear vision – to provide reliable, safe, and customized packaging solutions that help businesses protect and deliver their products with confidence.
                 </p>
                 <p>
-                  Over more than two decades, we have grown from a modest operation to a 
-                  state-of-the-art manufacturing facility, serving over 500 clients across 
-                  various industries while maintaining our commitment to quality and innovation.
+                  From humble beginnings with a small setup, we have grown into a trusted manufacturer and supplier of LDPE polythene bags, catering to pharmaceutical, industrial, food and commercial sectors. What sets us apart is our focus on quality, customization, and timely delivery.
                 </p>
                 <p>
-                  Today, we stand as a testament to the power of dedication, combining 
-                  traditional values with modern technology to deliver packaging solutions 
-                  that protect what matters most to our customers.
+                  Over more than two decades, we have grown & invested in modern blown film plants, cutting and sealing machinery, and strict quality control practices to ensure every bag we produce meets the highest standards. Whether it's custom sizes, colors, gauges, or printed branding, we provide packaging tailored to your unique needs.
+                </p>
+                <p>
+                  Today, we take pride in being a dependable packaging partner, combining traditional values & modern technology with a customer-first approach. Our commitment remains the same — to deliver packaging that protects, performs, and adds value to your business.
                 </p>
               </div>
               
@@ -128,7 +125,7 @@ const About = () => {
               <div className="space-y-6">
                 <Card className="shadow-card">
                   <CardContent className="p-6 text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">25+</div>
+                    <div className="text-3xl font-bold text-primary mb-2">19+</div>
                     <div className="text-muted-foreground">Years Experience</div>
                   </CardContent>
                 </Card>
