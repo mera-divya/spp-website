@@ -54,8 +54,8 @@ const Products = () => {
   const products = {
     "food-grade": [
       {
-        name: "Polythene Sheets",
-        description: "Food-safe LDPE bags meeting FDA regulations for direct food contact applications.",
+        name: "LDPE Polythene Bags",
+        description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
         specifications: [
           "Thickness: 25-150 microns",
           "Sizes: 4x6 inches to 18x24 inches",
@@ -67,8 +67,8 @@ const Products = () => {
         certifications: ["FDA Approved", "EU 10/2011", "BfR Recommendations"]
       },
       {
-        name: "Vacuum Packaging Bags",
-        description: "Multi-layer LDPE bags designed for vacuum packaging to extend food shelf life.",
+        name: "Polythene Sheets",
+        description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
         specifications: [
           "Structure: Multi-layer coextruded",
           "Thickness: 80-200 microns",
@@ -78,25 +78,12 @@ const Products = () => {
         ],
         applications: ["Meat products", "Seafood", "Cheese", "Ready meals"],
         certifications: ["FDA Food Contact", "HACCP Compliant", "Kosher Certified"]
-      },
-      {
-        name: "Produce Bags",
-        description: "Breathable LDPE bags designed for fresh fruits and vegetables with optimal gas exchange.",
-        specifications: [
-          "Thickness: 15-50 microns",
-          "Perforations: Micro or macro as required",
-          "Sizes: 8x12 inches to 16x24 inches",
-          "Colors: Clear, Green tinted",
-          "Features: Anti-fog, breathable"
-        ],
-        applications: ["Fresh fruits", "Vegetables", "Herbs", "Salad greens"],
-        certifications: ["FDA Food Grade", "Organic Compliant", "USDA Approved"]
       }
     ],
     "custom-packaging": [
       {
         name: "Custom Packaging Solutions",
-        description: "Custom-designed flexible pouches with advanced barrier properties for various product categories.",
+        description: "Custom LDPE packaging solutions tailored to any size, color, and thickness to meet your exact requirements",
         specifications: [
           "Material: Multi-layer LDPE/LLDPE blends",
           "Thickness: 50-300 microns",
@@ -106,38 +93,12 @@ const Products = () => {
         ],
         applications: ["Liquid products", "Powder packaging", "Granular materials", "Pet food", "Cosmetics"],
         certifications: ["FDA Food Contact", "BPA Free", "Custom validation available"]
-      },
-      {
-        name: "Stand-Up Pouches",
-        description: "Eye-catching stand-up pouches that provide excellent shelf presence and convenience.",
-        specifications: [
-          "Bottom gusset: 15-80mm",
-          "Sizes: 50ml to 5 liters capacity",
-          "Features: Resealable zippers, tear notches",
-          "Materials: LDPE, Metallized LDPE, Clear",
-          "Minimum order: 5,000 pieces"
-        ],
-        applications: ["Snack foods", "Beverages", "Sauces", "Detergents", "Health supplements"],
-        certifications: ["Food grade certified", "Child resistant options", "Recyclable materials"]
-      },
-      {
-        name: "Shaped Containers",
-        description: "Custom-molded and shaped containers for unique product requirements and branding needs.",
-        specifications: [
-          "Shapes: Bottle-shaped, contoured, geometric",
-          "Capacity: 100ml to 20 liters",
-          "Handle options: Integrated or separate",
-          "Closure types: Screw caps, snap lids, pumps",
-          "Lead time: 4-6 weeks for tooling"
-        ],
-        applications: ["Household cleaners", "Industrial chemicals", "Specialty liquids", "Promotional packaging"],
-        certifications: ["Drop test certified", "Leak proof testing", "Custom compliance"]
       }
     ],
     "printed-bags": [
       {
         name: "Printed Polythene Bags",
-        description: "High-quality flexographic printing on LDPE bags with vibrant colors and sharp detail reproduction.",
+        description: "High-quality printed polythene bags customized in any color with your logo, address, PCB number, and thickness for a professional brand identity",
         specifications: [
           "Colors: Up to 8 colors + varnish",
           "Print area: Full surface coverage available",
@@ -147,51 +108,12 @@ const Products = () => {
         ],
         applications: ["Retail packaging", "Promotional bags", "Brand marketing", "Product identification"],
         certifications: ["Color matching standards", "Food contact inks", "Migration test compliant"]
-      },
-      {
-        name: "Digital Printed Bags",
-        description: "Short-run digital printing for small quantities and variable data printing requirements.",
-        specifications: [
-          "Technology: High-resolution digital printing",
-          "Colors: Full CMYK + spot colors",
-          "Variable data: Barcodes, QR codes, numbering",
-          "Minimum order: 500 pieces",
-          "Turnaround: 5-7 working days"
-        ],
-        applications: ["Limited editions", "Test marketing", "Personalized packaging", "Short campaigns"],
-        certifications: ["UV-resistant inks", "Scratch resistant", "Fade resistant"]
-      },
-      {
-        name: "Laminated Printed Bags",
-        description: "Premium printed bags with protective lamination for enhanced durability and appearance.",
-        specifications: [
-          "Lamination: BOPP, PET, or specialized films",
-          "Thickness: 80-250 microns total",
-          "Print quality: Photo-quality reproduction",
-          "Features: Water resistant, tear resistant",
-          "Shelf life: Enhanced protection up to 2 years"
-        ],
-        applications: ["Premium products", "Export packaging", "Long-term storage", "Harsh environments"],
-        certifications: ["Lamination bond strength", "Print adhesion tested", "Environmental resistance"]
-      },
-      {
-        name: "Metallic Printed Bags",
-        description: "Eye-catching metallic substrate printed bags for premium product presentation.",
-        specifications: [
-          "Substrate: Metallized LDPE films",
-          "Colors: Silver, gold, copper base with overprints",
-          "Print process: Reverse printing for protection",
-          "Barrier properties: Enhanced moisture protection",
-          "Finish: High-gloss metallic appearance"
-        ],
-        applications: ["Luxury packaging", "Gift items", "Premium food products", "Cosmetic packaging"],
-        certifications: ["Food grade metallized films", "Print durability tested", "Barrier performance certified"]
       }
     ],
     custom: [
       {
-        name: "Printed Polythene Bags",
-        description: "Custom printed LDPE bags with your company branding and specifications.",
+        name: "Antistatic Polythene Bags",
+        description: "Static-dissipative packaging solutions for Pharma products & electronic components ensuring safety & reliability.",
         specifications: [
           "Printing: Up to 10 colors flexographic",
           "Finish: Matte, Gloss, Metallic options",
@@ -203,8 +125,8 @@ const Products = () => {
         certifications: ["Color matching standards", "Print quality ISO", "Brand compliance"]
       },
       {
-        name: "Specialty Barrier Bags",
-        description: "Advanced multi-layer bags with specific barrier properties for unique applications.",
+        name: "Rolls",
+        description: "Continuous polythene film rolls for automated packaging and industrial processes.",
         specifications: [
           "Layers: 3-7 layer coextrusion",
           "Barriers: Oxygen, moisture, light",
@@ -216,8 +138,8 @@ const Products = () => {
         certifications: ["Custom validation", "Performance testing", "Regulatory compliance"]
       },
       {
-        name: "Shaped & Formed Bags",
-        description: "Custom shaped and formed LDPE bags for unique packaging requirements.",
+        name: "VCI Polythene Bags",
+        description: "Also called anti-rustic bags. Provides corrosion protection for metal parts during storage & transport",
         specifications: [
           "Shapes: Gusset, stand-up, formed",
           "Features: Zippers, valves, spouts", 
@@ -227,6 +149,19 @@ const Products = () => {
         ],
         applications: ["Liquid packaging", "Powder containment", "Bulk materials", "Specialized storage"],
         certifications: ["Design validation", "Performance testing", "Quality assurance"]
+      },
+      {
+        name: "Self Seal Covers",
+        description: "Convenient self-sealing polythene covers with adhesive strips for quick and secure packaging.",
+        specifications: [
+          "Material: Self-adhesive LDPE",
+          "Sizes: Various standard sizes",
+          "Features: Easy peel, secure seal",
+          "Applications: Document protection",
+          "Minimum order: 1,000 pieces"
+        ],
+        applications: ["Document storage", "Product protection", "Mailing", "Archive storage"],
+        certifications: ["Adhesive strength tested", "Long-term storage suitable", "Non-toxic adhesive"]
       }
     ]
   };
