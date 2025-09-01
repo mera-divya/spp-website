@@ -25,8 +25,7 @@ const Products = () => {
         "Features: Freezer safe, microwave safe",
         "Compliance: FDA 21 CFR 177.1520"
       ],
-      applications: ["Fresh produce", "Frozen foods", "Bakery items", "Meat packaging"],
-      certifications: ["FDA Approved", "EU 10/2011", "BfR Recommendations"]
+      applications: ["Fresh produce", "Frozen foods", "Bakery items", "Meat packaging"]
     },
     {
       name: "Antistatic Polythene Bags",
@@ -38,8 +37,7 @@ const Products = () => {
         "Features: Static dissipative, transparent",
         "Testing: ANSI/ESD S20.20 compliant"
       ],
-      applications: ["Electronic components", "Pharmaceutical products", "Static-sensitive items", "Clean room packaging"],
-      certifications: ["ESD Association Standards", "Clean room compatible", "Static dissipative tested"]
+      applications: ["Electronic components", "Pharmaceutical products", "Static-sensitive items", "Clean room packaging"]
     },
     {
       name: "Polythene Sheets",
@@ -51,8 +49,7 @@ const Products = () => {
         "Colors: Clear, Silver metallized",
         "Features: Puncture resistant, heat sealable"
       ],
-      applications: ["Meat products", "Seafood", "Cheese", "Ready meals"],
-      certifications: ["FDA Food Contact", "HACCP Compliant", "Kosher Certified"]
+      applications: ["Meat products", "Seafood", "Cheese", "Ready meals"]
     },
     {
       name: "Rolls",
@@ -64,8 +61,7 @@ const Products = () => {
         "Core sizes: 25mm, 38mm, 76mm",
         "Features: High clarity, puncture resistant"
       ],
-      applications: ["Automated packaging", "Industrial wrapping", "Food processing", "Manufacturing lines"],
-      certifications: ["Food grade options", "Industrial strength tested", "Consistent thickness tolerance"]
+      applications: ["Automated packaging", "Industrial wrapping", "Food processing", "Manufacturing lines"]
     },
     {
       name: "Printed Polythene Bags",
@@ -77,8 +73,7 @@ const Products = () => {
         "Finish options: Matte, gloss, soft touch",
         "Minimum order: 10,000 pieces per design"
       ],
-      applications: ["Retail packaging", "Promotional bags", "Brand marketing", "Product identification"],
-      certifications: ["Color matching standards", "Food contact inks", "Migration test compliant"]
+      applications: ["Retail packaging", "Promotional bags", "Brand marketing", "Product identification"]
     },
     {
       name: "VCI Polythene Bags",
@@ -90,8 +85,7 @@ const Products = () => {
         "Features: Self-sealing, transparent",
         "Metals protected: Steel, copper, aluminum"
       ],
-      applications: ["Metal parts storage", "Automotive components", "Industrial equipment", "Export packaging"],
-      certifications: ["NACE standards", "Military specifications", "Corrosion protection tested"]
+      applications: ["Metal parts storage", "Automotive components", "Industrial equipment", "Export packaging"]
     },
     {
       name: "Custom Packaging Solutions",
@@ -103,8 +97,7 @@ const Products = () => {
         "Closure types: Heat seal, zipper, spout, valve",
         "Print capability: Up to 10 colors"
       ],
-      applications: ["Liquid products", "Powder packaging", "Granular materials", "Pet food", "Cosmetics"],
-      certifications: ["FDA Food Contact", "BPA Free", "Custom validation available"]
+      applications: ["Liquid products", "Powder packaging", "Granular materials", "Pet food", "Cosmetics"]
     },
     {
       name: "Self Seal Covers",
@@ -116,8 +109,7 @@ const Products = () => {
         "Applications: Document protection",
         "Minimum order: 1,000 pieces"
       ],
-      applications: ["Document storage", "Product protection", "Mailing", "Archive storage"],
-      certifications: ["Adhesive strength tested", "Long-term storage suitable", "Non-toxic adhesive"]
+      applications: ["Document storage", "Product protection", "Mailing", "Archive storage"]
     }
   ];
 
@@ -186,7 +178,7 @@ const Products = () => {
                   <p className="text-muted-foreground">{product.description}</p>
                 </CardHeader>
                 <CardContent>
-                  <div className="grid lg:grid-cols-3 gap-8">
+                  <div className="grid lg:grid-cols-2 gap-8">
                     {/* Specifications */}
                     <div>
                       <h4 className="font-semibold text-foreground mb-3">Specifications</h4>
@@ -207,19 +199,6 @@ const Products = () => {
                         {product.applications.map((app, appIndex) => (
                           <Badge key={appIndex} variant="secondary" className="text-xs">
                             {app}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Certifications */}
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-3">Certifications</h4>
-                      <div className="space-y-2">
-                        {product.certifications.map((cert, certIndex) => (
-                          <Badge key={certIndex} variant="outline" className="text-xs mr-2 mb-2">
-                            <CheckCircle className="w-3 h-3 mr-1" />
-                            {cert}
                           </Badge>
                         ))}
                       </div>
