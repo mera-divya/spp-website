@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Users, Building2, Star, Quote, Award, TrendingUp, Globe, Phone, Heart, CheckCircle } from "lucide-react";
 import skplLogo from "@/assets/client-logos/skpl-logo.jpg";
 import sanzymelogo from "@/assets/client-logos/sanzyme-biologics-logo.jpg";
+import leePharmaLogo from "@/assets/client-logos/lee-pharma-logo.jpg";
 const Clients = () => {
   const clients = [{
     name: "Sri Krishna Pharmaceuticals Ltd",
@@ -13,6 +14,10 @@ const Clients = () => {
   }, {
     name: "Sanzyme Biologics Pvt Ltd",
     logo: sanzymelogo,
+    location: "India"
+  }, {
+    name: "Lee Pharma Ltd",
+    logo: leePharmaLogo,
     location: "India"
   }, {
     name: "PharmaCorp Industries",
