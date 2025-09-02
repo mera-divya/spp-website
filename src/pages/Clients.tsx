@@ -165,7 +165,7 @@ const Clients = () => {
                 <Card key={index} className="shadow-card hover:shadow-elevated transition-all duration-300 group">
                   <CardContent className="p-6 text-center">
                     {/* Logo or initials */}
-                    <div className="w-20 h-16 mx-auto mb-4 flex items-center justify-center">
+                    <div className="w-32 h-16 mx-auto mb-4 flex items-center justify-center">
                       {client.logo ? (
                         <img 
                           src={client.logo} 
