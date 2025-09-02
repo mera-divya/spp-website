@@ -159,7 +159,15 @@ const Clients = () => {
                   <CardContent className="p-6 text-center">
                     {/* Logo or initials */}
                     <div className="w-32 h-16 mx-auto mb-4 flex items-center justify-center">
-                      {client.logo ? <img src={client.logo} alt={`${client.name} logo`} className="max-w-full max-h-full object-contain" /> : <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20">
+                      {client.logo ? <img 
+                        src={client.logo} 
+                        alt={`${client.name} logo`} 
+                        className={`max-w-full max-h-full ${
+                          client.name.includes('Sri Krishna') || client.name.includes('Biological E') 
+                            ? 'object-cover scale-125' 
+                            : 'object-contain'
+                        }`} 
+                      /> : <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20">
                           <span className="text-lg font-bold text-primary">{initials}</span>
                         </div>}
                     </div>
