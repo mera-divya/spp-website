@@ -4,11 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Users, Building2, Star, Quote, Award, TrendingUp, Globe, Phone, Heart, CheckCircle } from "lucide-react";
 import skplLogo from "@/assets/client-logos/skpl-logo.jpg";
+import sanzymelogo from "@/assets/client-logos/sanzyme-biologics-logo.jpg";
 const Clients = () => {
   const clients = [
     {
       name: "Sri Krishna Pharmaceuticals Ltd",
       logo: skplLogo,
+      location: "India"
+    },
+    {
+      name: "Sanzyme Biologics Pvt Ltd",
+      logo: sanzymelogo,
       location: "India"
     },
     {
@@ -159,15 +165,17 @@ const Clients = () => {
                 <Card key={index} className="shadow-card hover:shadow-elevated transition-all duration-300 group">
                   <CardContent className="p-6 text-center">
                     {/* Logo or initials */}
-                    <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20 group-hover:border-primary/40 transition-colors overflow-hidden">
+                    <div className="w-20 h-16 mx-auto mb-4 flex items-center justify-center">
                       {client.logo ? (
                         <img 
                           src={client.logo} 
                           alt={`${client.name} logo`}
-                          className="w-full h-full object-contain"
+                          className="max-w-full max-h-full object-contain"
                         />
                       ) : (
-                        <span className="text-lg font-bold text-primary">{initials}</span>
+                        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20">
+                          <span className="text-lg font-bold text-primary">{initials}</span>
+                        </div>
                       )}
                     </div>
                     {/* Company name */}
