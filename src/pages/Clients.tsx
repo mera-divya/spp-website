@@ -44,27 +44,6 @@ const Clients = () => {
     name: "Clariant India Pvt Ltd",
     logo: clariantIndiaLogo,
     location: "India"
-  }, {
-    name: "PharmaCorp Industries",
-    location: "Mumbai"
-  }, {
-    name: "MediLife Industries",
-    location: "Delhi"
-  }, {
-    name: "Industrial Solutions Ltd",
-    location: "Gujarat"
-  }, {
-    name: "Auto Components Ltd",
-    location: "Tamil Nadu"
-  }, {
-    name: "Food Processing Corp",
-    location: "Punjab"
-  }, {
-    name: "Global Export House",
-    location: "Middle East"
-  }, {
-    name: "Engineering Solutions",
-    location: "Karnataka"
   }];
   const testimonials = [{
     name: "Dr. Rajesh Kumar",
