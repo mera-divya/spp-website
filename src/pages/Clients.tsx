@@ -77,7 +77,7 @@ const Clients = () => {
   const partnershipBenefits = [{
     icon: <CheckCircle className="w-6 h-6 text-primary" />,
     title: "Dedicated Support",
-    description: "Assigned account managers for personalized service and quick resolution of queries."
+    description: "Personalized service and quick resolution of queries."
   }, {
     icon: <TrendingUp className="w-6 h-6 text-primary" />,
     title: "Scalable Solutions",
