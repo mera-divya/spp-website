@@ -166,49 +166,7 @@ const Clients = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="section-padding bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
-              Client Testimonials
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Hear what our clients say about their experience working with 
-              Srinivasa Polypack and our commitment to excellence.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex items-start mb-4">
-                    <Quote className="w-8 h-8 text-primary flex-shrink-0 mr-3" />
-                    <div className="flex-1">
-                      <div className="flex items-center mb-2">
-                        {[...Array(testimonial.rating)].map((_, starIndex) => <Star key={starIndex} className="w-4 h-4 text-yellow-400 fill-current" />)}
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    "{testimonial.testimonial}"
-                  </p>
-                  
-                  <div className="border-t border-border pt-4">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <div className="font-semibold text-foreground">{testimonial.name}</div>
-                        <div className="text-sm text-muted-foreground">{testimonial.position}</div>
-                        <div className="text-sm text-muted-foreground">{testimonial.company}</div>
-                      </div>
-                      <Badge variant="secondary">{testimonial.industry}</Badge>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Partnership Benefits */}
       <section className="section-padding section-gradient">
@@ -238,36 +196,7 @@ const Clients = () => {
       </section>
 
       {/* Client Success Story */}
-      <section className="section-padding bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="shadow-elevated">
-            <CardContent className="p-8 lg:p-12">
-              <div className="text-center mb-8">
-                <Heart className="w-16 h-16 text-primary mx-auto mb-4" />
-                <h2 className="text-3xl font-bold text-foreground mb-4">Client Success Story</h2>
-              </div>
-              
-              <div className="space-y-6 text-lg text-muted-foreground">
-                <p>
-                  <strong className="text-foreground">Challenge:</strong> A leading pharmaceutical company 
-                  needed specialized LDPE bags for their new drug packaging line that required specific 
-                  barrier properties and regulatory compliance.
-                </p>
-                <p>
-                  <strong className="text-foreground">Solution:</strong> Our technical team worked closely 
-                  with their R&D department to develop a custom multi-layer LDPE solution that met all 
-                  FDA requirements and enhanced product stability.
-                </p>
-                <p>
-                  <strong className="text-foreground">Result:</strong> The client successfully launched 
-                  their new product line with our packaging, resulting in 40% faster time-to-market and 
-                  improved product shelf life. They have since become one of our largest clients.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+      
 
       {/* CTA Section */}
       <section className="section-padding hero-gradient text-primary-foreground">
