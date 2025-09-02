@@ -135,27 +135,6 @@ const Clients = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {clientCategories.map((category, index) => (
-              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center justify-center mb-4">
-                    {category.icon}
-                  </div>
-                  <CardTitle className="text-center text-lg">{category.category}</CardTitle>
-                  <Badge variant="secondary" className="mx-auto">
-                    {category.count} Clients
-                  </Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground text-center mb-4">
-                    {category.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
           {/* Client Logos Grid */}
           <div className="text-center mb-12">
             <h3 className="text-2xl font-bold text-foreground mb-8">Trusted by Leading Companies</h3>
