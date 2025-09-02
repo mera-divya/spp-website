@@ -251,7 +251,7 @@ const Quality = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 
-                <Button asChild size="lg" variant="outline">
+                <Button asChild size="lg">
                   <Link to="/contact">
                     <Phone className="w-5 h-5 mr-2" />
                     Discuss Quality Requirements
