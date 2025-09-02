@@ -39,7 +39,7 @@ const Quality = () => {
     icon: <FileCheck className="w-8 h-8 text-primary" />,
     title: "Final Product Testing",
     description: "Rigorous testing of finished products to validate compliance with specifications and standards.",
-    steps: ["Dimensional accuracy check", "Strength and elongation testing", "Heat seal strength evaluation", "Barrier property assessment", "Print quality inspection"]
+    steps: ["Visual quality check", "Leak testing", "Print quality check", "Batch code & labeling verification", "Print quality inspection"]
   }, {
     icon: <TrendingUp className="w-8 h-8 text-primary" />,
     title: "Continuous Improvement",
