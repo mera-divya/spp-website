@@ -3,32 +3,43 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Users, Building2, Star, Quote, Award, TrendingUp, Globe, Phone, Heart, CheckCircle } from "lucide-react";
+import skplLogo from "@/assets/client-logos/skpl-logo.jpg";
 const Clients = () => {
-  const clientCategories = [{
-    category: "Pharmaceutical Companies",
-    icon: <Building2 className="w-8 h-8 text-primary" />,
-    description: "Leading pharmaceutical manufacturers who trust our FDA-compliant packaging solutions.",
-    count: "150+",
-    clients: ["Major Pharma Corp (Mumbai)", "MediLife Industries (Delhi)", "HealthCare Solutions (Bangalore)", "PharmaTech Ltd (Pune)", "Generic Medicines Inc (Chennai)"]
-  }, {
-    category: "Industrial Manufacturers",
-    icon: <Building2 className="w-8 h-8 text-primary" />,
-    description: "Industrial clients requiring heavy-duty packaging for various applications.",
-    count: "200+",
-    clients: ["Chemical Industries (Gujarat)", "Auto Components Ltd (Tamil Nadu)", "Engineering Solutions (Karnataka)", "Industrial Parts Co (Maharashtra)", "Manufacturing Hub (Haryana)"]
-  }, {
-    category: "Food Processing Units",
-    icon: <Building2 className="w-8 h-8 text-primary" />,
-    description: "Food industry clients using our food-grade LDPE bags for packaging.",
-    count: "100+",
-    clients: ["Food Processing Corp (Punjab)", "Dairy Products Ltd (Rajasthan)", "Frozen Foods Inc (Uttar Pradesh)", "Snack Manufacturing (West Bengal)", "Organic Foods Co (Kerala)"]
-  }, {
-    category: "Export Partners",
-    icon: <Globe className="w-8 h-8 text-primary" />,
-    description: "International partners who rely on our quality for global markets.",
-    count: "50+",
-    clients: ["Export House (Middle East)", "International Trading (Southeast Asia)", "Global Pharma (Europe)", "Overseas Distributors (Africa)", "Trading Partners (South America)"]
-  }];
+  const clients = [
+    {
+      name: "SKPL",
+      logo: skplLogo,
+      location: "India"
+    },
+    {
+      name: "PharmaCorp Industries",
+      location: "Mumbai"
+    },
+    {
+      name: "MediLife Industries",
+      location: "Delhi"
+    },
+    {
+      name: "Industrial Solutions Ltd",
+      location: "Gujarat"
+    },
+    {
+      name: "Auto Components Ltd",
+      location: "Tamil Nadu"
+    },
+    {
+      name: "Food Processing Corp",
+      location: "Punjab"
+    },
+    {
+      name: "Global Export House",
+      location: "Middle East"
+    },
+    {
+      name: "Engineering Solutions",
+      location: "Karnataka"
+    }
+  ];
   const testimonials = [{
     name: "Dr. Rajesh Kumar",
     position: "Quality Manager",
@@ -141,33 +152,36 @@ const Clients = () => {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-            {clientCategories.flatMap(category => 
-              category.clients.slice(0, 3).map((client, clientIndex) => {
-                // Extract company name and location
-                const [companyName, location] = client.split(' (');
-                const cleanLocation = location?.replace(')', '') || '';
-                const initials = companyName.split(' ').map(word => word[0]).join('').slice(0, 3);
-                
-                return (
-                  <Card key={`${category.category}-${clientIndex}`} className="shadow-card hover:shadow-elevated transition-all duration-300 group">
-                    <CardContent className="p-6 text-center">
-                      {/* Logo placeholder with initials */}
-                      <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20 group-hover:border-primary/40 transition-colors">
+            {clients.map((client, index) => {
+              const initials = client.name.split(' ').map(word => word[0]).join('').slice(0, 3);
+              
+              return (
+                <Card key={index} className="shadow-card hover:shadow-elevated transition-all duration-300 group">
+                  <CardContent className="p-6 text-center">
+                    {/* Logo or initials */}
+                    <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20 group-hover:border-primary/40 transition-colors overflow-hidden">
+                      {client.logo ? (
+                        <img 
+                          src={client.logo} 
+                          alt={`${client.name} logo`}
+                          className="w-full h-full object-contain"
+                        />
+                      ) : (
                         <span className="text-lg font-bold text-primary">{initials}</span>
-                      </div>
-                      {/* Company name */}
-                      <h4 className="font-semibold text-foreground text-sm mb-1">
-                        {companyName}
-                      </h4>
-                      {/* Location */}
-                      <p className="text-xs text-muted-foreground">
-                        {cleanLocation}
-                      </p>
-                    </CardContent>
-                  </Card>
-                );
-              })
-            )}
+                      )}
+                    </div>
+                    {/* Company name */}
+                    <h4 className="font-semibold text-foreground text-sm mb-1">
+                      {client.name}
+                    </h4>
+                    {/* Location */}
+                    <p className="text-xs text-muted-foreground">
+                      {client.location}
+                    </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
