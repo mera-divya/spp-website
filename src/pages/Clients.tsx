@@ -137,31 +137,7 @@ const Clients = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {clientCategories.map((category, index) => <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center space-x-3">
-                      {category.icon}
-                      <CardTitle className="text-xl text-foreground">{category.category}</CardTitle>
-                    </div>
-                    <Badge variant="outline" className="text-primary border-primary">
-                      {category.count}
-                    </Badge>
-                  </div>
-                  <p className="text-muted-foreground">{category.description}</p>
-                </CardHeader>
-                <CardContent>
-                  <h4 className="font-semibold text-foreground mb-3">Representative Clients:</h4>
-                  <ul className="space-y-2">
-                    {category.clients.map((client, clientIndex) => <li key={clientIndex} className="flex items-center space-x-2">
-                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                        <span className="text-muted-foreground text-sm">{client}</span>
-                      </li>)}
-                  </ul>
-                </CardContent>
-              </Card>)}
-          </div>
+          
         </div>
       </section>
 
