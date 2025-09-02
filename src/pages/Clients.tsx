@@ -128,9 +128,7 @@ const Clients = () => {
       <section className="section-padding section-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
-              Client Categories
-            </h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">Our Major Clients</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We serve diverse industries with specialized LDPE packaging solutions 
               tailored to their unique requirements and regulatory standards.
