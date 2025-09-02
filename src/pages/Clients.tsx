@@ -6,46 +6,36 @@ import { Users, Building2, Star, Quote, Award, TrendingUp, Globe, Phone, Heart, 
 import skplLogo from "@/assets/client-logos/skpl-logo.jpg";
 import sanzymelogo from "@/assets/client-logos/sanzyme-biologics-logo.jpg";
 const Clients = () => {
-  const clients = [
-    {
-      name: "Sri Krishna Pharmaceuticals Ltd",
-      logo: skplLogo,
-      location: "India"
-    },
-    {
-      name: "Sanzyme Biologics Pvt Ltd",
-      logo: sanzymelogo,
-      location: "India"
-    },
-    {
-      name: "PharmaCorp Industries",
-      location: "Mumbai"
-    },
-    {
-      name: "MediLife Industries",
-      location: "Delhi"
-    },
-    {
-      name: "Industrial Solutions Ltd",
-      location: "Gujarat"
-    },
-    {
-      name: "Auto Components Ltd",
-      location: "Tamil Nadu"
-    },
-    {
-      name: "Food Processing Corp",
-      location: "Punjab"
-    },
-    {
-      name: "Global Export House",
-      location: "Middle East"
-    },
-    {
-      name: "Engineering Solutions",
-      location: "Karnataka"
-    }
-  ];
+  const clients = [{
+    name: "Sri Krishna Pharmaceuticals Ltd",
+    logo: skplLogo,
+    location: "India"
+  }, {
+    name: "Sanzyme Biologics Pvt Ltd",
+    logo: sanzymelogo,
+    location: "India"
+  }, {
+    name: "PharmaCorp Industries",
+    location: "Mumbai"
+  }, {
+    name: "MediLife Industries",
+    location: "Delhi"
+  }, {
+    name: "Industrial Solutions Ltd",
+    location: "Gujarat"
+  }, {
+    name: "Auto Components Ltd",
+    location: "Tamil Nadu"
+  }, {
+    name: "Food Processing Corp",
+    location: "Punjab"
+  }, {
+    name: "Global Export House",
+    location: "Middle East"
+  }, {
+    name: "Engineering Solutions",
+    location: "Karnataka"
+  }];
   const testimonials = [{
     name: "Dr. Rajesh Kumar",
     position: "Quality Manager",
@@ -159,37 +149,24 @@ const Clients = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {clients.map((client, index) => {
-              const initials = client.name.split(' ').map(word => word[0]).join('').slice(0, 3);
-              
-              return (
-                <Card key={index} className="shadow-card hover:shadow-elevated transition-all duration-300 group">
+            const initials = client.name.split(' ').map(word => word[0]).join('').slice(0, 3);
+            return <Card key={index} className="shadow-card hover:shadow-elevated transition-all duration-300 group">
                   <CardContent className="p-6 text-center">
                     {/* Logo or initials */}
                     <div className="w-32 h-16 mx-auto mb-4 flex items-center justify-center">
-                      {client.logo ? (
-                        <img 
-                          src={client.logo} 
-                          alt={`${client.name} logo`}
-                          className="max-w-full max-h-full object-contain"
-                        />
-                      ) : (
-                        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20">
+                      {client.logo ? <img src={client.logo} alt={`${client.name} logo`} className="max-w-full max-h-full object-contain" /> : <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20">
                           <span className="text-lg font-bold text-primary">{initials}</span>
-                        </div>
-                      )}
+                        </div>}
                     </div>
                     {/* Company name */}
                     <h4 className="font-semibold text-foreground text-sm mb-1">
                       {client.name}
                     </h4>
                     {/* Location */}
-                    <p className="text-xs text-muted-foreground">
-                      {client.location}
-                    </p>
+                    
                   </CardContent>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
       </section>
