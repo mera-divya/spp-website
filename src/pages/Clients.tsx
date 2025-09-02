@@ -135,7 +135,61 @@ const Clients = () => {
             </p>
           </div>
 
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            {clientCategories.map((category, index) => (
+              <Card key={index} className="shadow-card hover:shadow-elevated transition-shadow">
+                <CardHeader>
+                  <div className="flex items-center justify-center mb-4">
+                    {category.icon}
+                  </div>
+                  <CardTitle className="text-center text-lg">{category.category}</CardTitle>
+                  <Badge variant="secondary" className="mx-auto">
+                    {category.count} Clients
+                  </Badge>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center mb-4">
+                    {category.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Client Logos Grid */}
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-bold text-foreground mb-8">Trusted by Leading Companies</h3>
+          </div>
           
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            {clientCategories.flatMap(category => 
+              category.clients.slice(0, 3).map((client, clientIndex) => {
+                // Extract company name and location
+                const [companyName, location] = client.split(' (');
+                const cleanLocation = location?.replace(')', '') || '';
+                const initials = companyName.split(' ').map(word => word[0]).join('').slice(0, 3);
+                
+                return (
+                  <Card key={`${category.category}-${clientIndex}`} className="shadow-card hover:shadow-elevated transition-all duration-300 group">
+                    <CardContent className="p-6 text-center">
+                      {/* Logo placeholder with initials */}
+                      <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20 group-hover:border-primary/40 transition-colors">
+                        <span className="text-lg font-bold text-primary">{initials}</span>
+                      </div>
+                      {/* Company name */}
+                      <h4 className="font-semibold text-foreground text-sm mb-1">
+                        {companyName}
+                      </h4>
+                      {/* Location */}
+                      <p className="text-xs text-muted-foreground">
+                        {cleanLocation}
+                      </p>
+                    </CardContent>
+                  </Card>
+                );
+              })
+            )}
+          </div>
         </div>
       </section>
 
