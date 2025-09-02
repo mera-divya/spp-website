@@ -29,7 +29,7 @@ const Quality = () => {
     icon: <Settings className="w-8 h-8 text-primary" />,
     title: "Raw Material Testing",
     description: "Comprehensive testing of all incoming raw materials including virgin LDPE resins, additives, and colorants.",
-    steps: ["Chemical composition analysis", "Physical property testing", "Melt flow index verification", "Contamination screening", "Certificate verification"]
+    steps: ["Virgin LDPE granules only", "Food grade certification", "Certificate of Analysis (COA) verification"]
   }, {
     icon: <Microscope className="w-8 h-8 text-primary" />,
     title: "Production Quality Control",
