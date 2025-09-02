@@ -103,10 +103,6 @@ const Clients = () => {
     number: "97%",
     label: "On - Time Delivery",
     description: "Commitment to reliability"
-  }, {
-    number: "15",
-    label: "States Served",
-    description: "Pan-India presence and distribution network"
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
