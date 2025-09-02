@@ -5,12 +5,6 @@ import { Link } from "react-router-dom";
 import { Users, Building2, Star, Quote, Award, TrendingUp, Globe, Phone, Heart, CheckCircle } from "lucide-react";
 import skplLogo from "@/assets/client-logos/skpl-logo.jpg";
 import sanzymelogo from "@/assets/client-logos/sanzyme-biologics-logo.jpg";
-import leePharmaLogo from "@/assets/client-logos/lee-pharma-logo.jpg";
-import salicylatesLogo from "@/assets/client-logos/salicylates-chemicals-logo.jpg";
-import biologicalELogo from "@/assets/client-logos/biological-e-logo.jpg";
-import vintageCoffeeLogo from "@/assets/client-logos/vintage-coffee-logo.jpg";
-import schneiderElectricLogo from "@/assets/client-logos/schneider-electric-logo.jpg";
-import clariantIndiaLogo from "@/assets/client-logos/clariant-india-logo.jpg";
 const Clients = () => {
   const clients = [{
     name: "Sri Krishna Pharmaceuticals Ltd",
@@ -21,29 +15,26 @@ const Clients = () => {
     logo: sanzymelogo,
     location: "India"
   }, {
-    name: "Lee Pharma Ltd",
-    logo: leePharmaLogo,
-    location: "India"
+    name: "PharmaCorp Industries",
+    location: "Mumbai"
   }, {
-    name: "Salicylates and Chemicals Pvt Ltd",
-    logo: salicylatesLogo,
-    location: "India"
+    name: "MediLife Industries",
+    location: "Delhi"
   }, {
-    name: "Biological E. Limited",
-    logo: biologicalELogo,
-    location: "India"
+    name: "Industrial Solutions Ltd",
+    location: "Gujarat"
   }, {
-    name: "Vintage Coffee Pvt Ltd",
-    logo: vintageCoffeeLogo,
-    location: "India"
+    name: "Auto Components Ltd",
+    location: "Tamil Nadu"
   }, {
-    name: "Schneider Electric India Pvt Ltd",
-    logo: schneiderElectricLogo,
-    location: "India"
+    name: "Food Processing Corp",
+    location: "Punjab"
   }, {
-    name: "Clariant India Pvt Ltd",
-    logo: clariantIndiaLogo,
-    location: "India"
+    name: "Global Export House",
+    location: "Middle East"
+  }, {
+    name: "Engineering Solutions",
+    location: "Karnataka"
   }];
   const testimonials = [{
     name: "Dr. Rajesh Kumar",
@@ -92,17 +83,21 @@ const Clients = () => {
     description: "Products manufactured to international standards for domestic and export markets."
   }];
   const stats = [{
-    number: "85%",
-    label: "Repeat Orders",
-    description: "Customer satisfaction and loyalty"
+    number: "500+",
+    label: "Active Clients",
+    description: "Across pharmaceutical, industrial, and food sectors"
   }, {
-    number: "10+",
+    number: "25+",
     label: "Years Partnership",
-    description: "Building relationships that last"
+    description: "Average client relationship duration"
   }, {
-    number: "97%",
-    label: "On - Time Delivery",
-    description: "Commitment to reliability"
+    number: "98%",
+    label: "Client Retention",
+    description: "Customer satisfaction and repeat business"
+  }, {
+    number: "15",
+    label: "States Served",
+    description: "Pan-India presence and distribution network"
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
@@ -124,7 +119,7 @@ const Clients = () => {
       {/* Client Stats */}
       <section className="section-padding bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => <Card key={index} className="shadow-card text-center">
                 <CardContent className="p-6">
                   <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
@@ -152,22 +147,14 @@ const Clients = () => {
             <h3 className="text-2xl font-bold text-foreground mb-8">Trusted by Leading Companies</h3>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {clients.map((client, index) => {
             const initials = client.name.split(' ').map(word => word[0]).join('').slice(0, 3);
             return <Card key={index} className="shadow-card hover:shadow-elevated transition-all duration-300 group">
                   <CardContent className="p-6 text-center">
                     {/* Logo or initials */}
                     <div className="w-32 h-16 mx-auto mb-4 flex items-center justify-center">
-                      {client.logo ? <img 
-                        src={client.logo} 
-                        alt={`${client.name} logo`} 
-                        className={`max-w-full max-h-full ${
-                          client.name.includes('Sri Krishna') || client.name.includes('Biological E') 
-                            ? 'object-cover scale-125' 
-                            : 'object-contain'
-                        }`} 
-                      /> : <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20">
+                      {client.logo ? <img src={client.logo} alt={`${client.name} logo`} className="max-w-full max-h-full object-contain" /> : <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20">
                           <span className="text-lg font-bold text-primary">{initials}</span>
                         </div>}
                     </div>
@@ -220,9 +207,7 @@ const Clients = () => {
       {/* CTA Section */}
       <section className="section-padding hero-gradient text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-            Join Our Success Stories
-          </h2>
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6">Personalized service and quick resolution of queries.</h2>
           <p className="text-xl mb-8 text-blue-100">
             Become part of our growing family of satisfied clients who trust 
             Srinivasa Polypack for their LDPE packaging requirements.
