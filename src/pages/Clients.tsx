@@ -152,7 +152,7 @@ const Clients = () => {
             <h3 className="text-2xl font-bold text-foreground mb-8">Trusted by Leading Companies</h3>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {clients.map((client, index) => {
             const initials = client.name.split(' ').map(word => word[0]).join('').slice(0, 3);
             return <Card key={index} className="shadow-card hover:shadow-elevated transition-all duration-300 group">
