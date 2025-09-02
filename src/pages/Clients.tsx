@@ -92,9 +92,9 @@ const Clients = () => {
     description: "Products manufactured to international standards for domestic and export markets."
   }];
   const stats = [{
-    number: "10 +",
-    label: "Active Clients",
-    description: "Across pharmaceutical, industrial, and food sectors"
+    number: "85%",
+    label: "Repeat Orders",
+    description: "Customer satisfaction and loyalty"
   }, {
     number: "10+",
     label: "Years Partnership",
