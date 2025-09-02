@@ -179,33 +179,7 @@ const Quality = () => {
 
       {/* Testing Parameters */}
       <section className="section-padding bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
-              Testing Parameters
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive testing protocols covering all aspects of product performance 
-              and compliance with industry standards.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {testParameters.map((category, index) => <Card key={index} className="shadow-card">
-                <CardHeader>
-                  <CardTitle className="text-lg text-foreground">{category.category}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
-                    {category.tests.map((test, testIndex) => <li key={testIndex} className="flex items-start space-x-2">
-                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground text-sm">{test}</span>
-                      </li>)}
-                  </ul>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
+        
       </section>
 
       {/* Quality Benefits */}
