@@ -6,6 +6,7 @@ import { Users, Building2, Star, Quote, Award, TrendingUp, Globe, Phone, Heart, 
 import skplLogo from "@/assets/client-logos/skpl-logo.jpg";
 import sanzymelogo from "@/assets/client-logos/sanzyme-biologics-logo.jpg";
 import leePharmaLogo from "@/assets/client-logos/lee-pharma-logo.jpg";
+import salicylatesLogo from "@/assets/client-logos/salicylates-chemicals-logo.jpg";
 const Clients = () => {
   const clients = [{
     name: "Sri Krishna Pharmaceuticals Ltd",
@@ -18,6 +19,10 @@ const Clients = () => {
   }, {
     name: "Lee Pharma Ltd",
     logo: leePharmaLogo,
+    location: "India"
+  }, {
+    name: "Salicylates and Chemicals Pvt Ltd",
+    logo: salicylatesLogo,
     location: "India"
   }, {
     name: "PharmaCorp Industries",
