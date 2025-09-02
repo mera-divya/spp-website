@@ -101,7 +101,7 @@ const Clients = () => {
     description: "Average client relationship duration"
   }, {
     number: "97%",
-    label: "Client Retention",
+    label: "On - Time Delivery",
     description: "Customer satisfaction and repeat business"
   }, {
     number: "15",
