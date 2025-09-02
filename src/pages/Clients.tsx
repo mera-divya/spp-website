@@ -10,6 +10,7 @@ import salicylatesLogo from "@/assets/client-logos/salicylates-chemicals-logo.jp
 import biologicalELogo from "@/assets/client-logos/biological-e-logo.jpg";
 import vintageCoffeeLogo from "@/assets/client-logos/vintage-coffee-logo.jpg";
 import schneiderElectricLogo from "@/assets/client-logos/schneider-electric-logo.jpg";
+import clariantIndiaLogo from "@/assets/client-logos/clariant-india-logo.jpg";
 const Clients = () => {
   const clients = [{
     name: "Sri Krishna Pharmaceuticals Ltd",
@@ -38,6 +39,10 @@ const Clients = () => {
   }, {
     name: "Schneider Electric India Pvt Ltd",
     logo: schneiderElectricLogo,
+    location: "India"
+  }, {
+    name: "Clariant India Pvt Ltd",
+    logo: clariantIndiaLogo,
     location: "India"
   }, {
     name: "PharmaCorp Industries",
