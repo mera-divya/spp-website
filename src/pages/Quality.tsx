@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Award, Shield, CheckCircle, Microscope, FileCheck, Users, Settings, TrendingUp, Target, Clock, Phone, Download } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
-import qualityLab from "@/assets/quality-lab.jpg";
+import qualityStandardsHero from "@/assets/quality-standards-hero.jpg";
 const Quality = () => {
   const certifications = [{
     title: "ISO 9001:2015",
@@ -73,7 +73,7 @@ const Quality = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <HeroSection backgroundImage={qualityLab} altText="Quality Control Laboratory">
+      <HeroSection backgroundImage={qualityStandardsHero} altText="Quality Standards Laboratory">
         <div className="text-center">
           <Badge variant="secondary" className="mb-6">
             <Award className="w-4 h-4 mr-2" />
