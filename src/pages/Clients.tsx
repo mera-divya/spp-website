@@ -96,7 +96,7 @@ const Clients = () => {
     label: "Active Clients",
     description: "Across pharmaceutical, industrial, and food sectors"
   }, {
-    number: "25+",
+    number: "10+",
     label: "Years Partnership",
     description: "Average client relationship duration"
   }, {
