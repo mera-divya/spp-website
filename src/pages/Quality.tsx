@@ -40,11 +40,6 @@ const Quality = () => {
     title: "Final Product Testing",
     description: "Rigorous testing of finished products to validate compliance with specifications and standards.",
     steps: ["Visual quality check", "Leak testing", "Print quality check", "Batch code & labeling verification", "Print quality inspection"]
-  }, {
-    icon: <TrendingUp className="w-8 h-8 text-primary" />,
-    title: "Continuous Improvement",
-    description: "Systematic approach to identify opportunities for enhancement and implement corrective actions.",
-    steps: ["Statistical process control", "Customer feedback analysis", "Internal audit findings", "Corrective action implementation", "Process optimization"]
   }];
   const testParameters = [{
     category: "Physical Properties",
