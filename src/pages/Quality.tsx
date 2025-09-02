@@ -34,7 +34,7 @@ const Quality = () => {
     icon: <Microscope className="w-8 h-8 text-primary" />,
     title: "Production Quality Control",
     description: "Continuous monitoring and control of manufacturing processes to ensure consistent quality output.",
-    steps: ["Extrusion parameter monitoring", "Film thickness measurement", "Temperature profile control", "Speed and tension monitoring", "Visual quality inspection"]
+    steps: ["Extrusion parameter monitoring", "Film thickness measurement", "Color consistency checks", "Seal strength testing", "Dimensional accuracy"]
   }, {
     icon: <FileCheck className="w-8 h-8 text-primary" />,
     title: "Final Product Testing",
