@@ -98,7 +98,7 @@ const Clients = () => {
   }, {
     number: "10+",
     label: "Years Partnership",
-    description: "Average client relationship duration"
+    description: "Building relationships that last"
   }, {
     number: "97%",
     label: "On - Time Delivery",
