@@ -32,7 +32,7 @@ const Quality = () => {
     steps: ["Chemical composition analysis", "Physical property testing", "Melt flow index verification", "Contamination screening", "Certificate verification"]
   }, {
     icon: <Microscope className="w-8 h-8 text-primary" />,
-    title: "In-Process Monitoring",
+    title: "Production Quality Control",
     description: "Continuous monitoring and control of manufacturing processes to ensure consistent quality output.",
     steps: ["Extrusion parameter monitoring", "Film thickness measurement", "Temperature profile control", "Speed and tension monitoring", "Visual quality inspection"]
   }, {
