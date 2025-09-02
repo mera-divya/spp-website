@@ -7,7 +7,7 @@ import skplLogo from "@/assets/client-logos/skpl-logo.jpg";
 const Clients = () => {
   const clients = [
     {
-      name: "SKPL",
+      name: "Sri Krishna Pharmaceuticals Ltd",
       logo: skplLogo,
       location: "India"
     },
