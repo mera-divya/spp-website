@@ -143,7 +143,7 @@ const Contact = () => {
                     {action.link.includes('mailto:') && (
                       <Button 
                         variant="outline" 
-                        className="w-full border-blue-200 text-blue-600 hover:bg-blue-50"
+                        className="w-full border-blue-400 text-blue-700 hover:bg-blue-100 hover:border-blue-500"
                         onClick={() => {
                           navigator.clipboard.writeText("srinivasapolypack@yahoo.com");
                           toast({ 
@@ -158,7 +158,7 @@ const Contact = () => {
                     {action.link.includes('wa.me') && (
                       <Button 
                         variant="outline" 
-                        className="w-full border-blue-200 text-blue-600 hover:bg-blue-50"
+                        className="w-full border-blue-400 text-blue-700 hover:bg-blue-100 hover:border-blue-500"
                         onClick={() => {
                           navigator.clipboard.writeText("+91 76719 36316");
                           toast({ 
