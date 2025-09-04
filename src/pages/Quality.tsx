@@ -5,7 +5,14 @@ import { Link } from "react-router-dom";
 import { Award, Shield, CheckCircle, Microscope, FileCheck, Users, Settings, TrendingUp, Target, Clock, Phone, Download } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import qualityStandardsHero from "@/assets/quality-standards-hero.jpg";
+import { useEffect } from "react";
 const Quality = () => {
+  // Preload hero background image for immediate display
+  useEffect(() => {
+    const img = new Image();
+    img.src = qualityStandardsHero;
+  }, []);
+
   const certifications = [{
     title: "ISO 9001:2015",
     description: "Quality Management System certification ensuring consistent quality and customer satisfaction.",
