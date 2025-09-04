@@ -142,7 +142,7 @@ const Contact = () => {
                     </Button>
                     {action.link.includes('mailto:') && (
                       <Button 
-                        variant="outline" 
+                        variant="secondary" 
                         className="w-full"
                         onClick={() => {
                           navigator.clipboard.writeText("srinivasapolypack@yahoo.com");
@@ -157,7 +157,7 @@ const Contact = () => {
                     )}
                     {action.link.includes('wa.me') && (
                       <Button 
-                        variant="outline" 
+                        variant="secondary" 
                         className="w-full"
                         onClick={() => {
                           navigator.clipboard.writeText("+91 76719 36316");
