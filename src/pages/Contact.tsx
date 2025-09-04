@@ -250,11 +250,14 @@ const Contact = () => {
                           <SelectValue placeholder="Select product type" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="pharmaceutical-bags">Pharmaceutical Bags</SelectItem>
-                          <SelectItem value="industrial-bags">Industrial Bags</SelectItem>
-                          <SelectItem value="food-grade-bags">Food Grade Bags</SelectItem>
-                          <SelectItem value="anti-static-bags">Anti-Static Bags</SelectItem>
-                          <SelectItem value="custom-solutions">Custom Solutions</SelectItem>
+                          <SelectItem value="ldpe-polythene-bags">LDPE Polythene Bags</SelectItem>
+                          <SelectItem value="antistatic-polythene-bags">Antistatic Polythene Bags</SelectItem>
+                          <SelectItem value="polythene-sheets">Polythene Sheets</SelectItem>
+                          <SelectItem value="rolls">Rolls</SelectItem>
+                          <SelectItem value="printed-polythene-bags">Printed Polythene Bags</SelectItem>
+                          <SelectItem value="vci-polythene-bags">VCI Polythene Bags</SelectItem>
+                          <SelectItem value="custom-packaging-solutions">Custom Packaging Solutions</SelectItem>
+                          <SelectItem value="self-seal-covers">Self Seal Covers</SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
