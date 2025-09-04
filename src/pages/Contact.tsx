@@ -79,8 +79,8 @@ const Contact = () => {
     icon: <Mail className="w-8 h-8 text-purple-600" />,
     title: "Email Us",
     description: "Send detailed requirements",
-    action: "Send Email",
-    link: "mailto:srinivasapolypack@yahoo.com"
+    action: "Copy Email",
+    link: "#copy-email"
   }];
   const companyHighlights = [{
     icon: <Factory className="w-6 h-6 text-primary" />,
@@ -134,11 +134,26 @@ const Contact = () => {
                   <div className="mb-4 flex justify-center">{action.icon}</div>
                   <h3 className="text-xl font-semibold mb-2 text-foreground">{action.title}</h3>
                   <p className="text-muted-foreground mb-4">{action.description}</p>
-                  <Button asChild className="hero-gradient w-full">
-                    <a href={action.link} target="_blank" rel="noopener noreferrer">
+                  {action.link === "#copy-email" ? (
+                    <Button 
+                      className="hero-gradient w-full"
+                      onClick={() => {
+                        navigator.clipboard.writeText("srinivasapolypack@yahoo.com");
+                        toast({ 
+                          title: "Email Copied!", 
+                          description: "srinivasapolypack@yahoo.com copied to clipboard" 
+                        });
+                      }}
+                    >
                       {action.action}
-                    </a>
-                  </Button>
+                    </Button>
+                  ) : (
+                    <Button asChild className="hero-gradient w-full">
+                      <a href={action.link} target="_blank" rel="noopener noreferrer">
+                        {action.action}
+                      </a>
+                    </Button>
+                  )}
                 </CardContent>
               </Card>)}
           </div>
