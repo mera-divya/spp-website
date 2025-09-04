@@ -73,8 +73,8 @@ const Contact = () => {
     icon: <Phone className="w-8 h-8 text-blue-600" />,
     title: "Call Now",
     description: "Speak directly with our experts",
-    action: "Call +91 98765 43210",
-    link: "tel:+919876543210"
+    action: "Call +91 9866106621",
+    link: "tel:+919866106621"
   }, {
     icon: <Mail className="w-8 h-8 text-purple-600" />,
     title: "Email Us",
@@ -354,9 +354,9 @@ const Contact = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary" className="shadow-elevated">
-              <a href="tel:+919876543210">
+              <a href="tel:+919866106621">
                 <Phone className="w-5 h-5 mr-2" />
-                Call Now: +91 98765 43210
+                Call Now: +91 9866106621
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/20 hover:bg-white/10">
