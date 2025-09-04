@@ -66,7 +66,7 @@ const Contact = () => {
   const quickActions = [{
     icon: <MessageSquare className="w-8 h-8 text-green-600" />,
     title: "WhatsApp",
-    description: "Chat with our sales team instantly",
+    description: "Chat with us",
     action: "Chat Now",
     link: "https://wa.me/917671936316"
   }, {
