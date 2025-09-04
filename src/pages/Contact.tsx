@@ -266,7 +266,7 @@ const Contact = () => {
 
                   <div>
                     <Label htmlFor="quantity">Expected Quantity (per month)</Label>
-                    <Input id="quantity" value={formData.quantity} onChange={e => handleInputChange("quantity", e.target.value)} placeholder="e.g., 10,000 pieces" />
+                    <Input id="quantity" value={formData.quantity} onChange={e => handleInputChange("quantity", e.target.value)} placeholder="e.g., 5000 pieces/kgs" />
                   </div>
 
                   <div>
