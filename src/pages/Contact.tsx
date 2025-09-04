@@ -72,7 +72,7 @@ const Contact = () => {
   }, {
     icon: <Phone className="w-8 h-8 text-blue-600" />,
     title: "Call Now",
-    description: "Speak directly with our experts",
+    description: "Speak directly with us",
     action: "Call +91 9866106621",
     action2: "Call +91 8885016621",
     link: "tel:+919866106621",
