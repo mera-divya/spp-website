@@ -142,8 +142,8 @@ const Contact = () => {
                     </Button>
                     {action.link.includes('mailto:') && (
                       <Button 
-                        variant="secondary" 
-                        className="w-full"
+                        variant="outline" 
+                        className="w-full border-blue-200 text-blue-600 hover:bg-blue-50"
                         onClick={() => {
                           navigator.clipboard.writeText("srinivasapolypack@yahoo.com");
                           toast({ 
@@ -157,8 +157,8 @@ const Contact = () => {
                     )}
                     {action.link.includes('wa.me') && (
                       <Button 
-                        variant="secondary" 
-                        className="w-full"
+                        variant="outline" 
+                        className="w-full border-blue-200 text-blue-600 hover:bg-blue-50"
                         onClick={() => {
                           navigator.clipboard.writeText("+91 76719 36316");
                           toast({ 
