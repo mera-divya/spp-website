@@ -146,7 +146,7 @@ const Contact = () => {
                       <Button 
                         asChild 
                         variant="outline" 
-                        className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500"
+                        className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500 hover:text-blue-700"
                       >
                         <a href={action.link2} target="_blank" rel="noopener noreferrer">
                           {action.action2}
@@ -156,7 +156,7 @@ const Contact = () => {
                     {action.link.includes('mailto:') && (
                       <Button 
                         variant="outline" 
-                        className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500"
+                        className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500 hover:text-blue-700"
                         onClick={() => {
                           navigator.clipboard.writeText("srinivasapolypack@yahoo.com");
                           toast({ 
@@ -171,7 +171,7 @@ const Contact = () => {
                     {action.link.includes('wa.me') && (
                       <Button 
                         variant="outline" 
-                        className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500"
+                        className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500 hover:text-blue-700"
                         onClick={() => {
                           navigator.clipboard.writeText("+91 76719 36316");
                           toast({ 
