@@ -74,7 +74,9 @@ const Contact = () => {
     title: "Call Now",
     description: "Speak directly with our experts",
     action: "Call +91 9866106621",
-    link: "tel:+919866106621"
+    action2: "Call +91 8885016621",
+    link: "tel:+919866106621",
+    link2: "tel:+918885016621"
   }, {
     icon: <Mail className="w-8 h-8 text-purple-600" />,
     title: "Email Us",
@@ -140,6 +142,13 @@ const Contact = () => {
                         {action.action}
                       </a>
                     </Button>
+                    {action.action2 && (
+                      <Button asChild className="hero-gradient w-full">
+                        <a href={action.link2} target="_blank" rel="noopener noreferrer">
+                          {action.action2}
+                        </a>
+                      </Button>
+                    )}
                     {action.link.includes('mailto:') && (
                       <Button 
                         variant="outline" 
