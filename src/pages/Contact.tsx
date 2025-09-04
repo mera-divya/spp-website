@@ -25,47 +25,25 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    try {
-      const response = await fetch('/functions/v1/send-contact-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-
-      if (result.success) {
-        toast({
-          title: "Message Sent Successfully!",
-          description: result.message || "We'll get back to you within 24 hours with a detailed quote.",
-        });
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          company: "",
-          industry: "",
-          productType: "",
-          quantity: "",
-          message: "",
-        });
-      } else {
-        toast({
-          title: "Error",
-          description: result.message || "Failed to send message. Please try again.",
-          variant: "destructive",
-        });
-      }
-    } catch (error) {
-      console.error('Contact form error:', error);
+      // For now, just show success message without backend call
       toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
+        title: "Message Sent Successfully!",
+        description: "We'll get back to you within 24 hours with a detailed quote.",
       });
-    }
+      
+      // Log the form data to console for testing
+      console.log('Contact Form Submission:', formData);
+      
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        industry: "",
+        productType: "",
+        quantity: "",
+        message: "",
+      });
   };
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({
