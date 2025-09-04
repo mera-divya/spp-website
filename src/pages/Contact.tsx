@@ -65,10 +65,10 @@ const Contact = () => {
   }];
   const quickActions = [{
     icon: <MessageSquare className="w-8 h-8 text-green-600" />,
-    title: "WhatsApp: +91 76719 36316",
-    description: "Copy number and open WhatsApp manually",
-    action: "Copy Number",
-    link: "#"
+    title: "WhatsApp",
+    description: "Chat with our sales team instantly",
+    action: "Chat Now",
+    link: "https://wa.me/917671936316"
   }, {
     icon: <Phone className="w-8 h-8 text-blue-600" />,
     title: "Call Now",
@@ -134,23 +134,11 @@ const Contact = () => {
                   <div className="mb-4 flex justify-center">{action.icon}</div>
                   <h3 className="text-xl font-semibold mb-2 text-foreground">{action.title}</h3>
                   <p className="text-muted-foreground mb-4">{action.description}</p>
-                  {action.link === "#" ? (
-                    <Button 
-                      className="hero-gradient w-full"
-                      onClick={() => {
-                        navigator.clipboard.writeText("+917671936316");
-                        toast({ title: "Number Copied!", description: "WhatsApp number copied to clipboard" });
-                      }}
-                    >
+                  <Button asChild className="hero-gradient w-full">
+                    <a href={action.link} target="_blank" rel="noopener noreferrer">
                       {action.action}
-                    </Button>
-                  ) : (
-                    <Button asChild className="hero-gradient w-full">
-                      <a href={action.link} target="_blank" rel="noopener noreferrer">
-                        {action.action}
-                      </a>
-                    </Button>
-                  )}
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>)}
           </div>
@@ -339,17 +327,11 @@ const Contact = () => {
                 Call Now: +91 98765 43210
               </a>
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white/20 hover:bg-white/10"
-              onClick={() => {
-                navigator.clipboard.writeText("+917671936316");
-                toast({ title: "Number Copied!", description: "WhatsApp: +91 76719 36316 copied to clipboard" });
-              }}
-            >
-              <MessageSquare className="w-5 h-5 mr-2" />
-              Copy WhatsApp Number
+            <Button asChild size="lg" variant="outline" className="border-white/20 hover:bg-white/10">
+              <a href="https://wa.me/917671936316" target="_blank" rel="noopener noreferrer">
+                <MessageSquare className="w-5 h-5 mr-2" />
+                WhatsApp Us
+              </a>
             </Button>
           </div>
         </div>
