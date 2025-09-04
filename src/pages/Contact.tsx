@@ -143,7 +143,11 @@ const Contact = () => {
                       </a>
                     </Button>
                     {action.action2 && (
-                      <Button asChild className="hero-gradient w-full">
+                      <Button 
+                        asChild 
+                        variant="outline" 
+                        className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500"
+                      >
                         <a href={action.link2} target="_blank" rel="noopener noreferrer">
                           {action.action2}
                         </a>
