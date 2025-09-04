@@ -68,7 +68,7 @@ const Contact = () => {
     title: "WhatsApp",
     description: "Chat with our sales team instantly",
     action: "Chat Now",
-    link: "https://wa.me/919876543210"
+    link: "https://wa.me/7671936316"
   }, {
     icon: <Phone className="w-8 h-8 text-blue-600" />,
     title: "Call Now",
@@ -328,7 +328,7 @@ const Contact = () => {
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/20 hover:bg-white/10">
-              <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/7671936316" target="_blank" rel="noopener noreferrer">
                 <MessageSquare className="w-5 h-5 mr-2" />
                 WhatsApp Us
               </a>
