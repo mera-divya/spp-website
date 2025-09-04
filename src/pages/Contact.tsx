@@ -80,7 +80,7 @@ const Contact = () => {
     title: "Email Us",
     description: "Send detailed requirements",
     action: "Send Email",
-    link: "mailto:srinivasapolypack@gmail.com"
+    link: "mailto:srinivasapolypack@yahoo.com"
   }];
   const companyHighlights = [{
     icon: <Factory className="w-6 h-6 text-primary" />,
