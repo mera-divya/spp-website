@@ -155,6 +155,21 @@ const Contact = () => {
                         Copy Email
                       </Button>
                     )}
+                    {action.link.includes('wa.me') && (
+                      <Button 
+                        variant="outline" 
+                        className="w-full"
+                        onClick={() => {
+                          navigator.clipboard.writeText("+91 76719 36316");
+                          toast({ 
+                            title: "Number Copied!", 
+                            description: "+91 76719 36316 copied to clipboard" 
+                          });
+                        }}
+                      >
+                        Copy Number
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>)}
