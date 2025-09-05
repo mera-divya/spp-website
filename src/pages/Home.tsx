@@ -213,7 +213,7 @@ const Home = () => {
                     {product.title}
                   </h3>
                   <p className="text-muted-foreground mb-4">{product.description}</p>
-                  <Button asChild variant="outline" className="w-full">
+                  <Button asChild variant="outline" className="w-full bg-blue-100 border-blue-400 text-black hover:bg-blue-200 hover:border-blue-500 hover:text-black">
                     <Link to="/products">Learn More</Link>
                   </Button>
                 </CardContent>
