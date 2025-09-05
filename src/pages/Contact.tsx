@@ -125,7 +125,7 @@ const Contact = () => {
     description: "Quality management system certified"
   }, {
     icon: <Users className="w-6 h-6 text-primary" />,
-    title: "500+ Happy Clients",
+    title: "Custom Packaging Solutions",
     description: "Serving pharmaceutical & industrial sectors"
   }, {
     icon: <Globe className="w-6 h-6 text-primary" />,
