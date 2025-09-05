@@ -126,7 +126,7 @@ const Contact = () => {
   }, {
     icon: <Users className="w-6 h-6 text-primary" />,
     title: "Custom Packaging Solutions",
-    description: "Serving pharmaceutical & industrial sectors"
+    description: "Tailored to your requirements"
   }, {
     icon: <Globe className="w-6 h-6 text-primary" />,
     title: "Pan-India Delivery",
