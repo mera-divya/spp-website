@@ -80,7 +80,7 @@ const Contact = () => {
   const contactInfo = [{
     icon: <MapPin className="w-6 h-6 text-primary" />,
     title: "Our Location",
-    details: ["Srinivasa Polypack Pvt. Ltd.", "Industrial Area, Sector 15", "Manufacturing Hub, Gujarat - 382015", "India"]
+    details: ["Srinivasa Polypack", "Adj to shed no :13/A/5, Phase - IV", "IDA Jeedimetla, Hyderabad - 500055", "Telangana, India"]
   }, {
     icon: <Phone className="w-6 h-6 text-primary" />,
     title: "Phone Numbers",
