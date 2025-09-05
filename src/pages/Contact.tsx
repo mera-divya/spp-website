@@ -88,7 +88,7 @@ const Contact = () => {
   }, {
     icon: <Mail className="w-6 h-6 text-primary" />,
     title: "Email Addresses",
-    details: ["sales@srinivasapolypack.com", "technical@srinivasapolypack.com", "info@srinivasapolypack.com", "support@srinivasapolypack.com"]
+    details: ["srinivasapolypack@yahoo.com"]
   }, {
     icon: <Clock className="w-6 h-6 text-primary" />,
     title: "Business Hours",
