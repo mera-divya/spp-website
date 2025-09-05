@@ -25,11 +25,10 @@ const Contact = () => {
   });
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     try {
       // Initialize EmailJS if not already done
       emailjs.init("YOUR_PUBLIC_KEY"); // We'll need to set this up
-      
+
       // Prepare email template parameters
       const templateParams = {
         from_name: formData.name,
@@ -41,20 +40,18 @@ const Contact = () => {
         quantity: formData.quantity,
         message: formData.message,
         to_email: 'srinivasapolypack@yahoo.com',
-        reply_to: formData.email,
+        reply_to: formData.email
       };
 
       // For now, let's use a simple success response while we set up EmailJS
       console.log('Contact Form Submission:', formData);
-      
+
       // Simulate email sending
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
       toast({
         title: "Message Sent Successfully!",
-        description: "We'll get back to you within 24 hours with a detailed quote.",
+        description: "We'll get back to you within 24 hours with a detailed quote."
       });
-      
       setFormData({
         name: "",
         email: "",
@@ -63,15 +60,14 @@ const Contact = () => {
         industry: "",
         productType: "",
         quantity: "",
-        message: "",
+        message: ""
       });
-      
     } catch (error) {
       console.error('Contact form error:', error);
       toast({
         title: "Error",
         description: "Failed to send message. Please try calling us directly at +91 9866106621.",
-        variant: "destructive",
+        variant: "destructive"
       });
     }
   };
@@ -177,47 +173,29 @@ const Contact = () => {
                         {action.action}
                       </a>
                     </Button>
-                    {action.action2 && (
-                      <Button 
-                        asChild 
-                        variant="outline" 
-                        className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500 hover:text-blue-700"
-                      >
+                    {action.action2 && <Button asChild variant="outline" className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500 hover:text-blue-700">
                         <a href={action.link2} target="_blank" rel="noopener noreferrer">
                           {action.action2}
                         </a>
-                      </Button>
-                    )}
-                    {action.link.includes('mailto:') && (
-                      <Button 
-                        variant="outline" 
-                        className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500 hover:text-blue-700"
-                        onClick={() => {
-                          navigator.clipboard.writeText("srinivasapolypack@yahoo.com");
-                          toast({ 
-                            title: "Email Copied!", 
-                            description: "srinivasapolypack@yahoo.com copied to clipboard" 
-                          });
-                        }}
-                      >
+                      </Button>}
+                    {action.link.includes('mailto:') && <Button variant="outline" className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500 hover:text-blue-700" onClick={() => {
+                  navigator.clipboard.writeText("srinivasapolypack@yahoo.com");
+                  toast({
+                    title: "Email Copied!",
+                    description: "srinivasapolypack@yahoo.com copied to clipboard"
+                  });
+                }}>
                         Copy Email
-                      </Button>
-                    )}
-                    {action.link.includes('wa.me') && (
-                      <Button 
-                        variant="outline" 
-                        className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500 hover:text-blue-700"
-                        onClick={() => {
-                          navigator.clipboard.writeText("+91 76719 36316");
-                          toast({ 
-                            title: "Number Copied!", 
-                            description: "+91 76719 36316 copied to clipboard" 
-                          });
-                        }}
-                      >
+                      </Button>}
+                    {action.link.includes('wa.me') && <Button variant="outline" className="w-full bg-blue-100 border-blue-400 text-blue-700 hover:bg-blue-200 hover:border-blue-500 hover:text-blue-700" onClick={() => {
+                  navigator.clipboard.writeText("+91 76719 36316");
+                  toast({
+                    title: "Number Copied!",
+                    description: "+91 76719 36316 copied to clipboard"
+                  });
+                }}>
                         Copy Number
-                      </Button>
-                    )}
+                      </Button>}
                   </div>
                 </CardContent>
               </Card>)}
@@ -348,9 +326,7 @@ const Contact = () => {
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
               Visit Our Facility
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Located in the heart of Gujarat's industrial area with excellent connectivity.
-            </p>
+            <p className="text-lg text-muted-foreground">Located in Jeedimetla, the heart of Hyderabad's industrial area with excellent connectivity.</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 items-center">
