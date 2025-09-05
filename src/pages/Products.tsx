@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import bagsShowcase from "@/assets/ldpe-bags-showcase.jpg";
-import polytheneSheets from "@/assets/polythene-sheets.jpg";
+import polytheneSheetsNew from "@/assets/polythene-sheets-new.jpg";
 import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
 import ldpePolytheneBagsNew from "@/assets/ldpe-polythene-bags-new.jpg";
 import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
@@ -26,7 +26,7 @@ const Products = () => {
     {
       name: "LDPE Polythene Bags",
       description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
-      image: polytheneSheets,
+      image: polytheneSheetsNew,
       specifications: [
         "Types: Plain & Gusseted",
         "Thickness: Multiple gauge options as per requirement",
@@ -52,7 +52,7 @@ const Products = () => {
     {
       name: "Polythene Sheets",
       description: "Flexible polythene sheets for covering, wrapping, and protective applications.",
-      image: ldpePolytheneBagsNew,
+      image: polytheneSheetsNew,
       specifications: [
         "Thickness: Multiple gauge options as per requirement",
         "Colors: Clear or Natural or Transparent or White, Black & Custom colors",
