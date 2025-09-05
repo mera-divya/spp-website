@@ -92,7 +92,7 @@ const Contact = () => {
   }, {
     icon: <Clock className="w-6 h-6 text-primary" />,
     title: "Business Hours",
-    details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 9:00 AM - 2:00 PM", "Sunday: Closed", "Emergency: 24/7 Available"]
+    details: ["Monday - Saturday: 9:30 AM - 6:00 PM", "Sunday: Closed"]
   }];
   const quickActions = [{
     icon: <MessageSquare className="w-8 h-8 text-green-600" />,
