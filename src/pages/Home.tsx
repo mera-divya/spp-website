@@ -18,10 +18,10 @@ import { HeroSection } from "@/components/HeroSection";
 import heroImage from "@/assets/blown-film-extrusion-hero.jpg";
 import vciPolytheneBags from "@/assets/vci-polythene-bags.jpg";
 import printedPolytheneBags from "@/assets/printed-polythene-bags.jpg";
-import ldpePolytheneBagsNew from "@/assets/ldpe-polythene-bags-new.jpg";
+import polytheneSheetsNew from "@/assets/polythene-sheets-new.jpg";
 import antistaticBagsNew from "@/assets/antistatic-bags-new.jpg";
 import mediumBlackLdpeRolls from "@/assets/medium-black-ldpe-rolls.jpg";
-import polytheneSheetsNew from "@/assets/polythene-sheets-new.jpg";
+import polytheneSheets from "@/assets/polythene-sheets.jpg";
 import selfSealCoversClear from "@/assets/self-seal-covers-clear.jpg";
 import customPackagingSolutions from "@/assets/custom-packaging-solutions.jpg";
 import isoLogoNew from "@/assets/iso-logo-new.jpg";
@@ -56,7 +56,7 @@ const Home = () => {
     {
       title: "LDPE Polythene Bags",
       description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
-      image: ldpePolytheneBagsNew
+      image: polytheneSheets
     },
     {
       title: "Antistatic Polythene Bags",
