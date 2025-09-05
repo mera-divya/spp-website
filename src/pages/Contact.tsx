@@ -84,7 +84,7 @@ const Contact = () => {
   }, {
     icon: <Phone className="w-6 h-6 text-primary" />,
     title: "Phone Numbers",
-    details: ["Sales: +91 98765 43210", "Technical: +91 98765 43211", "Customer Care: +91 98765 43212", "Toll Free: 1800-123-4567"]
+    details: ["+91 9866106621", "+91 8885016621", "+91 7671936316"]
   }, {
     icon: <Mail className="w-6 h-6 text-primary" />,
     title: "Email Addresses",
