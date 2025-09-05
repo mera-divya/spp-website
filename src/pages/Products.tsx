@@ -26,7 +26,7 @@ const Products = () => {
     {
       name: "LDPE Polythene Bags",
       description: "Premium quality Low Density Polyethylene bags for diverse packaging applications.",
-      image: polytheneSheetsNew,
+      image: ldpePolytheneBagsNew,
       specifications: [
         "Types: Plain & Gusseted",
         "Thickness: Multiple gauge options as per requirement",
