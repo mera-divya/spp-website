@@ -211,29 +211,7 @@ const About = () => {
 
       {/* Company Milestones */}
       <section className="section-padding bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
-              Our Journey
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Key milestones that mark our evolution into a leading LDPE manufacturer.
-            </p>
-          </div>
-
-          <div className="space-y-8">
-            {milestones.map((milestone, index) => <div key={index} className="flex items-center space-x-6 p-6 bg-muted/30 rounded-xl">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold">{milestone.year}</span>
-                  </div>
-                </div>
-                <div>
-                  <p className="text-lg text-muted-foreground">{milestone.event}</p>
-                </div>
-              </div>)}
-          </div>
-        </div>
+        
       </section>
 
       {/* CTA Section */}
