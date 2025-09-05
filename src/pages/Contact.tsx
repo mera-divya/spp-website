@@ -117,7 +117,7 @@ const Contact = () => {
   }];
   const companyHighlights = [{
     icon: <Factory className="w-6 h-6 text-primary" />,
-    title: "State-of-art Manufacturing",
+    title: "Custom Packing Solutions",
     description: "Advanced LDPE production facility"
   }, {
     icon: <Award className="w-6 h-6 text-primary" />,
